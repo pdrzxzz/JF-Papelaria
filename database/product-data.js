@@ -7,7 +7,7 @@ const data = [
         type: "canetas"
     },
     {
-        img: "../images/caneta-bic-cristal-vermelha.webp",
+        img: "./images/caneta-bic-cristal-vermelha.webp",
         name: "Caneta Bic Cristal Vermelha",
         brand: 'bic',
         type: "canetas"
