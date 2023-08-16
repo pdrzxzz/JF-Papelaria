@@ -15,6 +15,20 @@ const data = [
         price: '1,50'
     },
     {
+        img: "./images/caneta-compactor.webp",
+        name: "Caneta Compactor 0.7mm",
+        brand: 'compactor',
+        type: "canetas",
+        price: '1,50'
+    },
+    {
+        img: "./images/caneta-fabber.webp",
+        name: "Caneta Fabber Castell 1.0mm",
+        brand: 'fabber',
+        type: "canetas",
+        price: '1,50'
+    },
+    {
         img: "./images/caneta-bic-bold.webp",
         name: "Caneta Bic Bold Intenso 1.6mm",
         brand: 'bic',
@@ -27,5 +41,6 @@ const data = [
         brand: 'bic',
         type: "canetas",
         price: '3,95'
-    }
+    },
+
 ]

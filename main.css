@@ -85,6 +85,7 @@ form label:hover {
     border-radius: 5px;
     padding: 2vw 0;
     cursor: pointer;
+    margin-bottom: 5vw;
 }
 
 .product-img {
