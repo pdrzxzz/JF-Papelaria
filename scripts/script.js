@@ -4,7 +4,6 @@ form = document.querySelector('#products-form')
 let productSelected = ''
 
 
-
 form.addEventListener('click', () => {
     productsDiv.innerHTML = ''
     productHeader.innerHTML = ''
@@ -12,7 +11,7 @@ form.addEventListener('click', () => {
         if (productLabel.checked === true) {
             productSelected = productLabel.value
             SectionHeading = document.createElement('h2')
-            SectionHeading.textContent = productSelected.toUpperCase()
+            SectionHeading.textContent = productLabel.id
             productHeader.append(SectionHeading)
             for (product of data) {
                 // filtrar os produtos
