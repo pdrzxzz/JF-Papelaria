@@ -23,7 +23,7 @@ const data = [
     },
     {
         img: "./images/caneta-fabber.webp",
-        name: "Caneta Fabber Castell 1.0mm",
+        name: "Caneta Fabber-Castell 1.0mm",
         brand: 'fabber',
         type: "canetas",
         price: '1,50'
@@ -42,5 +42,20 @@ const data = [
         type: "canetas",
         price: '3,95'
     },
+    {
+        img: "./images/caneta-spiro.webp",
+        name: "Caneta Cis Spiro 0.7mm",
+        brand: 'cis',
+        type: "canetas",
+        price: '3,95'
+    },
+    {
+        img: "./images/caneta-pilot-bp-1.webp",
+        name: "Caneta Pilot BP-1",
+        brand: 'pilot',
+        type: "canetas",
+        price: '3,95'
+    }
+    
 
 ]
