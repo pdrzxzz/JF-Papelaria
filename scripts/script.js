@@ -31,14 +31,17 @@ form.addEventListener('click', () => {
                     newProductImg.src = product.img
                     newProductImg.classList.add('product-img')
                     newProductImgAnchor.append(newProductImg)
-                    newProductName = document.createElement('h3')
+                    newProductName = document.createElement('h2')
                     newProductName.textContent = product.name
                     newProductName.classList.add('product-name')
-                    newProductPrice = document.createElement('h4')
+                    newProductBrand = document.createElement('h3')
+                    newProductBrand.textContent = 'Marca: ' + product.brand
+                    newProductBrand.classList.add('product-brand')
+                    newProductPrice = document.createElement('h2')
                     newProductPrice.textContent = 'R$ ' + product.price
                     newProductPrice.classList.add('product-price')
                     newProductSection.addEventListener('click', grow)
-                    newProductSection.append(newProductImgAnchor, newProductName, newProductPrice)
+                    newProductSection.append(newProductImgAnchor, newProductName, newProductBrand, newProductPrice)
                     newProductSection.classList.add('animation')
                     productsDiv.append(newProductSection)
                     productHeader.append(productsDiv)

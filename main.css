@@ -98,14 +98,21 @@ form label:hover {
     transition: all 0.2s ease-out;
     margin-bottom: 2vw;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .product-name {
     width: 90%;
 }
 
-.product-price {
+.product-brand {
     width: 90%;
+}
+
+.product-price {
+    margin-right: 2.35vw;
+    display: inline;
+    align-self:flex-end;
 }
 
 .product-img:hover {
