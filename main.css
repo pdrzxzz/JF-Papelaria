@@ -10,6 +10,16 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+#local-anchor {
+    text-decoration: none;
+    color: inherit;
+    transition: all 1s ease;
+}
+
+#local-anchor:hover {
+    text-decoration: underline;
+}
+
 #products {
     transition: all 1s;
 }
@@ -25,16 +35,17 @@ header {
 }
 
 #products-ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 30vh;
     width: 100% - 4vw;
     list-style: none;
     background-color: #90181a;
     padding: 2vw;
     border-radius: 5px;
-    font-size: 1.4em;
+    font-size: 1.5em;
+    column-count: 4;
+}
+
+#products-ul li {
+    margin-bottom: 5px;
 }
 
 #logo {
@@ -113,6 +124,7 @@ form label:hover {
     margin-right: 2.35vw;
     display: inline;
     align-self:flex-end;
+    border-bottom: 3px solid #d22e2e;
 }
 
 .product-img:hover {

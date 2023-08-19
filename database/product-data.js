@@ -1,26 +1,27 @@
 // todos os dados de produtos existentes
 const data = [
+    //agendas
     //apagadores
     {
         img: "./images/apagador-para-quadro-branco.webp",
         name: "Apagador para quadro branco",
         brand: 'Radex',
         type: "apagadores-para-quadro",
-        price: '12,95'
+        price: '11.95'
     },
     {
         img: "./images/apagador-formato-mouse.jpg",
         name: "Apagador magnético em formato de mouse",
         brand: 'Radex',
         type: "apagadores-para-quadro",
-        price: '29,95'
+        price: '19.95'
     },
     {
         img: "./images/limpador-de-quadro-branco.webp",
         name: "Limpador de quadro branco spray",
         brand: 'Radex',
         type: "apagadores-para-quadro",
-        price: 'XX'
+        price: '24.95'
     },
     //apontadores
     {
@@ -28,7 +29,7 @@ const data = [
         name: "Apontador de metal",
         brand: 'Onda',
         type: "apontadores",
-        price: '1,95'
+        price: '1.95'
     },
     {
         img: "./images/apontador-plástico-pequeno.jpg",
@@ -47,82 +48,96 @@ const data = [
     {
         img: "./images/apontador-batman.webp",
         name: "Apontador batman",
-        brand: 'tris',
+        brand: 'Tris',
         type: "apontadores",
         price: 'XX'
     },
     {
         img: "./images/apontador-barbie.webp",
         name: "Apontador barbie",
-        brand: 'tris',
+        brand: 'Tris',
         type: "apontadores",
         price: 'XX'
     },
     {
         img: "./images/apontador-naruto.webp",
         name: "Apontador naruto",
-        brand: 'tris',
+        brand: 'Tris',
         type: "apontadores",
         price: 'XX'
     },
-    
+    //aquarela 
+    {
+        img: "./images/aquarela-onda.jpg",
+        name: "Estojo tinta aquarela 12 cores + pincel",
+        brand: 'Onda',
+        type: "aquarela",
+        price: 'XX'
+    },
+    //baterias
+    {
+        img: "./images/bateria-sonic.jpg",
+        name: "Bateria 9V",
+        brand: 'Elgin',
+        type: "aquarela",
+        price: 'XX'
+    },
     //canetas
     {
         img: "./images/caneta-bic-cristal.webp",
         name: "Caneta Bic Cristal 1.0mm",
         brand: 'Bic',
         type: "canetas",
-        price: '1,50'
+        price: '1.50'
     },
     {
         img: "./images/caneta-bic-fine.webp",
         name: "Caneta Bic Fine 0.8mm",
         brand: 'Bic',
         type: "canetas",
-        price: '1,50'
+        price: '1.50'
     },
     {
         img: "./images/caneta-compactor.webp",
         name: "Caneta Compactor 0.7mm",
         brand: 'Compactor',
         type: "canetas",
-        price: '1,50'
+        price: '1.50'
     },
     {
         img: "./images/caneta-fabber.webp",
         name: "Caneta Fabber-Castell 1.0mm",
         brand: 'Fabber',
         type: "canetas",
-        price: '1,50'
+        price: '1.50'
     },
     {
         img: "./images/caneta-bic-bold.webp",
         name: "Caneta Bic Bold Intenso 1.6mm",
         brand: 'Bic',
         type: "canetas",
-        price: '2,95'
+        price: '2.95'
     },
     {
         img: "./images/caneta-bic-ultrafine.webp",
         name: "Caneta Bic Ultra Fine 0.7mm",
         brand: 'Bic',
         type: "canetas",
-        price: '3,95'
+        price: '3.95'
     },
     {
         img: "./images/caneta-spiro.webp",
         name: "Caneta Cis Spiro 0.7mm",
         brand: 'Cis',
         type: "canetas",
-        price: '3,95'
+        price: '3.95'
     },
     {
         img: "./images/caneta-pilot-bp-1.webp",
         name: "Caneta Pilot BP-1",
         brand: 'Pilot',
         type: "canetas",
-        price: '3,95'
+        price: '3.95'
     }
-
 
 ]
