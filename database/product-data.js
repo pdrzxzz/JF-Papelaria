@@ -58,6 +58,14 @@ const data = [
         type: "apontadores",
         price: 'XX'
     },
+    {
+        img: "./images/apontador-naruto.webp",
+        name: "Apontador naruto",
+        brand: 'tris',
+        type: "apontadores",
+        price: 'XX'
+    },
+    
     //canetas
     {
         img: "./images/caneta-bic-cristal.webp",

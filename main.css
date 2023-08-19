@@ -28,13 +28,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 150px;
+    height: 30vh;
     width: 100% - 4vw;
     list-style: none;
     background-color: #90181a;
     padding: 2vw;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 #logo {
