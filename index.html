@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,18 @@
 <body>
     <header>
         <img id='logo' src="logo/logo.png" alt="logo JF papelaria branca, azul e vermelha">
-        <h2><a id='local-anchor' href="https://www.google.com.br/maps/place/JF+Papelaria+e+Servi%C3%A7os/@-7.9410135,-34.8799182,20.25z/data=!4m6!3m5!1s0x7ab1613effca4c9:0xbb4b9d86326ca567!8m2!3d-7.9410161!4d-34.8797379!16s%2Fg%2F11gcz3l87x?entry=ttu">Av Marechal Floriano Peixoto, 52 Centro - Paulista</a></h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1975.7785824734378!2d-34.88084452876633!3d-7.941230190438326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1613effca4c9%3A0xbb4b9d86326ca567!2sJF%20Papelaria%20e%20Servi%C3%A7os!5e0!3m2!1spt-BR!2sbr!4v1692481577746!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h1>Catálogo de Produtos</h1>
+        <h2><a id='local-anchor'
+                href="https://www.google.com.br/maps/place/JF+Papelaria+e+Servi%C3%A7os/@-7.9410135,-34.8799182,20.25z/data=!4m6!3m5!1s0x7ab1613effca4c9:0xbb4b9d86326ca567!8m2!3d-7.9410161!4d-34.8797379!16s%2Fg%2F11gcz3l87x?entry=ttu">Av
+                Marechal Floriano Peixoto, 52 Centro - Paulista</a></h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1975.7785824734378!2d-34.88084452876633!3d-7.941230190438326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1613effca4c9%3A0xbb4b9d86326ca567!2sJF%20Papelaria%20e%20Servi%C3%A7os!5e0!3m2!1spt-BR!2sbr!4v1692481577746!5m2!1spt-BR!2sbr"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <ul id="carrinho">
+            <h2>Carrinho de produtos</h2><span id="total-tracker"></span>
+        </ul>
+        <div id="copy-button">Copiar</div>
+        <h2 id="catalogo">Catálogo de Produtos</h2>
         <form id="products-form" action="">
             <ul id="products-ul">
 
@@ -22,9 +31,10 @@
                     <input type="radio" id="Agendas" value="agendas" name="product" class="hidden-input">
                     <label for="Agendas">Agendas</label>
                 </li>
-                
+
                 <li>
-                    <input type="radio" id="Apagadores-para-quadro" value="apagadores-para-quadro" name="product" class="hidden-input">
+                    <input type="radio" id="Apagadores-para-quadro" value="apagadores-para-quadro" name="product"
+                        class="hidden-input">
                     <label for="Apagadores-para-quadro">Apagadores para quadro</label>
                 </li>
 
@@ -33,7 +43,7 @@
                     <label for="Apontadores">Apontadores</label>
                 </li>
 
-                
+
                 <li>
                     <input type="radio" id="Aquarela" value="aquarela" name="product" class="hidden-input">
                     <label for="Aquarela">Aquarela</label>
@@ -55,7 +65,8 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Cadernos-pequenos" value="cadernos-pequenos" name="product" class="hidden-input">
+                    <input type="radio" id="Cadernos-pequenos" value="cadernos-pequenos" name="product"
+                        class="hidden-input">
                     <label for="Cadernos-pequenos">Cadernos-pequenos</label>
                 </li>
 
@@ -65,27 +76,32 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Cadernos-10-matérias" value="cadernos-10m" name="product" class="hidden-input">
+                    <input type="radio" id="Cadernos-10-matérias" value="cadernos-10m" name="product"
+                        class="hidden-input">
                     <label for="Cadernos-10-matérias">Cadernos 10 matérias</label>
                 </li>
 
                 <li>
-                    <input type="radio" id="Cadernos-12-matérias" value="cadernos-12m" name="product" class="hidden-input">
+                    <input type="radio" id="Cadernos-12-matérias" value="cadernos-12m" name="product"
+                        class="hidden-input">
                     <label for="Cadernos-12-matérias">Cadernos 12 matérias</label>
                 </li>
 
                 <li>
-                    <input type="radio" id="Cadernos-15-matérias" value="cadernos-15m" name="product" class="hidden-input">
+                    <input type="radio" id="Cadernos-15-matérias" value="cadernos-15m" name="product"
+                        class="hidden-input">
                     <label for="Cadernos-15-matérias">Cadernos 15 matérias</label>
                 </li>
 
                 <li>
-                    <input type="radio" id="Cadernos-20-matérias" value="cadernos-20m" name="product" class="hidden-input">
+                    <input type="radio" id="Cadernos-20-matérias" value="cadernos-20m" name="product"
+                        class="hidden-input">
                     <label for="Cadernos-20-matérias">Cadernos 20 matérias</label>
                 </li>
 
                 <li>
-                    <input type="radio" id="Cadernos-inteligentes" value="cadernos-inteligentes" name="product" class="hidden-input">
+                    <input type="radio" id="Cadernos-inteligentes" value="cadernos-inteligentes" name="product"
+                        class="hidden-input">
                     <label for="Cadernos-inteligentes">Cadernos inteligentes</label>
                 </li>
 
@@ -115,10 +131,15 @@
                 </li>
 
                 <li>
+                    <input type="radio" id="Chaveiros" value="chaveiros" name="product" class="hidden-input">
+                    <label for="Chaveiros">Chaveiros</label>
+                </li>
+
+                <li>
                     <input type="radio" id="Clipes" value="clipes" name="product" class="hidden-input">
                     <label for="Clipes">Clipes</label>
                 </li>
-                
+
                 <li>
                     <input type="radio" id="Colas" value="colas" name="product" class="hidden-input">
                     <label for="Colas">Colas</label>
@@ -205,7 +226,8 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Ligas-elásticas" value="ligas-elasticas" name="product" class="hidden-input">
+                    <input type="radio" id="Ligas-elásticas" value="ligas-elasticas" name="product"
+                        class="hidden-input">
                     <label for="Ligas-elásticas">Ligas elásticas</label>
                 </li>
 
@@ -215,12 +237,14 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Marcador-para-quadro-branco" value="Marcador-para-quadro-branco" name="product" class="hidden-input">
+                    <input type="radio" id="Marcador-para-quadro-branco" value="Marcador-para-quadro-branco"
+                        name="product" class="hidden-input">
                     <label for="Marcador-para-quadro-branco">Marcador para quadro branco</label>
                 </li>
 
                 <li>
-                    <input type="radio" id="Marcador-permanente" value="Marcador-permanente" name="product" class="hidden-input">
+                    <input type="radio" id="Marcador-permanente" value="Marcador-permanente" name="product"
+                        class="hidden-input">
                     <label for="Marcador-permanente">Marcador permanente</label>
                 </li>
 
@@ -230,7 +254,8 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Massa-de-modelar" value="massa-de-modelar" name="product" class="hidden-input">
+                    <input type="radio" id="Massa-de-modelar" value="massa-de-modelar" name="product"
+                        class="hidden-input">
                     <label for="Massa-de-modelar">Massa de modelar</label>
                 </li>
 
@@ -270,10 +295,11 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Papel-fotografico" value="papel-fotografico" name="product" class="hidden-input">
+                    <input type="radio" id="Papel-fotografico" value="papel-fotografico" name="product"
+                        class="hidden-input">
                     <label for="Papel-fotografico">Papel fotográfico</label>
                 </li>
-                
+
                 <li>
                     <input type="radio" id="Pasta-AZ" value="pasta-az" name="product" class="hidden-input">
                     <label for="Pasta-AZ">Pasta AZ</label>
@@ -290,7 +316,8 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Prendedor-de-papel" value="prendedor-de-papel" name="product" class="hidden-input">
+                    <input type="radio" id="Prendedor-de-papel" value="prendedor-de-papel" name="product"
+                        class="hidden-input">
                     <label for="Prendedor-de-papel">Prendedor de papel</label>
                 </li>
 
@@ -300,7 +327,8 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Suporte-para-fita" value="suporte-para-fita" name="product" class="hidden-input">
+                    <input type="radio" id="Suporte-para-fita" value="suporte-para-fita" name="product"
+                        class="hidden-input">
                     <label for="Suporte-para-fita">Suporte para fita</label>
                 </li>
 
@@ -310,7 +338,8 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Tinta-para-tecido" value="tinta-para-tecido" name="product" class="hidden-input">
+                    <input type="radio" id="Tinta-para-tecido" value="tinta-para-tecido" name="product"
+                        class="hidden-input">
                     <label for="Tinta-para-tecido">Tinta para tecido</label>
                 </li>
 

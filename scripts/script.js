@@ -1,6 +1,7 @@
 productsDiv = document.querySelector('#products')
 productHeader = document.querySelector('#product-header')
 form = document.querySelector('#products-form')
+carrinho = document.querySelector('#carrinho')
 let productSelected = ''
 
 
@@ -27,27 +28,49 @@ form.addEventListener('click', () => {
             productsList.sort(sortPrice)
             for (product of productsList) {
                 //adicionar os produtos na tela
-                newProductSection = document.createElement('section')
+                let newProductSection = document.createElement('section')
                 newProductSection.classList.add('product-section')
                 newProductSection.width = '50px'
-                newProductImgAnchor = document.createElement('a')
+                let newProductImgAnchor = document.createElement('a')
                 newProductImgAnchor.classList.add('img-anchor')
                 newProductImgAnchor.target = '_blank'
                 newProductImgAnchor.href = product.img
-                newProductImg = document.createElement('img')
+                let newProductImg = document.createElement('img')
                 newProductImg.src = product.img
                 newProductImg.classList.add('product-img')
                 newProductImgAnchor.append(newProductImg)
-                newProductName = document.createElement('h2')
+                let newProductName = document.createElement('h2')
                 newProductName.textContent = product.name
                 newProductName.classList.add('product-name')
-                newProductBrand = document.createElement('h3')
+                let newProductBrand = document.createElement('h3')
                 newProductBrand.textContent = 'Marca: ' + product.brand
                 newProductBrand.classList.add('product-brand')
-                newProductPrice = document.createElement('h2')
-                newProductPrice.textContent = 'R$ ' + product.price
+                let newProductPrice = document.createElement('h2')
+                let arrowDown = document.createElement('img')
+                arrowDown.src = 'logo/arrow-down.png'; arrowDown.classList.add('arrow-down')
+                let arrowUp = document.createElement('img')
+                arrowUp.src = 'logo/arrow-up.png'; arrowUp.classList.add('arrow-up')
+                let newBuyCount = document.createElement('input')
+                newBuyCount.type = 'number'; newBuyCount.id = 'number-count', newBuyCount.value = '1'
+                let counterSection = document.createElement('div')
+                counterSection.classList.add('counter-section')
+                let newBuyButton = document.createElement('div');
+                newBuyButton.classList.add('buy-button');
+                newBuyButton.textContent = 'Adicionar ao carrinho';
+                arrowUp.addEventListener('click', () => increaseNumber(product, newBuyCount))
+                arrowDown.addEventListener('click', () => decreaseNumber(product, newBuyCount))
+                newBuyButton.addEventListener('click', addCarrinho(product, newBuyCount));
+
+                if (product.falta == true) {
+                    newProductPrice.textContent = 'EM FALTA'
+                    newProductSection.style.opacity = 0.5
+                }
+                else {
+                    newProductPrice.textContent = 'R$ ' + product.price
+                }
                 newProductPrice.classList.add('product-price')
-                newProductSection.append(newProductImgAnchor, newProductName, newProductBrand, newProductPrice)
+                counterSection.append(arrowDown, newBuyCount, arrowUp)
+                newProductSection.append(newProductImgAnchor, newProductName, newProductBrand, newProductPrice, counterSection, newBuyButton)
                 newProductSection.classList.add('animation')
                 productsDiv.append(newProductSection)
                 productHeader.append(productsDiv)
@@ -57,7 +80,79 @@ form.addEventListener('click', () => {
 }
 )
 
+let total = 0
+let totalTracker = document.querySelector('#total-tracker')
+let productTotal = 0
+function addCarrinho(product, newBuyCount) {
+    return function () {
+        const number = parseInt(newBuyCount.value)
+        for (let i = 0; i < number; i++) {
+            if (!carrinho.querySelector('li')) {
+                product.quantity = 1;
+                total += parseFloat(product.price)
+                total = total.toFixed(2)
+                newLi = document.createElement('li')
+                newLi.innerHTML = `x${product.quantity} ${product.name} R$${product.price}`;
+                carrinho.append(newLi)
+                totalTracker.textContent = `Total: R$${total}`
+            }
+            else {
+                //checar se o produto já está no carrinho
+                if (carrinho.textContent.includes(product.name)) {
+                    total = parseFloat(total)
+                    product.quantity += 1
+                    productTotal = (product.quantity * parseFloat(product.price)).toFixed(2)
+                    total += parseFloat(product.price)
+                    total = total.toFixed(2)
+                    for (li of carrinho.children) {
+                        if (li.textContent.includes(product.name)) {
+                            li.textContent = ''
+                            li.innerHTML += `x${product.quantity} ${product.name} | R$${product.price} * ${product.quantity} = R$${productTotal}`;
+                        }
+                    }
+                    totalTracker.textContent = `Total: R$${total}`
+                }
+                else {
+                    total = parseFloat(total)
+                    product.quantity = 1
+                    total += parseFloat(product.price)
+                    total = total.toFixed(2)
+                    newLi = document.createElement('li')
+                    newLi.innerHTML = `x${product.quantity} ${product.name} R$${product.price}`;
+                    carrinho.append(newLi)
+                    totalTracker.textContent = `Total: R$${total}`
+                }
+            };
+        }
+    }
+}
+
 function sortPrice(a, b) {
     return a.price - b.price;
+}
+
+copyButoon = document.querySelector('#copy-button')
+copyButoon.addEventListener('click', () => {
+    navigator.clipboard.writeText(addLineBreaks(carrinho.textContent))
+    copyButoon.textContent = 'Copiado! :)'
+    setTimeout(() => {
+        copyButoon.textContent = 'Copiar'
+    }, 1250)
+})
+
+function addLineBreaks(text) {
+    const newText = text.replace(/x/g, '\nx');
+    return newText;
+}
+
+function increaseNumber(product, newBuyCount) {
+    newBuyCount.value = parseInt(newBuyCount.value) + 1;
+}
+
+function decreaseNumber(product, newBuyCount) {
+    let number = parseInt(newBuyCount.value);
+    if (number > 1) {
+        newBuyCount.value = number - 1;
+    }
 }
 
