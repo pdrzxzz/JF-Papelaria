@@ -86,6 +86,8 @@ let copyButton = document.createElement('div')
 copyButton.id = 'copy-button'
 let carrinhoInfo = document.createElement('span')
 carrinhoInfo.id = 'carrinho-info'
+let carrinhoDiv = document.querySelector('#carrinho-div')
+carrinhoDiv.id = 'carrinho-div'
 let liDiv = document.createElement('div')
 liDiv.id = 'li-div'
 let productTotal = 0
@@ -104,7 +106,8 @@ function addCarrinho(product, newBuyCount) {
                 totalTracker.textContent = `Total: R$${total}`
                 copyButton.textContent = 'Copiar'
                 liDiv.append(newLi)
-                carrinho.append(liDiv, totalTracker, copyButton, carrinhoInfo)
+                carrinho.append(liDiv, totalTracker, copyButton)
+                carrinhoDiv.append(carrinho, carrinhoInfo)
             }
             else {
                 //checar se o produto já está no carrinho

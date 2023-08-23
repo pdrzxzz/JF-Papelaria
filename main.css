@@ -59,10 +59,11 @@ header {
     line-height: 2.5rem;
     list-style: none;
     flex-direction: column;
+    margin-bottom: 5vw;
 }
 
 #li-div {
-    margin-bottom: 10vw;
+    margin-bottom: 1vw;
     max-width: 80%;
 }
 
@@ -99,15 +100,18 @@ header {
     transition: 0.2s ease all;
     background-color: #5a1113;
     box-shadow: 0 5px #230606;
-    bottom: 1vw;
+    bottom: -4vw;
     align-self: center;
+}
+
+#carrinho-div {
+    display: flex;
+    flex-direction: column;
 }
 
 #carrinho-info {
     align-self: center;
-    position: absolute;
-    bottom: 0;
-    max-width: 60;
+    font-size: 1.3rem;
 }
 
 #products-form {

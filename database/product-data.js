@@ -158,6 +158,79 @@ const data = [
         price: '3.95',
         falta: false,
     },
+    //borrachas
+    {
+        img: "./images/borracha-redbor.webp",
+        name: "Borracha Bicolor AV40",
+        brand: 'Red-bor',
+        type: "borrachas",
+        price: '1.95',
+        falta: false,
+    },
+    {
+        img: "./images/borracha-leoeleo.webp",
+        name: "Borracha Colorida",
+        brand: 'Leo & Leo',
+        type: "borrachas",
+        price: '2.95',
+        falta: false,
+    },
+    {
+        img: "./images/borracha-bic.webp",
+        name: "Borracha Branca com capa",
+        brand: 'Bic',
+        type: "borrachas",
+        price: '2.95',
+        falta: false,
+    },
+    {
+        img: "./images/borracha-onda.webp",
+        name: "Borracha Neon com capa",
+        brand: 'Onda',
+        type: "borrachas",
+        price: '3.95',
+        falta: false,
+    },
+    {
+        img: "./images/borracha-neon-brw.webp",
+        name: "Borracha Neon com capa",
+        brand: 'Brw',
+        type: "borrachas",
+        price: '2.95',
+        falta: false,
+    },
+    {
+        img: "./images/borracha-faber-glitz.webp",
+        name: "Borracha Max Glitz",
+        brand: 'Fabber-Castell',
+        type: "borrachas",
+        price: '5.95',
+        falta: false,
+    },
+    {
+        img: "./images/borracha-maped-shakky.webp",
+        name: "Borracha Shakky Bichinhos 2 unidades",
+        brand: 'Maped',
+        type: "borrachas",
+        price: '9.95',
+        falta: false,
+    },
+    {
+        img: "./images/borracha-branca-leoeleo.jpg",
+        name: "Borracha branca com capa verde",
+        brand: 'Leo & Leo',
+        type: "borrachas",
+        price: '3.95',
+        falta: false,
+    },
+    {
+        img: "./images/borracha-mercur-big.webp",
+        name: "Borracha Branca Big com capa preta",
+        brand: 'Mercur',
+        type: "borrachas",
+        price: '5.95',
+        falta: false,
+    },
     //calculadoras
     {
         img: "./images/calculadora-brw.jpg",
@@ -258,6 +331,24 @@ const data = [
         price: '39.95',
         falta: false,
     },
+    //mouse pads
+    {
+        img: "./images/mouse-pad-multilaser-slim.webp",
+        name: "Mouse pad slim",
+        brand: 'Multilaser',
+        type: "mouse-pads",
+        price: '8.95',
+        falta: false,
+    },
+    {
+        img: "./images/mouse-pad-multilaser-ergonomico.webp",
+        name: "Mouse pad ergonômico com apoio gel",
+        brand: 'Multilaser',
+        type: "mouse-pads",
+        price: '39.95',
+        falta: false,
+    },
+    
     //perfuradores
     {
         img: "./images/perfurador-alicate-brw.webp",
@@ -274,6 +365,15 @@ const data = [
         brand: 'Elgin',
         type: "pilhas",
         price: '14.95',
+        falta: false,
+    },
+    //teclados
+    {
+        img: "./images/teclado-multilaser.webp",
+        name: "Teclado Básico com fio USB",
+        brand: 'Multilaser',
+        type: "teclados",
+        price: '49.95',
         falta: false,
     },
 ]
