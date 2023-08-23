@@ -1,6 +1,47 @@
 // todos os dados de produtos existentes
 const data = [
     //agendas
+    {
+        img: "./images/agenda-pepper.webp",
+        name: "Agenda Costurada Pepper M4 160fls 2023",
+        brand: 'Tilibra',
+        type: "agendas",
+        price: '19.95',
+        falta: false,
+    },
+    {
+        img: "./images/agenda-pratika-master.webp",
+        name: "Agenda Costurada Pratika Master M4 176fls 2023",
+        brand: 'Tilibra',
+        type: "agendas",
+        price: '19.95',
+        falta: false,
+    },
+    {
+        img: "./images/agenda-napoli.webp",
+        name: "Agenda Costurada Napoli M5 176fls 2023",
+        brand: 'Tilibra',
+        type: "agendas",
+        price: '19.95',
+        falta: false,
+    },
+    {
+        img: "./images/agenda-infantil.jpg",
+        name: "Agenda Escolar Infantil 96fls",
+        brand: 'Foroni',
+        type: "agendas",
+        price: '14.95',
+        falta: false,
+    },
+    {
+        img: "./images/agenda-espiral-d+.jfif",
+        name: "Agenda Espiral Diária D+ 2023",
+        brand: 'Tilibra',
+        type: "agendas",
+        price: '19.95',
+        falta: false,
+    },
+    
     //apagadores
     {
         img: "./images/apagador-para-quadro-branco.webp",
@@ -81,16 +122,49 @@ const data = [
         name: "Estojo tinta aquarela 12 cores + pincel",
         brand: 'Onda',
         type: "aquarela",
-        price: 'XX',
+        price: '11.95',
         falta: false,
     },
-    //baterias
+    //bobinas
     {
-        img: "./images/bateria-sonic.webp",
-        name: "Bateria 9V",
-        brand: 'Elgin',
-        type: "baterias",
-        price: 'XX',
+        img: "./images/bobina-80-40-48.webp",
+        name: "Bobina 80mm x 40m x 48g",
+        brand: 'Silfer',
+        type: "bobinas",
+        price: '6.95',
+        falta: false,
+    },
+    {
+        img: "./images/bobina-57-22.webp",
+        name: "Bobina 57mm x 22m",
+        brand: 'Rio branco',
+        type: "bobinas",
+        price: '3.95',
+        falta: false,
+    },
+    {
+        img: "./images/bobina-57-300-48.webp",
+        name: "Bobina 57mm x 300m x 48g",
+        brand: 'Rio branco',
+        type: "bobinas",
+        price: '44.95',
+        falta: false,
+    },
+    {
+        img: "./images/bobina-57-30.jpg",
+        name: "Bobina 57mm x 30m",
+        brand: 'Silfer',
+        type: "bobinas",
+        price: '3.95',
+        falta: false,
+    },
+    //calculadoras
+    {
+        img: "./images/calculadora-brw.jpg",
+        name: "Calculadora eletrônica de mesa 12 dígitos",
+        brand: 'Brw',
+        type: "calculadoras",
+        price: '29.95',
         falta: false,
     },
     //canetas
@@ -157,6 +231,49 @@ const data = [
         type: "canetas",
         price: '3.95',
         falta: false,
-    }
-
+    },
+    //compassos
+    {
+        img: "./images/compasso-tris.jfif",
+        name: "Compasso escolar SU123",
+        brand: 'Tris',
+        type: "compassos",
+        price: '11.95',
+        falta: false,
+    },
+    {
+        img: "./images/compasso-onda.webp",
+        name: "Compasso escolar metal",
+        brand: 'Onda',
+        type: "compassos",
+        price: '9.95',
+        falta: false,
+    },
+    //mouses
+    {
+        img: "./images/mouse-sem-fio.webp",
+        name: "Mouse sem fio 1200dpi",
+        brand: 'Multilaser',
+        type: "mouses",
+        price: '39.95',
+        falta: false,
+    },
+    //perfuradores
+    {
+        img: "./images/perfurador-alicate-brw.webp",
+        name: "Perfurador de papel alicate metálico",
+        brand: 'Brw',
+        type: "perfuradores",
+        price: '14.95',
+        falta: false,
+    },
+    //pilhas e baterias
+    {
+        img: "./images/bateria-sonic.webp",
+        name: "Bateria 9V",
+        brand: 'Elgin',
+        type: "pilhas",
+        price: '14.95',
+        falta: false,
+    },
 ]

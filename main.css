@@ -9,6 +9,27 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+iframe {
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    width: 15vw;
+    max-width: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
 #local-anchor {
     text-decoration: none;
     color: inherit;
@@ -23,16 +44,70 @@ body {
     transition: all 1s;
 }
 
-#copy-button {}
-
-h2 {
-    font-size: 2rem;
+#carrinho {
+    position: relative;
+    display: flex;
+    padding: 1vw;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: start;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    width: 95vw;
+    border-radius: 3px;
+    background-color: #90181a;
+    line-height: 2.5rem;
+    list-style: none;
+    flex-direction: column;
 }
 
-header {
+#li-div {
+    margin-bottom: 10vw;
+    max-width: 80%;
+}
+
+.new-item {
+    margin-bottom: 1vw;
+}
+
+#carrinho>h2 {
+    align-self: center;
+}
+
+#total-tracker {
+    position: absolute;
+    align-self: end;
+    color: white;
+    font-size: 2rem;
+    bottom: 1vw;
+    /* width: 20%; */
+}
+
+#copy-button {
+    width: 16vw;
+    height: 4vw;
+    max-height: 62.5px;
+    color: white;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+    border-radius: 5px;
+    position: absolute;
+    cursor: pointer;
+    margin-bottom: 2vw;
+    transition: 0.2s ease all;
+    background-color: #5a1113;
+    box-shadow: 0 5px #230606;
+    bottom: 1vw;
+    align-self: center;
+}
+
+#carrinho-info {
+    align-self: center;
+    position: absolute;
+    bottom: 0;
+    max-width: 60;
 }
 
 #products-form {
@@ -54,41 +129,6 @@ header {
     margin-bottom: 5px;
 }
 
-#logo {
-    width: 15vw;
-    max-width: 200px;
-    border: 1px solid white;
-    border-radius: 50%;
-}
-
-#carrinho {
-    display: flex;
-    padding: 1vw;
-    align-items: start;
-    flex-wrap: wrap;
-    justify-content: start;
-    font-size: 1.5rem;
-    box-sizing: border-box;
-    width: 95vw;
-    border-radius: 3px;
-    background-color: #90181a;
-    line-height: 2.5rem;
-    list-style: none;
-    flex-direction: column;
-}
-
-#carrinho>h2 {
-    align-self: center;
-}
-
-#total-tracker {
-    position: absolute;
-    align-self: flex-end;
-    justify-self: flex-end;
-    color: white;
-    font-size: 2rem;
-}
-
 form label:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -108,8 +148,6 @@ form label:hover {
     min-width: 95vw;
     display: flex;
     flex-direction: column;
-    /* centralizado ou não */
-    /* align-items: center; */
 }
 
 .products-div {
@@ -134,10 +172,6 @@ form label:hover {
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.8);
 }
 
-.product-section>a {
-    cursor: default;
-}
-
 .product-img {
     width: 16vw;
     height: 16vw;
@@ -148,26 +182,14 @@ form label:hover {
     object-fit: cover;
 }
 
-.counter-section {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.arrow-up {
-    width: 2.3vw;
-    height: 2.3vw;
-    cursor: pointer;
-}
-
-.arrow-down {
-    width: 2.5vw;
-    height: 2.5vw;
-    cursor: pointer;
+.product-img:hover {
+    transform: scale(110%);
 }
 
 .product-name {
     width: 90%;
-    margin: 20px
+    margin: 20px;
+    line-height: 2.8rem;
 }
 
 .product-brand {
@@ -182,27 +204,38 @@ form label:hover {
     border-bottom: 3px solid #d22e2e;
 }
 
-.product-img:hover {
-    transform: scale(110%);
+.counter-section {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-@keyframes append {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+#number-count {
+    text-align: center;
+    background-color: #d22e2e;
+    color: white;
+    box-shadow: 0 3px #5a1113;
+    border: none;
+    width: 5vw;
+    height: 2.5vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 1.2rem;
 }
 
-.animation {
-    animation: append .3s ease;
+.arrow-up {
+    width: 2.3vw;
+    height: 2.3vw;
+    cursor: pointer;
 }
 
-.buy-button,
-#copy-button {
-    position: relative;
+.arrow-down {
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+}
+
+.buy-button {
     width: 16vw;
     height: 4vw;
     max-height: 62.5px;
@@ -224,17 +257,18 @@ form label:hover {
     box-shadow: 0 3px #5a1113;
 }
 
-#number-count {
-    text-align: center;
-    background-color: #d22e2e;
-    color: white;
-    box-shadow: 0 3px #5a1113;
-    border: none;
-    width: 5vw;
-    height: 2.5vw;
-    margin-bottom: 1vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
+@keyframes append {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animation {
+    animation: append .3s ease;
 }
 
 /* remover setinhas padrão dos input type number */

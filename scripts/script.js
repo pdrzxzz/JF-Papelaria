@@ -15,7 +15,6 @@ form.addEventListener('click', () => {
             //adicionar heading
             SectionHeading = document.createElement('h2')
             SectionHeading.textContent = productLabel.id.replaceAll('-', ' ')
-            SectionHeading.classList.add('section-heading')
             productHeader.append(SectionHeading)
             productsList = []
             for (product of data) {
@@ -81,7 +80,14 @@ form.addEventListener('click', () => {
 )
 
 let total = 0
-let totalTracker = document.querySelector('#total-tracker')
+let totalTracker = document.createElement('span')
+totalTracker.id = 'total-tracker'
+let copyButton = document.createElement('div')
+copyButton.id = 'copy-button'
+let carrinhoInfo = document.createElement('span')
+carrinhoInfo.id = 'carrinho-info'
+let liDiv = document.createElement('div')
+liDiv.id = 'li-div'
 let productTotal = 0
 function addCarrinho(product, newBuyCount) {
     return function () {
@@ -92,9 +98,13 @@ function addCarrinho(product, newBuyCount) {
                 total += parseFloat(product.price)
                 total = total.toFixed(2)
                 newLi = document.createElement('li')
-                newLi.innerHTML = `x${product.quantity} ${product.name} R$${product.price}`;
-                carrinho.append(newLi)
+                newLi.classList.add('new-item')
+                newLi.innerHTML = `x${product.quantity} ${product.name} | <b>R$${product.price}</b>`;
+                carrinhoInfo.textContent = 'Você pode copiar o conteúdo do seu carrinho e nos mandar via Whatsapp. Se a página for recarregada, o carrinho se esvaziará.'
                 totalTracker.textContent = `Total: R$${total}`
+                copyButton.textContent = 'Copiar'
+                liDiv.append(newLi)
+                carrinho.append(liDiv, totalTracker, copyButton, carrinhoInfo)
             }
             else {
                 //checar se o produto já está no carrinho
@@ -107,7 +117,7 @@ function addCarrinho(product, newBuyCount) {
                     for (li of carrinho.children) {
                         if (li.textContent.includes(product.name)) {
                             li.textContent = ''
-                            li.innerHTML += `x${product.quantity} ${product.name} | R$${product.price} * ${product.quantity} = R$${productTotal}`;
+                            li.innerHTML += `x${product.quantity} ${product.name} | R$${product.price} * ${product.quantity} = <b>R$${productTotal}</b>`;
                         }
                     }
                     totalTracker.textContent = `Total: R$${total}`
@@ -118,8 +128,10 @@ function addCarrinho(product, newBuyCount) {
                     total += parseFloat(product.price)
                     total = total.toFixed(2)
                     newLi = document.createElement('li')
-                    newLi.innerHTML = `x${product.quantity} ${product.name} R$${product.price}`;
-                    carrinho.append(newLi)
+                    newLi.classList.add('new-item')
+                    newLi.innerHTML = `x${product.quantity} ${product.name} | <b>R$${product.price}</b>`;
+                    liDiv.append(newLi)
+                    carrinho.append(liDiv)
                     totalTracker.textContent = `Total: R$${total}`
                 }
             };
@@ -131,17 +143,20 @@ function sortPrice(a, b) {
     return a.price - b.price;
 }
 
-copyButoon = document.querySelector('#copy-button')
-copyButoon.addEventListener('click', () => {
-    navigator.clipboard.writeText(addLineBreaks(carrinho.textContent))
-    copyButoon.textContent = 'Copiado! :)'
+copyButton.addEventListener('click', () => {
+    navigator.clipboard.writeText(formatarCarrinho(carrinho.textContent))
+    copyButton.textContent = 'Copiado! :)'
     setTimeout(() => {
-        copyButoon.textContent = 'Copiar'
+        copyButton.textContent = 'Copiar'
     }, 1250)
 })
 
-function addLineBreaks(text) {
-    const newText = text.replace(/x/g, '\nx');
+function formatarCarrinho(text) {
+    let newText = text.replace(/x/g, '\nx');
+    newText = newText.replace(totalTracker.textContent, '')
+    newText = newText.replace(copyButton.textContent, '')
+    newText = newText.replace(carrinhoInfo.textContent, '')
+    newText = newText + `\n\n${totalTracker.textContent}`
     return newText;
 }
 
