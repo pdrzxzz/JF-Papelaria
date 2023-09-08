@@ -23,6 +23,30 @@ header {
     align-items: center;
 }
 
+.nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nav-div span {
+    display: flex;
+    align-items: center;
+}
+
+#wpp-logo {
+    width: 40px;
+}
+
+#insta-logo {
+    width: 40px;
+}
+
+.contato {
+    font-size: 2rem;
+}
+
 #logo {
     width: 15vw;
     max-width: 200px;
@@ -59,16 +83,12 @@ header {
     line-height: 2.5rem;
     list-style: none;
     flex-direction: column;
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
 }
 
 #li-div {
     margin-bottom: 1vw;
     max-width: 80%;
-}
-
-.new-item {
-    margin-bottom: 1vw;
 }
 
 #carrinho>h2 {
@@ -84,10 +104,21 @@ header {
     /* width: 20%; */
 }
 
+#name-div {
+    width: 20px;
+    height: 15px;
+}
+
+#name-button {
+    width: 20px;
+    height: 20px;
+}
+
 #copy-button {
     width: 16vw;
-    height: 4vw;
-    max-height: 62.5px;
+    height: 3vw;
+    max-width: 400px;
+    /* max-height: 62.5px; */
     color: white;
     display: flex;
     align-items: center;
@@ -96,11 +127,10 @@ header {
     border-radius: 5px;
     position: absolute;
     cursor: pointer;
-    margin-bottom: 2vw;
     transition: 0.2s ease all;
     background-color: #5a1113;
     box-shadow: 0 5px #230606;
-    bottom: -4vw;
+    bottom: -1.5vw;
     align-self: center;
 }
 
@@ -111,7 +141,7 @@ header {
 
 #carrinho-info {
     align-self: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 #products-form {
@@ -253,6 +283,11 @@ form label:hover {
     cursor: pointer;
     transition: 0.2s ease all;
     box-shadow: 0 5px #5a1113;
+}
+
+.buy-button:hover,
+#copy-button:hover {
+    transform: translateY(-2px);
 }
 
 .buy-button:active,
