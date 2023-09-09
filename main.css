@@ -41,23 +41,23 @@ header {
     text-decoration: underline;
 }
 
-#wpp-logo {
-    width: 40px;
-}
-
-#insta-logo {
-    width: 40px;
+.redesocial {
+    width: 45px;
 }
 
 .contato {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 #logo {
-    width: 15vw;
+    width: 12vw;
     max-width: 200px;
     border: 1px solid white;
     border-radius: 50%;
+}
+
+header > h2 {
+    text-align: center;
 }
 
 #local-anchor {
@@ -93,8 +93,8 @@ header {
 }
 
 #li-div {
-    margin-bottom: 1vw;
-    max-width: 80%;
+    margin-bottom: 5vw;
+    max-width: 100%;
 }
 
 #carrinho>h2 {
@@ -110,30 +110,9 @@ header {
     /* width: 20%; */
 }
 
-#name-input {
-    width: 10%;
-    border: none;
-    outline: none;
-    border-bottom: 0.2em solid #230606;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: 1.3rem;
-    color: white;
-    background-color:#5a1113;
-    position: absolute;
-    right: 0;
-    font-family: inherit;
-}
 
-#name-input::placeholder{
-    color:white;
-    opacity: 0.85;
-    font-family: inherit;
-}
-
-#copy-button,
-#name-button {
-    width: 16vw;
+#copy-button {
+    width: 20%;
     height: 3vw;
     max-width: 400px;
     /* max-height: 62.5px; */
@@ -141,7 +120,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-radius: 5px;
     position: absolute;
     cursor: pointer;
@@ -152,24 +131,18 @@ header {
     align-self: center;
 }
 
-#name-button {
-    width: 8%;
-    height: 20px;
-    position: absolute;
-    right: 1%;
-    top: 50%;
-    font-family: inherit;
-    transition: 1s ease all;
-}
-
 .no-opacity {
     opacity: 0;
 }
 
+#map-iframe {
+    width: 95vw;
+}
 
 #carrinho-div {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #carrinho-info {
@@ -227,12 +200,12 @@ form label:hover {
 }
 
 .product-section {
-    width: 19.75vw;
+    width: 16vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 0 2vw;
+    margin: 0 1.5vw;
     background-color: #90181a;
     border-radius: 5px;
     padding: 2vw 0;
@@ -241,8 +214,8 @@ form label:hover {
 }
 
 .product-img {
-    width: 16vw;
-    height: 16vw;
+    width: 13vw;
+    height: 13vw;
     border-radius: 5px;
     transition: all 0.2s ease-out;
     margin-bottom: 1vw;
@@ -266,7 +239,7 @@ form label:hover {
 }
 
 .product-price {
-    margin-right: 2.35vw;
+    margin-right: 10%;
     display: inline;
     align-self: flex-end;
     border-bottom: 3px solid #d22e2e;
@@ -283,12 +256,12 @@ form label:hover {
     color: white;
     box-shadow: 0 3px #5a1113;
     border: none;
-    width: 5vw;
+    width: 25%;
     height: 2.5vw;
     margin-bottom: 1vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    font-size: 1.5  rem;
+    font-size: 1.6rem;
 }
 
 .arrow-up {
@@ -304,7 +277,7 @@ form label:hover {
 }
 
 .buy-button {
-    width: 16vw;
+    width: 80%;
     height: 4vw;
     max-height: 62.5px;
     background-color: #d22e2e;
@@ -312,7 +285,7 @@ form label:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4vw;
+    font-size: 1.5rem;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.2s ease all;
@@ -320,14 +293,12 @@ form label:hover {
 }
 
 .buy-button:hover,
-#copy-button:hover,
-#name-button:hover {
+#copy-button:hover{
     transform: translateY(-2px);
 }
 
 .buy-button:active,
-#copy-button:active,
-#name-button:active {
+#copy-button:active{
     transform: translateY(4px);
     box-shadow: 0 3px #5a1113;
 }
@@ -361,5 +332,59 @@ input[type="number"]::-webkit-outer-spin-button {
     .product-img { 
         width: 23vw;
         height: 23vw;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #products-ul {
+        column-count: 3;
+    }
+    .contato {
+        font-size: 1.8rem;
+    }
+    .redesocial {
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 924px) {
+    #products-ul {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #local-anchor {
+        font-size: 1.5rem;
+    }
+    .contato {
+        font-size: 1.2rem;
+    }
+    .redesocial {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    #local-anchor {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    #local-anchor {
+        font-size: 1rem;
+    }
+    .contato {
+        font-size: 0.8rem;
+    }
+    .redesocial {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    #local-anchor {
+        font-size: 0.8rem;
     }
 }

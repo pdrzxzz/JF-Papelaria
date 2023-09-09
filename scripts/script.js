@@ -91,48 +91,7 @@ let carrinhoInfo = document.createElement('span')
 carrinhoInfo.id = 'carrinho-info'
 let carrinhoDiv = document.querySelector('#carrinho-div')
 carrinhoDiv.id = 'carrinho-div'
-let nameInput = document.createElement('input')
-nameInput.type = 'text'
-nameInput.id = 'name-input'
-nameInput.placeholder = 'Insira seu nome'
-let nameButton = document.createElement('div')
-nameButton.id = 'name-button'
-nameButton.textContent = 'Confirmar'
-nameButton.classList.add('no-opacity')
-nameButton.addEventListener('click', () => {
-    if (nameInput.value) {
-        carrinho.removeChild(copyButton)
-        carrinho.removeChild(nameInput)
-        carrinho.removeChild(nameButton)
-        let name = primeiraLetraMaiuscula(nameInput.value)
-        carrinho.innerHTML = carrinho.innerHTML.replace(/🛒/g, `de ${name} 🛒`);
 
-        let newCopyButton = document.createElement('div');
-        newCopyButton.id = 'copy-button';
-        newCopyButton.textContent = 'Copiar';
-        newCopyButton.addEventListener('click', () => {
-            navigator.clipboard.writeText(formatarCarrinho(carrinho))
-                .then(() => {
-                    newCopyButton.textContent = 'Copiado! :)';
-                    setTimeout(() => {
-                        newCopyButton.textContent = 'Copiar';
-                    }, 1250);
-                })
-                .catch((error) => {
-                    console.error('Erro ao copiar para a área de transferência:', error);
-                });
-        });
-        carrinho.appendChild(newCopyButton);
-    }
-})
-
-nameInput.addEventListener('input', () => {
-if (nameInput.value.trim() !== '') {
-    nameButton.classList.remove('no-opacity');
-} else {
-    nameButton.classList.add('no-opacity')
-}
-})
 let liDiv = document.createElement('div')
 liDiv.id = 'li-div'
 let productTotal = 0
@@ -151,7 +110,7 @@ function addCarrinho(product, newBuyCount) {
                 totalTracker.innerHTML = `Total: R$<b>${total}</b>`
                 copyButton.textContent = 'Copiar'
                 liDiv.append(newLi)
-                carrinho.append(liDiv, totalTracker, copyButton, nameInput, nameButton)
+                carrinho.append(liDiv, totalTracker, copyButton)
                 carrinhoDiv.append(carrinho, carrinhoInfo)
                 totalTracker.innerHTML = totalTracker.innerHTML.replace('.', ',')
             }
