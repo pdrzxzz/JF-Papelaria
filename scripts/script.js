@@ -95,15 +95,17 @@ let nameInput = document.createElement('input')
 nameInput.type = 'text'
 nameInput.id = 'name-input'
 nameInput.placeholder = 'Insira seu nome'
-let nameButton = document.createElement('button')
+let nameButton = document.createElement('div')
 nameButton.id = 'name-button'
+nameButton.textContent = 'Confirmar'
+nameButton.classList.add('no-opacity')
 nameButton.addEventListener('click', () => {
     if (nameInput.value) {
         carrinho.removeChild(copyButton)
         carrinho.removeChild(nameInput)
         carrinho.removeChild(nameButton)
         let name = primeiraLetraMaiuscula(nameInput.value)
-        carrinho.innerHTML = carrinho.innerHTML.replace(/🛒/g, `de ${name}🛒`);
+        carrinho.innerHTML = carrinho.innerHTML.replace(/🛒/g, `de ${name} 🛒`);
 
         let newCopyButton = document.createElement('div');
         newCopyButton.id = 'copy-button';
@@ -123,6 +125,14 @@ nameButton.addEventListener('click', () => {
         carrinho.appendChild(newCopyButton);
     }
 })
+
+nameInput.addEventListener('input', () => {
+if (nameInput.value.trim() !== '') {
+    nameButton.classList.remove('no-opacity');
+} else {
+    nameButton.classList.add('no-opacity')
+}
+})
 let liDiv = document.createElement('div')
 liDiv.id = 'li-div'
 let productTotal = 0
@@ -136,8 +146,8 @@ function addCarrinho(product, newBuyCount) {
                 total = total.toFixed(2)
                 newLi = document.createElement('li')
                 newLi.classList.add('new-item')
-                newLi.innerHTML = `x${product.quantity} ${product.name} | <b>R$${product.price.replace('.', ',')}</b>.\n`;
-                carrinhoInfo.textContent = 'Você pode copiar o conteúdo do seu carrinho e nos mandar via Whatsapp. Se a página for recarregada, o carrinho se esvaziará.'
+                newLi.innerHTML = `x${product.quantity} ${product.name} ${product.brand} | <b>R$${product.price.replace('.', ',')}</b>.\n`;
+                carrinhoInfo.textContent = 'Você pode copiar o conteúdo do seu carrinho e nos mandar via Whatsapp ou Instagram. Se a página for recarregada, o carrinho se esvaziará.'
                 totalTracker.innerHTML = `Total: R$<b>${total}</b>`
                 copyButton.textContent = 'Copiar'
                 liDiv.append(newLi)
@@ -156,7 +166,7 @@ function addCarrinho(product, newBuyCount) {
                     for (li of liDiv.children) {
                         if (li.textContent.includes(product.name)) {
                             li.textContent = ''
-                            li.innerHTML += `x${product.quantity} ${product.name} | R$${product.price.replace('.', ',')} * ${product.quantity} = <b>R$${productTotal.replace('.', ',')}</b>.\n`;
+                            li.innerHTML += `x${product.quantity} ${product.name} ${product.brand} | R$${product.price.replace('.', ',')} * ${product.quantity} = <b>R$${productTotal.replace('.', ',')}</b>.\n`;
                         }
                     }
                     totalTracker.innerHTML = `Total: R$<b>${total}</b>`
@@ -169,7 +179,7 @@ function addCarrinho(product, newBuyCount) {
                     total = total.toFixed(2)
                     newLi = document.createElement('li')
                     newLi.classList.add('new-item')
-                    newLi.innerHTML = `x${product.quantity} ${product.name} | <b>R$${product.price.replace('.', ',')}</b>.\n`;
+                    newLi.innerHTML = `x${product.quantity} ${product.name} ${product.brand} | <b>R$${product.price.replace('.', ',')}</b>.\n`;
                     liDiv.append(newLi)
                     carrinho.append(liDiv)
                     totalTracker.innerHTML = `Total: R$<b>${total}</b>`
