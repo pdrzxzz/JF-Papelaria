@@ -6,27 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="logo/logo.png">
+    <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
     <title>JF Papelaria</title>
 </head>
 
 <body>
     <header>
-        <div class="nav-div"><a class='contato' href="https://wa.me/5581973100079" target="_blank" id="whatsapp"> <img id="wpp-logo" class='redesocial' src="logo/wpp-logo.png" alt="">(81)9.7310-0079</a><img id='logo'
-                src="logo/logo.png" alt="logo JF papelaria branca, azul e vermelha"><a class='contato' target="_blank" href="https://www.instagram.com/jfpapelaria52/"
-                id="instagram"><img id='insta-logo'class='redesocial' src="logo/insta-logo.png" alt="">@jfpapelaria52</a></div>
+        <div class="nav-div"><a class='contato' href="https://wa.me/5581973100079" target="_blank" id="whatsapp"> <img
+                    id="wpp-logo" class='redesocial' src="logo/wpp-logo.png" alt="">(81)9.7310-0079</a><img id='logo'
+                src="logo/logo.png" alt="logo JF papelaria branca, azul e vermelha"><a class='contato' target="_blank"
+                href="https://www.instagram.com/jfpapelaria52/" id="instagram"><img id='insta-logo' class='redesocial'
+                    src="logo/insta-logo.png" alt="">@jfpapelaria52</a></div>
 
-        <h2><a id='local-anchor' target="_blank"
+        <h2 id="local-heading"><a id='local-anchor' target="_blank"
                 href="https://www.google.com.br/maps/place/JF+Papelaria+e+Servi%C3%A7os/@-7.9410135,-34.8799182,20.25z/data=!4m6!3m5!1s0x7ab1613effca4c9:0xbb4b9d86326ca567!8m2!3d-7.9410161!4d-34.8797379!16s%2Fg%2F11gcz3l87x?entry=ttu">Av
                 Marechal Floriano Peixoto, 52 Centro - Paulista</a></h2>
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1975.7785824734378!2d-34.88084452876633!3d-7.941230190438326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1613effca4c9%3A0xbb4b9d86326ca567!2sJF%20Papelaria%20e%20Servi%C3%A7os!5e0!3m2!1spt-BR!2sbr!4v1692481577746!5m2!1spt-BR!2sbr" height="300" style="border:0;" allowfullscreen="" loading="lazy" id="map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1975.7785824734378!2d-34.88084452876633!3d-7.941230190438326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1613effca4c9%3A0xbb4b9d86326ca567!2sJF%20Papelaria%20e%20Servi%C3%A7os!5e0!3m2!1spt-BR!2sbr!4v1692481577746!5m2!1spt-BR!2sbr"
+            height="300" style="border:0;" allowfullscreen="" loading="lazy" id="map-iframe"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div id="carrinho-div"></div>
-        <ul id="carrinho"><h2>Carrinho de produtos 🛒</h2></ul>
         </div>
-        <h2 id="catalogo">Catálogo de Produtos</h2>
-        <form id="products-form" action="">
+        <div id="catalogo-heading">
+            <h2 id="destaques">Destaques</h2>
+            <h2 id="todos-produtos">Todos os produtos</h2>
+            <h2 id="categorias">Categorias</h2>
+        </div>
+        <div class="white-line"></div>
+        <form id="products-form" action="" class="none">
             <ul id="products-ul">
+                <li>
+                    <input type="radio" id="Almofadas" value="almofadas" name="product" class="hidden-input">
+                    <label for="Almofadas">Almofadas para carimbo</label>
+                </li>
 
                 <li>
                     <input type="radio" id="Agendas" value="agendas" name="product" class="hidden-input">
@@ -34,14 +45,18 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Apagadores-para-quadro" value="apagadores-para-quadro" name="product"
-                        class="hidden-input">
-                    <label for="Apagadores-para-quadro">Apagadores para quadro</label>
+                    <input type="radio" id="Apagadores" value="apagadores" name="product" class="hidden-input">
+                    <label for="Apagadores">Apagadores</label>
                 </li>
 
                 <li>
                     <input type="radio" id="Apontadores" value="apontadores" name="product" class="hidden-input">
                     <label for="Apontadores">Apontadores</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="bingo" value="bingo" name="product" class="hidden-input">
+                    <label for="bingo">Bingo</label>
                 </li>
 
                 <li>
@@ -90,8 +105,8 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Caixas" value="caixas" name="product" class="hidden-input">
-                    <label for="Caixas">Caixa de som</label>
+                    <input type="radio" id="Caixa-de-som" value="caixa-de-som" name="product" class="hidden-input">
+                    <label for="Caixa-de-som">Caixa de som</label>
                 </li>
 
                 <li>
@@ -107,16 +122,6 @@
                 <li>
                     <input type="radio" id="Canetas" value="canetas" name="product" class="hidden-input">
                     <label for="Canetas">Canetas</label>
-                </li>
-
-                <li>
-                    <input type="radio" id="Carimbos" value="carimbos" name="product" class="hidden-input">
-                    <label for="Carimbos">Carimbos</label>
-                </li>
-
-                <li>
-                    <input type="radio" id="Chaveiros" value="chaveiros" name="product" class="hidden-input">
-                    <label for="Chaveiros">Chaveiros</label>
                 </li>
 
                 <li>
@@ -147,6 +152,11 @@
                 <li>
                     <input type="radio" id="Dicionários" value="dicionarios" name="product" class="hidden-input">
                     <label for="Dicionários">Dicionários</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="Elásticos" value="elasticos" name="product" class="hidden-input">
+                    <label for="Elásticos">Elásticos</label>
                 </li>
 
                 <li>
@@ -205,8 +215,18 @@
                 </li>
 
                 <li>
+                    <input type="radio" id="Grampos" value="grampos" name="product" class="hidden-input">
+                    <label for="Grampos">Grampos</label>
+                </li>
+
+                <li>
                     <input type="radio" id="Lápis" value="lapis" name="product" class="hidden-input">
                     <label for="Lápis">Lápis</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="Lápis-de-cor" value="lapis-de-cor" name="product" class="hidden-input">
+                    <label for="Lápis-de-cor">Lápis de cor</label>
                 </li>
 
                 <li>
@@ -215,18 +235,12 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Ligas-elásticas" value="ligas-elasticas" name="product"
-                        class="hidden-input">
-                    <label for="Ligas-elásticas">Ligas elásticas</label>
-                </li>
-
-                <li>
                     <input type="radio" id="Lupas" value="Lupas" name="product" class="hidden-input">
                     <label for="Lupas">Lupas</label>
                 </li>
 
                 <li>
-                    <input type="radio" id="Marcador-para-quadro-branco" value="Marcador-para-quadro-branco"
+                    <input type="radio" id="Marcador-para-quadro-branco" value="marcador-para-quadro-branco"
                         name="product" class="hidden-input">
                     <label for="Marcador-para-quadro-branco">Marcador para quadro branco</label>
                 </li>
@@ -239,7 +253,7 @@
 
                 <li>
                     <input type="radio" id="Marcatextos" value="marca-textos" name="product" class="hidden-input">
-                    <label for="Marcatextos">Marcatextos</label>
+                    <label for="Marcatextos">Marca-textos</label>
                 </li>
 
                 <li>
@@ -332,14 +346,8 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Tinta-para-tecido" value="tinta-para-tecido" name="product"
-                        class="hidden-input">
-                    <label for="Tinta-para-tecido">Tinta para tecido</label>
-                </li>
-
-                <li>
-                    <input type="radio" id="Tinta-3D" value="tinta-3D" name="product" class="hidden-input">
-                    <label for="Tinta-3D">Tinta 3D</label>
+                    <input type="radio" id="Tintas" value="tintas" name="product" class="hidden-input">
+                    <label for="Tintas">Tintas</label>
                 </li>
 
             </ul>
@@ -348,11 +356,12 @@
         </form>
 
     </header>
-    <div class="white-line"></div>
+
     <div class="product-header" id="product-header"></div>
     <div id='products' class="products-div"></div>
     <script src="database/product-data.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="database/destaques-data.js"></script>
 </body>
 
 </html>
