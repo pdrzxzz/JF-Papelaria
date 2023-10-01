@@ -1,19 +1,20 @@
 productsDiv = document.querySelector('#products')
 productHeader = document.querySelector('#product-header')
 form = document.querySelector('#products-form')
+SectionHeading = document.createElement('h2')
 let productSelected = ''
 let categorias = document.querySelector('#categorias')
 let todos = document.querySelector('#todos-produtos')
 let destaques = document.querySelector('#destaques')
 
 destaques.addEventListener('click', () => {
-    // if (SectionHeading) {
-    // SectionHeading.textContent = 'Destaques'
-    // }
+    SectionHeading.textContent = 'Destaques'
+    productHeader.append(SectionHeading)
     form.classList.add('none')
-    for (product of productsDiv.children) {
-        productsDiv.remove(product)
-    }
+    const productsChildren = Array.from(productsDiv.children);
+    productsChildren.forEach(product => {
+        productsDiv.removeChild(product);
+    });
     let productsList = []
     for (product of destaquesData) {
         productsList.push(product)
@@ -44,7 +45,7 @@ destaques.addEventListener('click', () => {
         let newProductPrice = document.createElement('h2')
         if (product.falta == true) {
             newProductPrice.textContent = 'EM FALTA'
-            newProductSection.style.opacity = 0.5
+            newProductSection.style.opacity = 0.85
         }
         else {
             productPrice = product.price.replace('.', ',')
@@ -61,11 +62,13 @@ destaques.addEventListener('click', () => {
 })
 
 todos.addEventListener('click', () => {
-    SectionHeading.textContent = ''
     form.classList.add('none')
-    for (product of productsDiv.children) {
-        productsDiv.remove(product)
-    }
+    SectionHeading.textContent = 'Todos os produtos'
+    productHeader.append(SectionHeading)
+    const productsChildren = Array.from(productsDiv.children);
+    productsChildren.forEach(product => {
+        productsDiv.removeChild(product);
+    });
     let productsList = []
     for (product of data) {
         productsList.push(product)
@@ -113,6 +116,7 @@ todos.addEventListener('click', () => {
 })
 
 categorias.addEventListener('click', () => {
+    SectionHeading.textContent = ''
     for (product of productsDiv.children) {
         productsDiv.remove(product)
     }
@@ -128,7 +132,6 @@ form.addEventListener('click', () => {
             productHeader.innerHTML = ''
             productSelected = productLabel.value
             //adicionar heading
-            SectionHeading = document.createElement('h2')
             SectionHeading.textContent = productLabel.id.replaceAll('-', ' ')
             productHeader.append(SectionHeading)
             productsList = []
