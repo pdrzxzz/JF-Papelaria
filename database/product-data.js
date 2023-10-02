@@ -3,7 +3,7 @@ const data = [
     //almofadas
     {
         img: "./images/almofada-para-carimbo-radex.jpg",
-        name: "Almofadas para carimbo cores",
+        name: "Almofadas Para Carimbo",
         brand: 'Radex',
         type: "almofadas",
         price: '4.95',
@@ -54,7 +54,7 @@ const data = [
     //apagadores
     {
         img: "./images/apagador-para-quadro-branco.webp",
-        name: "Apagador básico preto",
+        name: "Apagador Básico Preto",
         brand: 'Radex',
         type: "apagadores",
         price: '11.95',
@@ -62,7 +62,7 @@ const data = [
     },
     {
         img: "./images/apagador-formato-mouse.jpg",
-        name: "Apagador magnético em formato de mouse",
+        name: "Apagador Magnético em Formato de Mouse",
         brand: 'Radex',
         type: "apagadores",
         price: '19.95',
@@ -70,7 +70,7 @@ const data = [
     },
     {
         img: "./images/limpador-de-quadro-branco.webp",
-        name: "Limpador de quadro branco spray",
+        name: "Limpador de Quadro Branco Spray",
         brand: 'Radex',
         type: "apagadoresca",
         price: '24.95',
@@ -79,7 +79,7 @@ const data = [
     //apontadores
     {
         img: "./images/apontador-metal-onda.webp",
-        name: "Apontador de metal",
+        name: "Apontador de Metal",
         brand: 'Onda',
         type: "apontadores",
         price: '1.95',
@@ -87,7 +87,7 @@ const data = [
     },
     {
         img: "./images/apontador-plástico-pequeno.jpg",
-        name: "Apontador depósito de plástico",
+        name: "Apontador Depósito de Plástico",
         brand: 'Onda',
         type: "apontadores",
         price: '3.95',
@@ -95,7 +95,7 @@ const data = [
     },
     {
         img: "./images/apontador-oval-onda.jpg",
-        name: "Apontador depósito oval de plástico",
+        name: "Apontador Depósito Oval de Plástico",
         brand: 'Onda',
         type: "apontadores",
         price: '4.95',
@@ -103,7 +103,7 @@ const data = [
     },
     {
         img: "./images/apontador-batman.webp",
-        name: "Apontador batman",
+        name: "Apontador Batman",
         brand: 'Tris',
         type: "apontadores",
         price: '7.95',
@@ -111,7 +111,7 @@ const data = [
     },
     {
         img: "./images/apontador-barbie.webp",
-        name: "Apontador barbie",
+        name: "Apontador Barbie",
         brand: 'Tris',
         type: "apontadores",
         price: '7.95',
@@ -119,7 +119,7 @@ const data = [
     },
     {
         img: "./images/apontador-naruto.webp",
-        name: "Apontador naruto",
+        name: "Apontador Naruto",
         brand: 'Tris',
         type: "apontadores",
         price: '7.95',
@@ -128,7 +128,7 @@ const data = [
     //aquarela 
     {
         img: "./images/aquarela-onda.jpg",
-        name: "Estojo tinta aquarela 12 cores + pincel",
+        name: "Estojo Tinta Aquarela 12 cores + Pincel",
         brand: 'Onda',
         type: "aquarela",
         price: '11.95',
@@ -137,7 +137,7 @@ const data = [
     //bingo
     {
         img: "./images/bingo-sidgraph.jpg",
-        name: "Cartela de bingo 100fl",
+        name: "Cartela de Bingo 100fl",
         brand: 'Sidgraph',
         type: "bingo",
         price: '5.95',
@@ -195,7 +195,7 @@ const data = [
     },
     {
         img: "./images/borracha-bic.webp",
-        name: "Borracha Branca com capa",
+        name: "Borracha Branca com Capa",
         brand: 'Bic',
         type: "borrachas",
         price: '2.95',
@@ -203,7 +203,7 @@ const data = [
     },
     {
         img: "./images/borracha-onda.webp",
-        name: "Borracha Neon com capa",
+        name: "Borracha Neon com Capa",
         brand: 'Onda',
         type: "borrachas",
         price: '3.95',
@@ -211,7 +211,7 @@ const data = [
     },
     {
         img: "./images/borracha-neon-brw.webp",
-        name: "Borracha Neon com capa",
+        name: "Borracha Neon com Capa",
         brand: 'Brw',
         type: "borrachas",
         price: '2.95',
@@ -227,7 +227,7 @@ const data = [
     },
     {
         img: "./images/borracha-maped-shakky.webp",
-        name: "Borracha Shakky Bichinhos 2 unidades",
+        name: "Borracha Shakky Bichinhos c/2",
         brand: 'Maped',
         type: "borrachas",
         price: '9.95',
@@ -235,7 +235,7 @@ const data = [
     },
     {
         img: "./images/borracha-branca-leoeleo.jpg",
-        name: "Borracha branca com capa verde",
+        name: "Borracha branca com Capa Verde",
         brand: 'Leo & Leo',
         type: "borrachas",
         price: '3.95',
@@ -243,7 +243,7 @@ const data = [
     },
     {
         img: "./images/borracha-mercur-big.webp",
-        name: "Borracha Branca Big com capa preta",
+        name: "Borracha Branca Big com Capa Preta",
         brand: 'Mercur',
         type: "borrachas",
         price: '5.95',
@@ -252,7 +252,7 @@ const data = [
     //caixa de som
     {
         img: "./images/caixa-de-som-multilaser.jpg",
-        name: "Caixa de som multimídia 3WRMS",
+        name: "Caixa de Som Multimídia 3WRMS",
         brand: 'Multilaser',
         type: "caixa-de-som",
         price: '39.95',
@@ -261,7 +261,7 @@ const data = [
     //caligrafia
     {
         img: "./images/aprendendo-a-escrever.webp",
-        name: "Livro aprendendo a escrever",
+        name: "Livro Aprendendo a Escrever",
         brand: 'Baag',
         type: "caligrafia",
         price: '29.95',
@@ -269,7 +269,7 @@ const data = [
     },
     {
         img: "./images/amo-meu-abc.webp",
-        name: "Livro eu amo meu abc",
+        name: "Livro Eu Amo Meu ABC",
         brand: 'Baag',
         type: "caligrafia",
         price: '5.95',
@@ -278,7 +278,7 @@ const data = [
     //calculadoras
     {
         img: "./images/calculadora-brw.jpg",
-        name: "Calculadora eletrônica de mesa 12 dígitos",
+        name: "Calculadora Eletrônica de Mesa 12 Dígitos",
         brand: 'Brw',
         type: "calculadoras",
         price: '29.95',
@@ -286,7 +286,7 @@ const data = [
     },
     {
         img: "./images/calculadora-cientifica-casio.webp",
-        name: "Calculadora científica fx-82ms 2nd edition",
+        name: "Calculadora Científica fx-82ms 2nd Edition",
         brand: 'Casio',
         type: "calculadoras",
         price: '89.95',
@@ -294,8 +294,16 @@ const data = [
     },
     //canetas
     {
+        img: "./images/caneta-jet-lux.webp",
+        name: "Caneta Jet Lux",
+        brand: 'Compactor',
+        type: "canetas",
+        price: '2.00',
+        falta: false,
+    },
+    {
         img: "./images/kit-metalico-bic.webp",
-        name: "Kit canetas metálicas",
+        name: "Kit Canetas Metálicas",
         brand: 'Bic',
         type: "canetas",
         price: '29.95',
@@ -303,7 +311,7 @@ const data = [
     },
     {
         img: "./images/caneta-bic-cristal.webp",
-        name: "Caneta Bic Cristal 1.0mm",
+        name: "Caneta Cristal 1.0mm",
         brand: 'Bic',
         type: "canetas",
         price: '1.50',
@@ -311,7 +319,7 @@ const data = [
     },
     {
         img: "./images/caneta-bic-fine.webp",
-        name: "Caneta Bic Fine 0.8mm",
+        name: "Caneta Fine 0.8mm",
         brand: 'Bic',
         type: "canetas",
         price: '1.50',
@@ -319,7 +327,7 @@ const data = [
     },
     {
         img: "./images/caneta-compactor.webp",
-        name: "Caneta Compactor 0.7mm",
+        name: "Caneta 0.7mm",
         brand: 'Compactor',
         type: "canetas",
         price: '1.50',
@@ -327,15 +335,15 @@ const data = [
     },
     {
         img: "./images/caneta-fabber.webp",
-        name: "Caneta Fabber-Castell 1.0mm",
-        brand: 'Fabber',
+        name: "Caneta 1.0mm",
+        brand: 'Fabber-Castell',
         type: "canetas",
         price: '1.50',
         falta: false,
     },
     {
         img: "./images/caneta-bic-bold.webp",
-        name: "Caneta Bic Bold Intenso 1.6mm",
+        name: "Caneta Bold Intenso 1.6mm",
         brand: 'Bic',
         type: "canetas",
         price: '2.95',
@@ -343,7 +351,7 @@ const data = [
     },
     {
         img: "./images/caneta-bic-ultrafine.webp",
-        name: "Caneta Bic Ultra Fine 0.7mm",
+        name: "Caneta Ultra Fine 0.7mm",
         brand: 'Bic',
         type: "canetas",
         price: '3.95',
@@ -351,7 +359,7 @@ const data = [
     },
     {
         img: "./images/caneta-spiro.webp",
-        name: "Caneta Cis Spiro 0.7mm",
+        name: "Caneta Spiro 0.7mm",
         brand: 'Cis',
         type: "canetas",
         price: '3.95',
@@ -359,7 +367,7 @@ const data = [
     },
     {
         img: "./images/caneta-pilot-bp-1.webp",
-        name: "Caneta Pilot BP-1 1.0mm",
+        name: "Caneta BP-1 1.0mm",
         brand: 'Pilot',
         type: "canetas",
         price: '3.95',
@@ -375,7 +383,7 @@ const data = [
     },
     {
         img: "./images/caneta-4-cores-capricho.webp",
-        name: "Caneta 4 cores 1.0mm",
+        name: "Caneta 4 cores Rosa 1.0mm",
         brand: 'Capricho',
         type: "canetas",
         price: '12.95',
@@ -383,7 +391,7 @@ const data = [
     },
     {
         img: "./images/kit-4-canetas-bic-cores.webp",
-        name: " 4 Canetas coloridas 1.2mm",
+        name: "Canetas coloridas 1.2mm c/4",
         brand: 'Bic',
         type: "canetas",
         price: '7.95',
@@ -391,7 +399,7 @@ const data = [
     },
     {
         img: "./images/kit-10-canetas-bic-cores.webp",
-        name: "10 Canetas coloridas 1.2mm",
+        name: "Canetas coloridas 1.2mm c/10",
         brand: 'Bic',
         type: "canetas",
         price: '19.95',
@@ -399,7 +407,7 @@ const data = [
     },
     {
         img: "./images/caneta-pilot-bp-s.webp",
-        name: "Caneta Pilot BP-S 0.7mm",
+        name: "Caneta BP-S 0.7mm",
         brand: 'Pilot',
         type: "canetas",
         price: '9.95',
@@ -407,7 +415,7 @@ const data = [
     },
     {
         img: "./images/caneta-pilot-bps-grip.webp",
-        name: "Caneta Pilot BPS Grip 1.0mm",
+        name: "Caneta BPS Grip 1.0mm",
         brand: 'Pilot',
         type: "canetas",
         price: '9.95',
@@ -415,7 +423,7 @@ const data = [
     },
     {
         img: "./images/caneta-onda-pro-neon.webp",
-        name: "Caneta em gel neon",
+        name: "Caneta em Gel Neon",
         brand: 'Onda',
         type: "canetas",
         price: '4.95',
@@ -424,7 +432,7 @@ const data = [
     //colas
     {
         img: "./images/cola-isopor-pira-80g.png",
-        name: "Cola para isopor e eva escolar 80g",
+        name: "Cola para Isopor Escolar 80g",
         brand: 'Piratininga',
         type: "colas",
         price: '5.95',
@@ -432,7 +440,7 @@ const data = [
     },
     {
         img: "./images/cola-branca-pira-40g.webp",
-        name: "Cola branca escolar 40g",
+        name: "Cola Branca Escolar 40g",
         brand: 'Piratininga',
         type: "colas",
         price: '2.95',
@@ -440,7 +448,7 @@ const data = [
     },
     {
         img: "./images/cola-branca-pira-90g.webp",
-        name: "Cola branca escolar 90g",
+        name: "Cola Branca Escolar 90g",
         brand: 'Piratininga',
         type: "colas",
         price: '3.95',
@@ -449,7 +457,7 @@ const data = [
     //compassos
     {
         img: "./images/compasso-tris.jfif",
-        name: "Compasso escolar SU123",
+        name: "Compasso Escolar SU123",
         brand: 'Tris',
         type: "compassos",
         price: '11.95',
@@ -457,7 +465,7 @@ const data = [
     },
     {
         img: "./images/compasso-onda.webp",
-        name: "Compasso escolar metal",
+        name: "Compasso Escolar Metal",
         brand: 'Onda',
         type: "compassos",
         price: '9.95',
@@ -466,7 +474,7 @@ const data = [
     //corretivos
     {
         img: "./images/corretivo-bic-ecolutions.jpg",
-        name: "Corretivo líquido ECOlutions 18ml",
+        name: "Corretivo Líquido ECOlutions 18ml",
         brand: 'Bic',
         type: "corretivos",
         price: '3.95',
@@ -474,7 +482,7 @@ const data = [
     },
     {
         img: "./images/corretivo-toque-magico.webp",
-        name: "Corretivo líquido 18ml",
+        name: "Corretivo Líquido 18ml",
         brand: 'Toque mágico',
         type: "corretivos",
         price: '6.95',
@@ -482,7 +490,7 @@ const data = [
     },
     {
         img: "./images/corretivo-fita-radex.jpg",
-        name: "Corretivo em fita 6m",
+        name: "Corretivo em Fita 6mx5mm",
         brand: 'Radex',
         type: "corretivos",
         price: '9.95',
@@ -490,7 +498,7 @@ const data = [
     },
     {
         img: "./images/corretivo-fita-mercur.webp",
-        name: "Corretivo em fita 12m",
+        name: "Corretivo em Fita 12mx4,2mm",
         brand: 'Mercur',
         type: "corretivos",
         price: '17.95',
@@ -498,7 +506,7 @@ const data = [
     },
     {
         img: "./images/corretivo-fita-onda.webp",
-        name: "Corretivo em fita 6m",
+        name: "Corretivo em Fita 6mx5mm",
         brand: 'Onda',
         type: "corretivos",
         price: '9.95    ',
@@ -506,7 +514,7 @@ const data = [
     },
     {
         img: "./images/caneta-corretiva-radex.webp",
-        name: "Corretivo caneta",
+        name: "Caneta Corretiva",
         brand: 'Radex',
         type: "corretivos",
         price: '9.95',
@@ -515,7 +523,7 @@ const data = [
     //dicionários
     {
         img: "./images/mini-dicionario-espanhol-scottini.webp",
-        name: "Minidicionário scottini espanhol",
+        name: "Minidicionário Scottini Espanhol",
         brand: 'Todolivro',
         type: "dicionarios",
         price: '9.95',
@@ -523,7 +531,7 @@ const data = [
     },
     {
         img: "./images/mini-dicionario-portugues-scottini.webp",
-        name: "Minidicionário scottini língua portuguesa",
+        name: "Minidicionário Scottini Língua Portuguesa",
         brand: 'Todolivro',
         type: "dicionarios",
         price: '9.95',
@@ -531,7 +539,7 @@ const data = [
     },
     {
         img: "./images/mini-dicionario-ingles-scottini.webp",
-        name: "Minidicionário scottini inglês",
+        name: "Minidicionário Scottini Inglês",
         brand: 'Todolivro',
         type: "dicionarios",
         price: '9.95',
@@ -540,7 +548,7 @@ const data = [
     //elásticos
     {
         img: "./images/elastico-redbor-60.jpg",
-        name: "Elásticos 60un",
+        name: "Elásticos c/60",
         brand: 'Redbor',
         type: "elasticos",
         price: '3.95',
@@ -548,7 +556,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-60.jpg",
-        name: "Elásticos 60un",
+        name: "Elásticos c/60",
         brand: 'Mercur',
         type: "elasticos",
         price: '7.95',
@@ -556,7 +564,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-120.webp",
-        name: "Elásticos 120un",
+        name: "Elásticos c/120",
         brand: 'Mercur',
         type: "elasticos",
         price: '14.95',
@@ -564,7 +572,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-1200.jpg",
-        name: "Elásticos 1200un",
+        name: "Elásticos c/1200",
         brand: 'Mercur',
         type: "elasticos",
         price: '59.95',
@@ -572,7 +580,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-2200.jpg",
-        name: "Elásticos 2200un",
+        name: "Elásticos c/2200",
         brand: 'Mercur',
         type: "elasticos",
         price: '99.95',
@@ -581,7 +589,7 @@ const data = [
     //emborrachados
     {
         img: "./images/eva-liso.webp",
-        name: "Emborrachado liso cores 40x48cm",
+        name: "Emborrachado Liso 40x48cm",
         brand: 'Pendente',
         type: "emborrachados",
         price: '3.00',
@@ -589,7 +597,7 @@ const data = [
     },
     {
         img: "./images/eva-com-glitter.webp",
-        name: "Emborrachado com glitter cores 40x48cm",
+        name: "Emborrachado com Glitter 40x48cm",
         brand: 'Pendente',
         type: "emborrachados",
         price: '7.00',
@@ -598,7 +606,7 @@ const data = [
     //extrator
     {
         img: "./images/extrator-chaparrau.jpg",
-        name: "Extrator de grampos aço inoxidável",
+        name: "Extrator de Grampos Aço Inoxidável",
         brand: 'chaparrau',
         type: "extrator",
         price: '4.95',
@@ -607,7 +615,7 @@ const data = [
     //grampos
     {
         img: "./images/grampo-2313.jpg",
-        name: "Grampos 23/13 1000un",
+        name: "Grampos 23/13 c/1000",
         brand: 'Acc',
         type: "grampos",
         price: '9.95',
@@ -615,7 +623,7 @@ const data = [
     },
     {
         img: "./images/grampo-frama.webp",
-        name: "Grampos 26/6 5000un",
+        name: "Grampos 26/6 c/5000",
         brand: 'Frama',
         type: "grampos",
         price: '9.95',
@@ -623,7 +631,7 @@ const data = [
     },
     {
         img: "./images/grampo-onda.webp",
-        name: "Grampos 26/6 5000un",
+        name: "Grampos 26/6 c/5000",
         brand: 'Onda',
         type: "grampos",
         price: '8.95',
@@ -631,7 +639,7 @@ const data = [
     },
     {
         img: "./images/grampo-masterprint.webp",
-        name: "Grampos 26/6 5000un",
+        name: "Grampos 26/6 c/5000",
         brand: 'Masterprint',
         type: "grampos",
         price: '9.95',
@@ -640,7 +648,7 @@ const data = [
     //lápis
     {
         img: "./images/lapis-serelepe.jpg",
-        name: "Lápis preto N2",
+        name: "Lápis Preto N2",
         brand: 'Serelepe',
         type: "lapis",
         price: '0.75',
@@ -648,7 +656,7 @@ const data = [
     },
     {
         img: "./images/lapis-serelepe-caixa.webp",
-        name: "Caixa de lápis preto N2 c/144",
+        name: "Caixa de Lápis Preto N2 c/144",
         brand: 'Serelepe',
         type: "lapis",
         price: '59.95',
@@ -656,7 +664,7 @@ const data = [
     },
     {
         img: "./images/lapis-onda-caixa.webp",
-        name: "Caixa de lápis preto N2 c/144",
+        name: "Caixa de Lápis Preto N2 c/144",
         brand: 'onda',
         type: "lapis",
         price: '59.95',
@@ -664,16 +672,24 @@ const data = [
     },
     {
         img: "./images/lapis-bic-evolution.jpg",
-        name: "Lápis preto evolution HB2",
+        name: "Lápis Preto Evolution HB2",
         brand: 'Bic',
         type: "lapis",
         price: '1.00',
         falta: false,
     },
     //lapis de cor
+        {
+        img: "./images/lapis-de-cor-faber-castell.webp",
+        name: "Ecolápis de Cor Sextavado c/36",
+        brand: 'Faber-Castell',
+        type: "lapis-de-cor",
+        price: '69.95',
+        falta: false,
+    },
     {
         img: "./images/lapis-de-cor-naruto.jfif",
-        name: "Lápis de cor naruto shippudden c/12",
+        name: "Lápis de Cor Naruto Shippudden c/12",
         brand: 'Viz',
         type: "lapis-de-cor",
         price: '19.95',
@@ -681,7 +697,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-barbie.webp",
-        name: "Lápis de cor barbie c/12",
+        name: "Lápis de Cor Barbie c/12",
         brand: 'Tris',
         type: "lapis-de-cor",
         price: '19.95',
@@ -689,7 +705,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-batman.webp",
-        name: "Lápis de cor batman c/12",
+        name: "Lápis de Cor Batman c/12",
         brand: 'Tris',
         type: "lapis-de-cor",
         price: '19.95',
@@ -697,7 +713,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-tons-de-pele-tris.webp",
-        name: "Lápis de cor tons de pele c/12",
+        name: "Lápis de Cor Tons de Pele c/12",
         brand: 'Tris',
         type: "lapis-de-cor",
         price: '17.95',
@@ -705,7 +721,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-serelepe.webp",
-        name: "Lápis de cor c/12",
+        name: "Lápis de Cor c/12",
         brand: 'Serelepe',
         type: "lapis-de-cor",
         price: '8.95',
@@ -713,7 +729,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-onda-12.webp",
-        name: "Lápis de cor sextavado c/12",
+        name: "Lápis de Cor Sextavado c/12",
         brand: 'Onda',
         type: "lapis-de-cor",
         price: '8.95',
@@ -721,7 +737,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-leo&leo.webp",
-        name: "Lápis de cor redondo c/12",
+        name: "Lápis de Cor Redondo c/12",
         brand: 'Leo&Leo',
         type: "lapis-de-cor",
         price: '8.95',
@@ -729,7 +745,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-onda-24.jpg",
-        name: "Lápis de cor redondo c/24",
+        name: "Lápis de Cor Redondo c/24",
         brand: 'Onda',
         type: "lapis-de-cor",
         price: '19.95',
@@ -737,7 +753,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-onda-big.webp",
-        name: "Lápis de cor BIG c/12",
+        name: "Lápis de Cor BIG triangular c/12",
         brand: 'Onda',
         type: "lapis-de-cor",
         price: '19.95',
@@ -747,7 +763,7 @@ const data = [
     //marca-textos
     {
         img: "./images/marca-texto-pastel-bic.jpg",
-        name: "Marca-texto pastel c/4",
+        name: "Marca-texto Pastel c/4",
         brand: 'Bic',
         type: "marca-textos",
         price: '14.95',
@@ -755,7 +771,7 @@ const data = [
     },
     {
         img: "./images/marca-texto-neon-keep.jpg",
-        name: "Marca-texto neon c/4",
+        name: "Marca-texto Neon c/4",
         brand: 'Keep',
         type: "marca-textos",
         price: '14.95',
@@ -764,7 +780,7 @@ const data = [
     //marcador quadro branco
     {
         img: "./images/tinta-marcador-quadro-500ml.webp",
-        name: "Tinta para marcador de quadro 500ml",
+        name: "Tinta para Marcador de Quadro 500ml",
         brand: 'Radex',
         type: "marcador-para-quadro-branco",
         price: '99.95',
@@ -772,7 +788,7 @@ const data = [
     },
     {
         img: "./images/tinta-marcador-quadro-40ml.webp",
-        name: "Tinta para marcador de quadro 40ml",
+        name: "Tinta para Marcador de Quadro 40ml",
         brand: 'Radex',
         type: "marcador-para-quadro-branco",
         price: '14.95',
@@ -780,7 +796,7 @@ const data = [
     },
     {
         img: "./images/marcador-quadro-pilot.jpg",
-        name: "Marcador WBM-7 recarregável cores ",
+        name: "Marcador WBM-7 Recarregável",
         brand: 'Pilot',
         type: "marcador-para-quadro-branco",
         price: '8.95',
@@ -788,7 +804,7 @@ const data = [
     },
     {
         img: "./images/marcador-quadro-vboard.jpg",
-        name: "Marcador Vboard master recarregável cores",
+        name: "Marcador Vboard Master Recarregável",
         brand: 'Pilot',
         type: "marcador-para-quadro-branco",
         price: '12.95',
@@ -796,7 +812,7 @@ const data = [
     },
     {
         img: "./images/marcador-quadro-keep.webp",
-        name: "Marcador easy azul",
+        name: "Marcador Easy Azul",
         brand: 'keep',
         type: "marcador-para-quadro-branco",
         price: '4.95',
@@ -804,7 +820,7 @@ const data = [
     },
     {
         img: "./images/cartucho-vboard.webp",
-        name: "Cartucho de tinta Vboard master",
+        name: "Cartucho de tinta Vboard Master",
         brand: 'Pilot',
         type: "marcador-para-quadro-branco",
         price: '5.95',
@@ -813,7 +829,7 @@ const data = [
     //mouses
     {
         img: "./images/mouse-com-fio.webp",
-        name: "Mouse óptico com fio 1200dpi",
+        name: "Mouse Óptico com Fio 1200dpi",
         brand: 'Multilaser',
         type: "mouses",
         price: '19.95',
@@ -821,7 +837,7 @@ const data = [
     },
     {
         img: "./images/mouse-sem-fio.webp",
-        name: "Mouse sem fio 1200dpi",
+        name: "Mouse Sem Fio 1200dpi",
         brand: 'Multilaser',
         type: "mouses",
         price: '39.95',
@@ -830,7 +846,7 @@ const data = [
     //mouse pads
     {
         img: "./images/mouse-pad-multilaser-slim.webp",
-        name: "Mouse pad slim",
+        name: "Mouse Pad Slim",
         brand: 'Multilaser',
         type: "mouse-pads",
         price: '8.95',
@@ -838,7 +854,7 @@ const data = [
     },
     {
         img: "./images/mouse-pad-multilaser-ergonomico.webp",
-        name: "Mouse pad ergonômico com apoio gel",
+        name: "Mouse pad Ergonômico com Apoio Gel",
         brand: 'Multilaser',
         type: "mouse-pads",
         price: '29.95?',
@@ -847,7 +863,7 @@ const data = [
     //papel fotográfico
     {
         img: "./images/papel-foto-nexel-20fl.webp",
-        name: "Papel fotográfico 180gr 20fl",
+        name: "Papel Fotográfico 180gr 20fl",
         brand: 'Nexel',
         type: "papel-fotografico",
         price: '12.00',
@@ -855,7 +871,7 @@ const data = [
     },
     {
         img: "./images/papel-foto-nexel-50fl.webp",
-        name: "Papel fotográfico 180gr 50fl",
+        name: "Papel Fotográfico 180gr 50fl",
         brand: 'Nexel',
         type: "papel-fotografico",
         price: '25.00',
@@ -863,7 +879,7 @@ const data = [
     },
     {
         img: "./images/papel-foto-adesivo-nexel-20fl.webp",
-        name: "Papel fotográfico adesivo 130gr 20fl",
+        name: "Papel Fotográfico Adesivo 130gr 20fl",
         brand: 'Nexel',
         type: "papel-fotografico",
         price: '18.00',
@@ -871,7 +887,7 @@ const data = [
     },
     {
         img: "./images/papel-foto-adesivo-nexel-50fl.webp",
-        name: "Papel fotográfico adesivo 130gr 50fl",
+        name: "Papel Fotográfico Adesivo 130gr 50fl",
         brand: 'Nexel',
         type: "papel-fotografico",
         price: '35.00',
@@ -879,7 +895,7 @@ const data = [
     },
     {
         img: "./images/papel-foto-baag-50fl.webp",
-        name: "Papel fotográfico 135gr 50fl",
+        name: "Papel Fotográfico 135gr 50fl",
         brand: 'Baag',
         type: "papel-fotografico",
         price: '25.00',
@@ -888,7 +904,7 @@ const data = [
     //flip chart
     {
         img: "./images/flip-chart.jpg",
-        name: "Flip chart",
+        name: "Flip Chart",
         brand: 'Mademaster',
         type: "flip-chart",
         price: '149.95',
@@ -896,7 +912,7 @@ const data = [
     },
     {
         img: "./images/papel-para-flip-chart-stalo.webp",
-        name: "Papel para flip chart 50fl",
+        name: "Papel para Flip Chart 50fl",
         brand: 'Stalo',
         type: "flip-chart",
         price: '79.95',
@@ -905,7 +921,7 @@ const data = [
     //perfuradores
     {
         img: "./images/perfurador-alicate-brw.webp",
-        name: "Perfurador de papel alicate metálico",
+        name: "Perfurador de Papel Alicate Metálico",
         brand: 'Brw',
         type: "perfuradores",
         price: '14.95',
@@ -914,7 +930,7 @@ const data = [
     //pilhas e baterias
     {
         img: "./images/pilha-elgin-palito.jpg",
-        name: "Pilha alcalina AAA 2un",
+        name: "Pilha Alcalina AAA 2un",
         brand: 'Elgin',
         type: "pilhas",
         price: '6.95',
@@ -922,7 +938,7 @@ const data = [
     },
     {
         img: "./images/pilha-philips-pequena.png",
-        name: "Pilha alcalina AA 4un",
+        name: "Pilha Alcalina AA 4un",
         brand: 'Philips',
         type: "pilhas",
         price: '9.95',
@@ -939,10 +955,27 @@ const data = [
     //teclados
     {
         img: "./images/teclado-multilaser.webp",
-        name: "Teclado Básico com fio USB",
+        name: "Teclado Básico com Fio USB",
         brand: 'Multilaser',
         type: "teclados",
         price: '49.95',
+        falta: false,
+    },
+    //tintas
+    {
+        img: "./images/tinta-guache-caixinha.webp",
+        name: "Tinta Guache Escolar 15ml c/6",
+        brand: 'Piratininga',
+        type: "tintas",
+        price: '5.95',
+        falta: false,
+    },
+    {
+        img: "./images/tinta-para-tecido-acrilex.webp",
+        name: "Tinta para Tecido 37ml",
+        brand: 'Acrilex',
+        type: "tintas",
+        price: '5.95',
         falta: false,
     },
 ]
