@@ -1,16 +1,21 @@
 productsDiv = document.querySelector('#products')
 productHeader = document.querySelector('#product-header')
-form = document.querySelector('#products-form')
+servicesHeader = document.querySelector('#services-header')
+let form = document.querySelector('#products-form')
 SectionHeading = document.createElement('h2')
 let productSelected = ''
 let categorias = document.querySelector('#categorias')
 let todos = document.querySelector('#todos-produtos')
 let destaques = document.querySelector('#destaques')
+let services = document.querySelector('#services')
+let servicesUl = document.querySelector('#services-ul')
 
 destaques.addEventListener('click', () => {
     SectionHeading.textContent = 'Destaques'
     productHeader.append(SectionHeading)
     form.classList.add('none')
+    servicesHeader.classList.add('none')
+    servicesUl.classList.add('none')
     const productsChildren = Array.from(productsDiv.children);
     productsChildren.forEach(product => {
         productsDiv.removeChild(product);
@@ -63,6 +68,8 @@ destaques.addEventListener('click', () => {
 
 todos.addEventListener('click', () => {
     form.classList.add('none')
+    servicesHeader.classList.add('none')
+    servicesUl.classList.add('none')
     SectionHeading.textContent = 'Todos os produtos'
     productHeader.append(SectionHeading)
     const productsChildren = Array.from(productsDiv.children);
@@ -116,11 +123,25 @@ todos.addEventListener('click', () => {
 })
 
 categorias.addEventListener('click', () => {
+    servicesHeader.classList.add('none')
+    servicesUl.classList.add('none')
     SectionHeading.textContent = ''
     for (product of productsDiv.children) {
         productsDiv.remove(product)
     }
     form.classList.toggle('none')
+})
+
+services.addEventListener('click', () => {
+    const productsChildren = Array.from(productsDiv.children);
+    productsChildren.forEach(product => {
+        productsDiv.removeChild(product);
+    });
+    SectionHeading.textContent = ''
+    productHeader.append(SectionHeading)
+    form.classList.add('none')
+    servicesUl.classList.toggle('none')
+    servicesHeader.classList.toggle('none')
 })
 
 form.addEventListener('click', () => {
@@ -185,6 +206,7 @@ form.addEventListener('click', () => {
     }
 }
 )
+
 
 function sortPrice(a, b) {
     return a.price - b.price;
