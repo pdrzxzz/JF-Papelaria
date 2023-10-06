@@ -37,8 +37,9 @@ header {
     text-decoration: none;
 }
 
-.nav-div a:hover {
+.nav-div a:hover, #local-anchor:hover, #catalogo-heading > h2:hover, form label:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .redesocial {
@@ -68,10 +69,6 @@ margin: 50px 0  ;
     text-decoration: none;
     color: inherit;
     transition: all 1s ease;
-}
-
-#local-anchor:hover {
-    text-decoration: underline;
 }
 
 #products {
@@ -111,9 +108,6 @@ margin: 50px 0  ;
     cursor: pointer;
 }
 
-#catalogo-heading > h2:hover {
-    text-decoration: underline;
-}
 
 .none {
     display: none;
@@ -138,11 +132,6 @@ margin: 50px 0  ;
 
 #products-ul li {
     margin-bottom: 5px;
-}
-
-form label:hover {
-    cursor: pointer;
-    text-decoration: underline;
 }
 
 .hidden-input {
@@ -228,6 +217,10 @@ form label:hover {
     border-bottom: 3px solid #d22e2e;
 }
 
+.chosen {
+    text-decoration: underline; 
+}
+
 @keyframes append {
     from {
         opacity: 0;
@@ -271,12 +264,7 @@ form label:hover {
 @media screen and (max-width: 924px) {
     #products-ul {
         column-count: 2;
-    }
-    #carrinho-info {
-        font-size: 1rem;
-    }
-    #copy-button {
-        width: 32%;
+        line-height: 2rem;
     }
     .product-section {
         width: 89vw;
@@ -288,6 +276,9 @@ form label:hover {
         height: 30vw;
         margin: 3vw;
     }
+    .nav-div, #local-anchor {
+        text-decoration: underline; 
+    }
 }
 
 
@@ -295,8 +286,11 @@ form label:hover {
     #local-anchor {
         font-size: 1.5rem;
     }
+    #logo {
+        width: 100px;
+    }
     .contato {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     .redesocial {
         width: 25px;
@@ -304,39 +298,54 @@ form label:hover {
     #li-div {
         margin-bottom: 10vw;
     }
-}
-
-@media screen and (max-width: 568px) {
-    #local-anchor {
-        font-size: 1.2rem;
+    #catalogo-heading {
+        text-align: center;
+        flex-direction: column;
     }
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 588px) {
     #local-anchor {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .contato {
-        font-size: 0.8rem;
+        font-size: 1.4rem;
+    }
+    .product-section {
+        flex-direction: column;
+    }
+    .product-img {
+        width: 80vw;
+        height: 80vw;
+    }
+    .product-name, .product-brand {
+        text-align: center;
+    }
+    .product-brand {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    #products-ul {
+        column-count: 1;
+    }
+    .contato {
+        font-size: 1.8rem;
+        margin: 12px 0;
+    }
+    #logo {
+        width: 200px;
     }
     .redesocial {
         width: 20px;
     }
-    #carrinho > h3 {
-        font-size: 1.5rem;
+    .nav-div {
+        flex-direction: column;
     }
 }
-
 @media screen and (max-width: 374px) {
-    #local-anchor {
-        font-size: 0.8rem;
-    }
-    #products-ul {
-        column-count: 1;
-    }
-}
-@media screen and (max-width: 324px) {
-    #carrinho > h3 {
-        font-size: 1rem;
+    .product-section {
+        margin: 5vw;
     }
 }

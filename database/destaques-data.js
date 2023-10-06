@@ -1,7 +1,7 @@
 const destaquesData = [
     {
         img: "./images/resma-papel-chamex.webp",
-        name: "Resma de papel ofício A4",
+        name: "Resma de Papel Ofício A4",
         brand: 'Chamex',
         type: "papel",
         price: '25.00',
@@ -9,7 +9,7 @@ const destaquesData = [
     },
     {
         img: "./images/marcador-quadro-pilot.jpg",
-        name: "Marcador WBM-7 recarregável cores ",
+        name: "Marcador WBM-7 Recarregável",
         brand: 'Pilot',
         type: "marcador-para-quadro-branco",
         price: '8.95',
@@ -17,7 +17,7 @@ const destaquesData = [
     },
     {
         img: "./images/tinta-marcador-quadro-500ml.webp",
-        name: "Tinta para marcador de quadro 500ml",
+        name: "Tinta para Marcador de Quadro 500ml",
         brand: 'Radex',
         type: "marcador-para-quadro-branco",
         price: '99.95',
@@ -25,7 +25,7 @@ const destaquesData = [
     },
     {
         img: "./images/marcador-quadro-vboard.jpg",
-        name: "Marcador Vboard master recarregável cores",
+        name: "Marcador Vboard Master Recarregável",
         brand: 'Pilot',
         type: "marcador-para-quadro-branco",
         price: '12.95',
@@ -33,7 +33,7 @@ const destaquesData = [
     },
     {
         img: "./images/kit-metalico-bic.webp",
-        name: "Kit canetas metálicas",
+        name: "Kit Canetas Metálicas C/3",
         brand: 'Bic',
         type: "canetas",
         price: '29.95',
