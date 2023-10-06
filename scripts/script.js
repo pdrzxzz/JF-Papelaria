@@ -20,8 +20,6 @@ destaques.addEventListener('click', () => {
     SectionHeading.textContent = ''
     productHeader.append(SectionHeading)
     form.classList.add('none')
-    servicesHeader.classList.add('none')
-    servicesUl.classList.add('none')
     const productsChildren = Array.from(productsDiv.children);
     productsChildren.forEach(product => {
         productsDiv.removeChild(product);
@@ -78,8 +76,6 @@ todos.addEventListener('click', () => {
     services.classList.remove('chosen')
     todos.classList.add('chosen')
     form.classList.add('none')
-    servicesHeader.classList.add('none')
-    servicesUl.classList.add('none')
     SectionHeading.textContent = ''
     productHeader.append(SectionHeading)
     const productsChildren = Array.from(productsDiv.children);
@@ -137,16 +133,12 @@ categorias.addEventListener('click', () => {
     destaques.classList.remove('chosen')
     services.classList.remove('chosen')
     todos.classList.remove('chosen')
-    servicesHeader.classList.add('none')
-    servicesUl.classList.add('none')
     SectionHeading.textContent = ''
     for (product of productsDiv.children) {
         productsDiv.remove(product)
     }
-    form.classList.toggle('none')
-    if (!form.classList.contains('none')) {
-        form.scrollIntoView({behavior: 'smooth'})
-    }
+    form.classList.remove('none')
+    form.scrollIntoView({behavior: 'smooth'})
 })
 
 services.addEventListener('click', () => {
@@ -161,11 +153,35 @@ services.addEventListener('click', () => {
     SectionHeading.textContent = ''
     productHeader.append(SectionHeading)
     form.classList.add('none')
-    servicesUl.classList.toggle('none')
-    servicesHeader.classList.toggle('none')
-    if (!servicesUl.classList.contains('none')) {
-        servicesUl.scrollIntoView({behavior: 'smooth'})
+    let productsList = []
+    for (product of servicesData) {
+        productsList.push(product)
     }
+    //ordenar produtos por preço
+    productsList.sort(sortPrice)
+    for (product of productsList) {
+        //adicionar os produtos na tela
+        let newProductSection = document.createElement('section')
+        newProductSection.classList.add('product-section')
+        newProductSection.style.flexDirection = 'column'
+        newProductSection.width = '50px'
+        let newProductImg = document.createElement('img')
+        newProductImg.src = product.img
+        newProductImg.classList.add('product-img')
+        newProductImg.style.width = '90%'
+        newProductImg.style.height = '90%'
+        let newProductName = document.createElement('h2')
+        newProductName.textContent = product.name
+        newProductName.classList.add('product-name')
+        let newProductBio = document.createElement('div')
+        newProductBio.classList.add('product-bio')
+        newProductBio.append(newProductName )
+        newProductSection.append(newProductImg, newProductBio)
+        newProductSection.classList.add('animation')
+        productsDiv.append(newProductSection)
+        productHeader.append(productsDiv)
+    }
+    productHeader.scrollIntoView({behavior:'smooth'})
 })
 
 form.addEventListener('click', () => {
@@ -239,8 +255,6 @@ function starter() {
     SectionHeading.textContent = ''
     productHeader.append(SectionHeading)
     form.classList.add('none')
-    servicesHeader.classList.add('none')
-    servicesUl.classList.add('none')
     const productsChildren = Array.from(productsDiv.children);
     productsChildren.forEach(product => {
         productsDiv.removeChild(product);

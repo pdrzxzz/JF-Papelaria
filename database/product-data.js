@@ -227,7 +227,7 @@ const data = [
     },
     {
         img: "./images/borracha-maped-shakky.webp",
-        name: "Borracha Shakky Bichinhos c/2",
+        name: "Borracha Shakky Bichinhos C/2",
         brand: 'Maped',
         type: "borrachas",
         price: '9.95',
@@ -391,7 +391,7 @@ const data = [
     },
     {
         img: "./images/kit-4-canetas-bic-cores.webp",
-        name: "Canetas coloridas 1.2mm c/4",
+        name: "Canetas coloridas 1.2mm C/4",
         brand: 'Bic',
         type: "canetas",
         price: '7.95',
@@ -399,7 +399,7 @@ const data = [
     },
     {
         img: "./images/kit-10-canetas-bic-cores.webp",
-        name: "Canetas coloridas 1.2mm c/10",
+        name: "Canetas coloridas 1.2mm C/10",
         brand: 'Bic',
         type: "canetas",
         price: '19.95',
@@ -572,7 +572,7 @@ const data = [
     //elásticos
     {
         img: "./images/elastico-redbor-60.jpg",
-        name: "Elásticos c/60",
+        name: "Elásticos C/60",
         brand: 'Redbor',
         type: "elasticos",
         price: '3.95',
@@ -580,7 +580,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-60.jpg",
-        name: "Elásticos c/60",
+        name: "Elásticos C/60",
         brand: 'Mercur',
         type: "elasticos",
         price: '7.95',
@@ -588,7 +588,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-120.webp",
-        name: "Elásticos c/120",
+        name: "Elásticos C/120",
         brand: 'Mercur',
         type: "elasticos",
         price: '14.95',
@@ -596,7 +596,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-1200.jpg",
-        name: "Elásticos c/1200",
+        name: "Elásticos C/1200",
         brand: 'Mercur',
         type: "elasticos",
         price: '59.95',
@@ -604,7 +604,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-2200.jpg",
-        name: "Elásticos c/2200",
+        name: "Elásticos C/2200",
         brand: 'Mercur',
         type: "elasticos",
         price: '99.95',
@@ -639,7 +639,7 @@ const data = [
     //grampos
     {
         img: "./images/grampo-2313.jpg",
-        name: "Grampos 23/13 c/1000",
+        name: "Grampos 23/13 C/1000",
         brand: 'Acc',
         type: "grampos",
         price: '9.95',
@@ -647,7 +647,7 @@ const data = [
     },
     {
         img: "./images/grampo-frama.webp",
-        name: "Grampos 26/6 c/5000",
+        name: "Grampos 26/6 C/5000",
         brand: 'Frama',
         type: "grampos",
         price: '9.95',
@@ -655,7 +655,7 @@ const data = [
     },
     {
         img: "./images/grampo-onda.webp",
-        name: "Grampos 26/6 c/5000",
+        name: "Grampos 26/6 C/5000",
         brand: 'Onda',
         type: "grampos",
         price: '8.95',
@@ -663,7 +663,7 @@ const data = [
     },
     {
         img: "./images/grampo-masterprint.webp",
-        name: "Grampos 26/6 c/5000",
+        name: "Grampos 26/6 C/5000",
         brand: 'Masterprint',
         type: "grampos",
         price: '9.95',
@@ -680,7 +680,7 @@ const data = [
     },
     {
         img: "./images/lapis-serelepe-caixa.webp",
-        name: "Caixa de Lápis Preto N2 c/144",
+        name: "Caixa de Lápis Preto N2 C/144",
         brand: 'Serelepe',
         type: "lapis",
         price: '59.95',
@@ -688,7 +688,7 @@ const data = [
     },
     {
         img: "./images/lapis-onda-caixa.webp",
-        name: "Caixa de Lápis Preto N2 c/144",
+        name: "Caixa de Lápis Preto N2 C/144",
         brand: 'onda',
         type: "lapis",
         price: '59.95',
@@ -705,7 +705,7 @@ const data = [
     //lapis de cor
         {
         img: "./images/lapis-de-cor-faber-castell.webp",
-        name: "Ecolápis de Cor Sextavado c/36",
+        name: "Ecolápis de Cor Sextavado C/36",
         brand: 'Faber-Castell',
         type: "lapis-de-cor",
         price: '69.95',
@@ -713,7 +713,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-naruto.jfif",
-        name: "Lápis de Cor Naruto Shippudden c/12",
+        name: "Lápis de Cor Naruto Shippudden C/12",
         brand: 'Viz',
         type: "lapis-de-cor",
         price: '19.95',
@@ -721,7 +721,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-barbie.webp",
-        name: "Lápis de Cor Barbie c/12",
+        name: "Lápis de Cor Barbie C/12",
         brand: 'Tris',
         type: "lapis-de-cor",
         price: '19.95',
@@ -729,7 +729,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-batman.webp",
-        name: "Lápis de Cor Batman c/12",
+        name: "Lápis de Cor Batman C/12",
         brand: 'Tris',
         type: "lapis-de-cor",
         price: '19.95',
@@ -737,7 +737,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-tons-de-pele-tris.webp",
-        name: "Lápis de Cor Tons de Pele c/12",
+        name: "Lápis de Cor Tons de Pele C/12",
         brand: 'Tris',
         type: "lapis-de-cor",
         price: '17.95',
@@ -745,7 +745,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-serelepe.webp",
-        name: "Lápis de Cor c/12",
+        name: "Lápis de Cor C/12",
         brand: 'Serelepe',
         type: "lapis-de-cor",
         price: '8.95',
@@ -753,7 +753,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-onda-12.webp",
-        name: "Lápis de Cor Sextavado c/12",
+        name: "Lápis de Cor Sextavado C/12",
         brand: 'Onda',
         type: "lapis-de-cor",
         price: '8.95',
@@ -761,7 +761,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-leo&leo.webp",
-        name: "Lápis de Cor Redondo c/12",
+        name: "Lápis de Cor Redondo C/12",
         brand: 'Leo&Leo',
         type: "lapis-de-cor",
         price: '8.95',
@@ -769,7 +769,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-onda-24.jpg",
-        name: "Lápis de Cor Redondo c/24",
+        name: "Lápis de Cor Redondo C/24",
         brand: 'Onda',
         type: "lapis-de-cor",
         price: '19.95',
@@ -777,7 +777,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-onda-big.webp",
-        name: "Lápis de Cor BIG triangular c/12",
+        name: "Lápis de Cor BIG triangular C/12",
         brand: 'Onda',
         type: "lapis-de-cor",
         price: '19.95',
@@ -787,7 +787,7 @@ const data = [
     //marca-textos
     {
         img: "./images/marca-texto-pastel-bic.jpg",
-        name: "Marca-texto Pastel c/4",
+        name: "Marca-texto Pastel C/4",
         brand: 'Bic',
         type: "marca-textos",
         price: '14.95',
@@ -795,7 +795,7 @@ const data = [
     },
     {
         img: "./images/marca-texto-neon-keep.jpg",
-        name: "Marca-texto Neon c/4",
+        name: "Marca-texto Neon C/4",
         brand: 'Keep',
         type: "marca-textos",
         price: '14.95',
@@ -988,7 +988,7 @@ const data = [
     //tintas
     {
         img: "./images/tinta-guache-caixinha.webp",
-        name: "Tinta Guache Escolar 15ml c/6",
+        name: "Tinta Guache Escolar 15ml C/6",
         brand: 'Piratininga',
         type: "tintas",
         price: '5.95',
