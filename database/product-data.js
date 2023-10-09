@@ -12,7 +12,7 @@ const data = [
     //agendas
     {
         img: "./images/agenda-pepper.webp",
-        name: "Agenda Costurada Pepper M4 160fls 2023",
+        name: "Agenda Costurada Pepper M4 160FLs 2023",
         brand: 'Tilibra',
         type: "agendas",
         price: '19.95',
@@ -20,7 +20,7 @@ const data = [
     },
     {
         img: "./images/agenda-pratika-master.webp",
-        name: "Agenda Costurada Pratika Master M4 176fls 2023",
+        name: "Agenda Costurada Pratika Master M4 176FLs 2023",
         brand: 'Tilibra',
         type: "agendas",
         price: '19.95',
@@ -28,7 +28,7 @@ const data = [
     },
     {
         img: "./images/agenda-napoli.webp",
-        name: "Agenda Costurada Napoli M5 176fls 2023",
+        name: "Agenda Costurada Napoli M5 176FLs 2023",
         brand: 'Tilibra',
         type: "agendas",
         price: '19.95',
@@ -36,7 +36,7 @@ const data = [
     },
     {
         img: "./images/agenda-infantil.jpg",
-        name: "Agenda Escolar Infantil 96fls",
+        name: "Agenda Escolar Infantil 96FLs",
         brand: 'Foroni',
         type: "agendas",
         price: '14.95',
@@ -134,13 +134,45 @@ const data = [
         price: '11.95',
         falta: false,
     },
-    //bingo
+    //blocos e talões
     {
         img: "./images/bingo-sidgraph.jpg",
-        name: "Cartela de Bingo 100fl",
+        name: "Cartela de Bingo 100FL",
         brand: 'Sidgraph',
-        type: "bingo",
+        type: "blocos-e-taloes",
         price: '5.95',
+        falta: false,
+    },
+    {
+        img: "./images/recibo-comercial-tilibra-100fl.webp",
+        name: "Recibo Comercial com Canhoto 100FL",
+        brand: 'Tilibra',
+        type: "blocos-e-taloes",
+        price: '5.95',
+        falta: false,
+    },
+    {
+        img: "./images/recibo-comercial-tilibra-50fl.webp",
+        name: "Recibo Comercial com Canhoto 50FL",
+        brand: 'Tilibra',
+        type: "blocos-e-taloes",
+        price: '3.95',
+        falta: false,
+    },
+    {
+        img: "./images/talao-de-comando-2-corpos-100fl.webp",
+        name: "Talão de Comando 2 Corpos 100FL",
+        brand: 'Tilibra',
+        type: "blocos-e-taloes",
+        price: '3.95',
+        falta: false,
+    },
+    {
+        img: "./images/talao-de-comando-3-corpos-100fl.webp",
+        name: "Talão de Comando 3 Corpos 100FL",
+        brand: 'Tilibra',
+        type: "blocos-e-taloes",
+        price: '?.95',
         falta: false,
     },
     //bobinas
@@ -227,7 +259,7 @@ const data = [
     },
     {
         img: "./images/borracha-maped-shakky.webp",
-        name: "Borracha Shakky Bichinhos c/2",
+        name: "Borracha Shakky Bichinhos C/2",
         brand: 'Maped',
         type: "borrachas",
         price: '9.95',
@@ -277,9 +309,33 @@ const data = [
     },
     //calculadoras
     {
+        img: "./images/calculadora-kk-800a.webp",
+        name: "Calculadora KK-800A",
+        brand: 'Kenko',
+        type: "calculadoras",
+        price: '29.95',
+        falta: false,
+    },
+    {
         img: "./images/calculadora-brw.jpg",
         name: "Calculadora Eletrônica de Mesa 12 Dígitos",
         brand: 'Brw',
+        type: "calculadoras",
+        price: '29.95',
+        falta: false,
+    },
+    {
+        img: "./images/calculadora-brw-de-bolso.webp",
+        name: "Calculadora de Bolso 8 dígitos",
+        brand: 'Brw',
+        type: "calculadoras",
+        price: '19.95',
+        falta: false,
+    },
+    {
+        img: "./images/calculadora-elgin-mv4122.jpg",
+        name: "Calculadora de mesa MV4122 12 Dígitos",
+        brand: 'Elgin',
         type: "calculadoras",
         price: '29.95',
         falta: false,
@@ -335,7 +391,7 @@ const data = [
     },
     {
         img: "./images/caneta-fabber.webp",
-        name: "Caneta 1.0mm",
+        name: "Caneta Trillux 032 Medium 1.0mm",
         brand: 'Fabber-Castell',
         type: "canetas",
         price: '1.50',
@@ -367,7 +423,7 @@ const data = [
     },
     {
         img: "./images/caneta-pilot-bp-1.webp",
-        name: "Caneta BP-1 1.0mm",
+        name: "Caneta BP-1 Inox 1.0mm",
         brand: 'Pilot',
         type: "canetas",
         price: '3.95',
@@ -391,7 +447,7 @@ const data = [
     },
     {
         img: "./images/kit-4-canetas-bic-cores.webp",
-        name: "Canetas coloridas 1.2mm c/4",
+        name: "Canetas coloridas 1.2mm C/4",
         brand: 'Bic',
         type: "canetas",
         price: '7.95',
@@ -399,7 +455,7 @@ const data = [
     },
     {
         img: "./images/kit-10-canetas-bic-cores.webp",
-        name: "Canetas coloridas 1.2mm c/10",
+        name: "Canetas coloridas 1.2mm C/10",
         brand: 'Bic',
         type: "canetas",
         price: '19.95',
@@ -426,6 +482,39 @@ const data = [
         name: "Caneta em Gel Neon",
         brand: 'Onda',
         type: "canetas",
+        price: '4.95',
+        falta: false,
+    },
+    //clips
+    {
+        img: "./images/clips-20-ecco-100.webp",
+        name: "Clips Galvanizado N°2/0 C/100",
+        brand: 'Ecco',
+        type: "clips",
+        price: '4.95',
+        falta: false,
+    },
+    {
+        img: "./images/clips-40-acc-50.webp",
+        name: "Clips Galvanizado N°4/0 C/50",
+        brand: 'Acc',
+        type: "clips",
+        price: '4.95',
+        falta: false,
+    },
+    {
+        img: "./images/clips-60-ecco-50.webp",
+        name: "Clips Galvanizado N°6/0 C/100",
+        brand: 'Ecco',
+        type: "clips",
+        price: '4.95',
+        falta: false,
+    },
+    {
+        img: "./images/clips-80-ecco-25.webp",
+        name: "Clips Galvanizado N°8/0 C/100",
+        brand: 'Ecco',
+        type: "clips",
         price: '4.95',
         falta: false,
     },
@@ -476,6 +565,39 @@ const data = [
         brand: 'Piratininga',
         type: "colas",
         price: '3.95',
+        falta: false,
+    },
+    //cola quente
+    {
+        img: "./images/pistola-cola-quente-pequena-onda.jpg",
+        name: "Pistola Cola Quente Pequena",
+        brand: 'Onda',
+        type: "cola-quente",
+        price: '19.95',
+        falta: false,
+    },
+    {
+        img: "./images/pistola-cola-quente-grande-onda.jpg",
+        name: "Pistola Cola Quente Grande",
+        brand: 'Onda',
+        type: "cola-quente",
+        price: '29.95',
+        falta: false,
+    },
+    {
+        img: "./images/cola-quente-grosso.webp",
+        name: "Bastão de Cola Quente Grosso",
+        brand: 'Nexel',
+        type: "cola-quente",
+        price: '2.00',
+        falta: false,
+    },
+    {
+        img: "./images/cola-quente-fino.jpg",
+        name: "Bastão de Cola Quente Fino",
+        brand: 'Nexel',
+        type: "cola-quente",
+        price: '1.00',
         falta: false,
     },
     //compassos
@@ -572,15 +694,15 @@ const data = [
     //elásticos
     {
         img: "./images/elastico-redbor-60.jpg",
-        name: "Elásticos c/60",
+        name: "Elásticos Amarelos C/60",
         brand: 'Redbor',
         type: "elasticos",
         price: '3.95',
         falta: false,
-    },
+    },  
     {
         img: "./images/elastico-mercur-60.jpg",
-        name: "Elásticos c/60",
+        name: "Elásticos Amarelos C/60",
         brand: 'Mercur',
         type: "elasticos",
         price: '7.95',
@@ -588,7 +710,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-120.webp",
-        name: "Elásticos c/120",
+        name: "Elásticos Amarelos C/120",
         brand: 'Mercur',
         type: "elasticos",
         price: '14.95',
@@ -596,7 +718,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-1200.jpg",
-        name: "Elásticos c/1200",
+        name: "Elásticos Amarelos C/1200",
         brand: 'Mercur',
         type: "elasticos",
         price: '59.95',
@@ -604,7 +726,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-2200.jpg",
-        name: "Elásticos c/2200",
+        name: "Elásticos Amarelos C/2200",
         brand: 'Mercur',
         type: "elasticos",
         price: '99.95',
@@ -627,6 +749,31 @@ const data = [
         price: '7.00',
         falta: false,
     },
+    //envelopes
+    {
+        img: "./images/envelope-sko34.webp",
+        name: "Envelope Ouro 80g SKO 34",
+        brand: 'Scrity',
+        type: "envelopes",
+        price: '0.75',
+        falta: false,
+    },
+    {
+        img: "./images/envelope-skn34.webp",
+        name: "Envelope Ouro 80g SKN 34",
+        brand: 'Scrity',
+        type: "envelopes",
+        price: '0.75',
+        falta: false,
+    },
+    {
+        img: "./images/envelope-sof34.webp",
+        name: "Envelope Ouro 80g SOF 34",
+        brand: 'Scrity',
+        type: "envelopes",
+        price: '0.75',
+        falta: false,
+    },
     //extrator
     {
         img: "./images/extrator-chaparrau.jpg",
@@ -636,10 +783,45 @@ const data = [
         price: '4.95',
         falta: false,
     },
+    //giz de cera
+    {
+        img: "./images/giz-de-cera-pira.jpg",
+        name: "Giz de Cera C/12 Cores",
+        brand: 'Piratininga',
+        type: "giz-de-cera",
+        price: '5.95',
+        falta: false,
+    },
+    //giz-escolar
+    {
+        img: "./images/giz-escolar-branco.webp",
+        name: "Giz Escolar Branco",
+        brand: 'Delta',
+        type: "giz-escolar",
+        price: '4.95',
+        falta: false,
+    },
+    {
+        img: "./images/giz-escolar-colorido.jfif",
+        name: "Giz Escolar Colorido",
+        brand: 'Delta',
+        type: "giz-escolar",
+        price: '5.95',
+        falta: false,
+    },
+    //grampeadores
+    {
+        img: "./images/grampeador-maped-a17.jpg",
+        name: "Grampeador de Mesa Preto A17",
+        brand: 'Maped',
+        type: "grampeadores",
+        price: '34.95',
+        falta: false,
+    },
     //grampos
     {
         img: "./images/grampo-2313.jpg",
-        name: "Grampos 23/13 c/1000",
+        name: "Grampos 23/13 C/1000",
         brand: 'Acc',
         type: "grampos",
         price: '9.95',
@@ -647,7 +829,7 @@ const data = [
     },
     {
         img: "./images/grampo-frama.webp",
-        name: "Grampos 26/6 c/5000",
+        name: "Grampos 26/6 C/5000",
         brand: 'Frama',
         type: "grampos",
         price: '9.95',
@@ -655,7 +837,7 @@ const data = [
     },
     {
         img: "./images/grampo-onda.webp",
-        name: "Grampos 26/6 c/5000",
+        name: "Grampos 26/6 C/5000",
         brand: 'Onda',
         type: "grampos",
         price: '8.95',
@@ -663,7 +845,7 @@ const data = [
     },
     {
         img: "./images/grampo-masterprint.webp",
-        name: "Grampos 26/6 c/5000",
+        name: "Grampos 26/6 C/5000",
         brand: 'Masterprint',
         type: "grampos",
         price: '9.95',
@@ -680,7 +862,7 @@ const data = [
     },
     {
         img: "./images/lapis-serelepe-caixa.webp",
-        name: "Caixa de Lápis Preto N2 c/144",
+        name: "Caixa de Lápis Preto N2 C/144",
         brand: 'Serelepe',
         type: "lapis",
         price: '59.95',
@@ -688,7 +870,7 @@ const data = [
     },
     {
         img: "./images/lapis-onda-caixa.webp",
-        name: "Caixa de Lápis Preto N2 c/144",
+        name: "Caixa de Lápis Preto N2 C/144",
         brand: 'onda',
         type: "lapis",
         price: '59.95',
@@ -705,7 +887,7 @@ const data = [
     //lapis de cor
         {
         img: "./images/lapis-de-cor-faber-castell.webp",
-        name: "Ecolápis de Cor Sextavado c/36",
+        name: "Ecolápis de Cor Sextavado C/36",
         brand: 'Faber-Castell',
         type: "lapis-de-cor",
         price: '69.95',
@@ -713,7 +895,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-naruto.jfif",
-        name: "Lápis de Cor Naruto Shippudden c/12",
+        name: "Lápis de Cor Naruto Shippudden C/12",
         brand: 'Viz',
         type: "lapis-de-cor",
         price: '19.95',
@@ -721,7 +903,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-barbie.webp",
-        name: "Lápis de Cor Barbie c/12",
+        name: "Lápis de Cor Barbie C/12",
         brand: 'Tris',
         type: "lapis-de-cor",
         price: '19.95',
@@ -729,7 +911,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-batman.webp",
-        name: "Lápis de Cor Batman c/12",
+        name: "Lápis de Cor Batman C/12",
         brand: 'Tris',
         type: "lapis-de-cor",
         price: '19.95',
@@ -737,7 +919,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-tons-de-pele-tris.webp",
-        name: "Lápis de Cor Tons de Pele c/12",
+        name: "Lápis de Cor Tons de Pele C/12",
         brand: 'Tris',
         type: "lapis-de-cor",
         price: '17.95',
@@ -745,7 +927,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-serelepe.webp",
-        name: "Lápis de Cor c/12",
+        name: "Lápis de Cor C/12",
         brand: 'Serelepe',
         type: "lapis-de-cor",
         price: '8.95',
@@ -753,7 +935,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-onda-12.webp",
-        name: "Lápis de Cor Sextavado c/12",
+        name: "Lápis de Cor Sextavado C/12",
         brand: 'Onda',
         type: "lapis-de-cor",
         price: '8.95',
@@ -761,7 +943,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-leo&leo.webp",
-        name: "Lápis de Cor Redondo c/12",
+        name: "Lápis de Cor Redondo C/12",
         brand: 'Leo&Leo',
         type: "lapis-de-cor",
         price: '8.95',
@@ -769,7 +951,7 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-onda-24.jpg",
-        name: "Lápis de Cor Redondo c/24",
+        name: "Lápis de Cor Redondo C/24",
         brand: 'Onda',
         type: "lapis-de-cor",
         price: '19.95',
@@ -777,17 +959,57 @@ const data = [
     },
     {
         img: "./images/lapis-de-cor-onda-big.webp",
-        name: "Lápis de Cor BIG triangular c/12",
+        name: "Lápis de Cor BIG triangular C/12",
         brand: 'Onda',
         type: "lapis-de-cor",
         price: '19.95',
         falta: false,
     },
-    
+    //lapiseiras
+    {
+        img: "./images/lapiseira-onda-07.webp",
+        name: "Lapiseira de Metal 0.7mm Azul",
+        brand: 'Onda',
+        type: "lapiseiras",
+        price: '12.95',
+        falta: false,
+    },
+    {
+        img: "./images/lapiseira-onda-05.webp",
+        name: "Lapiseira de Metal 0.5mm Preta",
+        brand: 'Onda',
+        type: "lapiseiras",
+        price: '12.95',
+        falta: false,
+    },
+    {
+        img: "./images/lapiseira-onda-09.webp",
+        name: "Lapiseira de Metal 0.9mm Preta",
+        brand: 'Onda',
+        type: "lapiseiras",
+        price: '12.95',
+        falta: false,
+    },
+    {
+        img: "./images/lapiseira-juice-keep-07.webp",
+        name: "Lapiseira Juice 0.7mm Cores",
+        brand: 'Keep',
+        type: "lapiseiras",
+        price: '5.95',
+        falta: false,
+    },
+    {
+        img: "./images/lapiseira-tris-college-20.webp",
+        name: "Lapiseira College 2.0mm",
+        brand: 'Tris',
+        type: "lapiseiras",
+        price: '7.95',
+        falta: true,
+    },
     //marca-textos
     {
         img: "./images/marca-texto-pastel-bic.jpg",
-        name: "Marca-texto Pastel c/4",
+        name: "Marca-texto Pastel C/4",
         brand: 'Bic',
         type: "marca-textos",
         price: '14.95',
@@ -795,7 +1017,7 @@ const data = [
     },
     {
         img: "./images/marca-texto-neon-keep.jpg",
-        name: "Marca-texto Neon c/4",
+        name: "Marca-texto Neon C/4",
         brand: 'Keep',
         type: "marca-textos",
         price: '14.95',
@@ -850,6 +1072,31 @@ const data = [
         price: '5.95',
         falta: false,
     },
+    //massa de modelar
+    {
+        img: "./images/massa-de-modelar-acrilex.webp",
+        name: "Massa de Modelar SOFT C/12 Cores",
+        brand: 'Acrilex',
+        type: "massa-de-modelar",
+        price: '8.95',
+        falta: false,
+    },
+    {
+        img: "./images/massa-de-modelar-koala.jpg",
+        name: "Massa de Modelar C/12 Cores",
+        brand: 'Koala',
+        type: "massa-de-modelar",
+        price: '8.95',
+        falta: false,
+    },
+    {
+        img: "./images/massa-de-modelar-onda.webp",
+        name: "Massa de Modelar C/12 Cores",
+        brand: 'Onda',
+        type: "massa-de-modelar",
+        price: '8.95',
+        falta: false,
+    },
     //mouses
     {
         img: "./images/mouse-com-fio.webp",
@@ -887,7 +1134,7 @@ const data = [
     //papel fotográfico
     {
         img: "./images/papel-foto-nexel-20fl.webp",
-        name: "Papel Fotográfico 180gr 20fl",
+        name: "Papel Fotográfico 180gr 20FL",
         brand: 'Nexel',
         type: "papel-fotografico",
         price: '12.00',
@@ -895,7 +1142,7 @@ const data = [
     },
     {
         img: "./images/papel-foto-nexel-50fl.webp",
-        name: "Papel Fotográfico 180gr 50fl",
+        name: "Papel Fotográfico 180gr 50FL",
         brand: 'Nexel',
         type: "papel-fotografico",
         price: '25.00',
@@ -903,7 +1150,7 @@ const data = [
     },
     {
         img: "./images/papel-foto-adesivo-nexel-20fl.webp",
-        name: "Papel Fotográfico Adesivo 130gr 20fl",
+        name: "Papel Fotográfico Adesivo 130gr 20FL",
         brand: 'Nexel',
         type: "papel-fotografico",
         price: '18.00',
@@ -911,7 +1158,7 @@ const data = [
     },
     {
         img: "./images/papel-foto-adesivo-nexel-50fl.webp",
-        name: "Papel Fotográfico Adesivo 130gr 50fl",
+        name: "Papel Fotográfico Adesivo 130gr 50FL",
         brand: 'Nexel',
         type: "papel-fotografico",
         price: '35.00',
@@ -919,27 +1166,84 @@ const data = [
     },
     {
         img: "./images/papel-foto-baag-50fl.webp",
-        name: "Papel Fotográfico 135gr 50fl",
+        name: "Papel Fotográfico 135gr 50FL",
         brand: 'Baag',
         type: "papel-fotografico",
         price: '25.00',
         falta: false,
     },
-    //flip chart
+    //FLip chart
     {
         img: "./images/flip-chart.jpg",
         name: "Flip Chart",
         brand: 'Mademaster',
-        type: "flip-chart",
+        type: "Flip-chart",
         price: '149.95',
         falta: false,
     },
     {
         img: "./images/papel-para-flip-chart-stalo.webp",
-        name: "Papel para Flip Chart 50fl",
+        name: "Papel para Flip Chart 50FL",
         brand: 'Stalo',
-        type: "flip-chart",
+        type: "Flip-chart",
         price: '79.95',
+        falta: false,
+    },
+    //Papel sulfite
+    { 
+        img: "./images/resma-papel-chamex.webp",
+        name: "Resma de Papel Ofício Chamex A4",
+        brand: 'Sylvamo',
+        type: "papel-sulfite",
+        price: '25.00',
+        falta: false,
+    },
+    {
+        img: "./images/chamequinho-branco.webp",
+        name: "Chamequinho Branco A4 100FL",
+        brand: 'Sylvamo',
+        type: "papel-sulfite",
+        price: '6.95',
+        falta: false,
+    },
+    {
+        img: "./images/chamequinho-amarelo.webp",
+        name: "Chamequinho Amarelo A4 100FL",
+        brand: 'Sylvamo',
+        type: "papel-sulfite",
+        price: '7.95',
+        falta: false,
+    },
+    {
+        img: "./images/chamequinho-verde.webp",
+        name: "Chamequinho Verde A4 100FL",
+        brand: 'Sylvamo',
+        type: "papel-sulfite",
+        price: '7.95',
+        falta: false,
+    },
+    {
+        img: "./images/chamequinho-rosa.webp",
+        name: "Chamequinho Rosa A4 100FL",
+        brand: 'Sylvamo',
+        type: "papel-sulfite",
+        price: '7.95',
+        falta: false,
+    },
+    {
+        img: "./images/chamequinho-azul.webp",
+        name: "Chamequinho Azul A4 100FL",
+        brand: 'Sylvamo',
+        type: "papel-sulfite",
+        price: '7.95',
+        falta: false,
+    },
+    {
+        img: "./images/chamequinho-colorido.webp",
+        name: "Chamequinho Colorido A4 100FL",
+        brand: 'Sylvamo',
+        type: "papel-sulfite",
+        price: '9.95',
         falta: false,
     },
     //perfuradores
@@ -988,7 +1292,7 @@ const data = [
     //tintas
     {
         img: "./images/tinta-guache-caixinha.webp",
-        name: "Tinta Guache Escolar 15ml c/6",
+        name: "Tinta Guache Escolar 15ml C/6",
         brand: 'Piratininga',
         type: "tintas",
         price: '5.95',
@@ -1024,6 +1328,23 @@ const data = [
         brand: 'Nexel',
         type: "tintas-imp",
         price: '14.95',
+        falta: false,
+    },
+    //variados
+    {
+        img: "./images/lixa-de-unha.jpg",
+        name: "Lixa de unha",
+        brand: 'Pendente',
+        type: "variados",
+        price: '0.50',
+        falta: false,
+    },
+    {
+        img: "./images/papel-pautado.jpg",
+        name: "Papel Almaço/Pautado C/10",
+        brand: 'Pendente',
+        type: "variados",
+        price: '2.00',
         falta: false,
     },
 ]
