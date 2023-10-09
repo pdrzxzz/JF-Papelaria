@@ -10,65 +10,16 @@ let destaques = document.querySelector('#destaques')
 let services = document.querySelector('#services')
 let servicesUl = document.querySelector('#services-ul')
 
-SectionHeading.textContent = 'Destaques'
-productHeader.append(SectionHeading)
-form.classList.add('none')
-servicesHeader.classList.add('none')
-servicesUl.classList.add('none')
-const productsChildren = Array.from(productsDiv.children);
-productsChildren.forEach(product => {
-    productsDiv.removeChild(product);
-});
-let productsList = []
-for (product of destaquesData) {
-    productsList.push(product)
-}
-//ordenar produtos por preço
-productsList.sort(sortPrice)
-for (product of productsList) {
-    //adicionar os produtos na tela
-    let newProductSection = document.createElement('section')
-    newProductSection.classList.add('product-section')
-    newProductSection.width = '50px'
-    let newProductImgAnchor = document.createElement('a')
-    newProductImgAnchor.classList.add('img-anchor')
-    newProductImgAnchor.target = '_blank'
-    newProductImgAnchor.href = product.img
-    let newProductImg = document.createElement('img')
-    newProductImg.src = product.img
-    newProductImg.classList.add('product-img')
-    newProductImgAnchor.append(newProductImg)
-    let newProductName = document.createElement('h2')
-    newProductName.textContent = product.name
-    newProductName.classList.add('product-name')
-    let newProductBio = document.createElement('div')
-    newProductBio.classList.add('product-bio')
-    let newProductBrand = document.createElement('h3')
-    newProductBrand.textContent = 'Marca: ' + product.brand
-    newProductBrand.classList.add('product-brand')
-    let newProductPrice = document.createElement('h2')
-    if (product.falta == true) {
-        newProductPrice.textContent = 'EM FALTA'
-        newProductSection.style.opacity = 0.85
-    }
-    else {
-        productPrice = product.price.replace('.', ',')
-        newProductPrice.textContent = 'R$ ' + productPrice
-    }
-    newProductPrice.classList.add('product-price')
-    newProductBio.append(newProductName, newProductBrand, newProductPrice)
-    newProductSection.append(newProductImgAnchor, newProductBio)
-    newProductSection.classList.add('animation')
-    productsDiv.append(newProductSection)
-    productHeader.append(productsDiv)
-}
+starter()
 
 destaques.addEventListener('click', () => {
-    SectionHeading.textContent = 'Destaques'
+    categorias.classList.remove('chosen')
+    destaques.classList.add('chosen')
+    services.classList.remove('chosen')
+    todos.classList.remove('chosen')
+    SectionHeading.textContent = ''
     productHeader.append(SectionHeading)
     form.classList.add('none')
-    servicesHeader.classList.add('none')
-    servicesUl.classList.add('none')
     const productsChildren = Array.from(productsDiv.children);
     productsChildren.forEach(product => {
         productsDiv.removeChild(product);
@@ -121,10 +72,12 @@ destaques.addEventListener('click', () => {
 
 
 todos.addEventListener('click', () => {
+    categorias.classList.remove('chosen')
+    destaques.classList.remove('chosen')
+    services.classList.remove('chosen')
+    todos.classList.add('chosen')
     form.classList.add('none')
-    servicesHeader.classList.add('none')
-    servicesUl.classList.add('none')
-    SectionHeading.textContent = 'Todos os produtos'
+    SectionHeading.textContent = ''
     productHeader.append(SectionHeading)
     const productsChildren = Array.from(productsDiv.children);
     productsChildren.forEach(product => {
@@ -173,20 +126,27 @@ todos.addEventListener('click', () => {
         productsDiv.append(newProductSection)
         productHeader.append(productsDiv)
     }
-    productHeader.scrollIntoView({ behavior: 'smooth' })
+    productHeader.scrollIntoView({behavior:'smooth'})
 })
 
 categorias.addEventListener('click', () => {
-    servicesHeader.classList.add('none')
-    servicesUl.classList.add('none')
+    categorias.classList.add('chosen')
+    destaques.classList.remove('chosen')
+    services.classList.remove('chosen')
+    todos.classList.remove('chosen')
     SectionHeading.textContent = ''
     for (product of productsDiv.children) {
         productsDiv.remove(product)
     }
-    form.classList.toggle('none')
+    form.classList.remove('none')
+    form.scrollIntoView({behavior: 'smooth'})
 })
 
 services.addEventListener('click', () => {
+    categorias.classList.remove('chosen')
+    destaques.classList.remove('chosen')
+    services.classList.add('chosen')
+    todos.classList.remove('chosen')
     const productsChildren = Array.from(productsDiv.children);
     productsChildren.forEach(product => {
         productsDiv.removeChild(product);
@@ -194,8 +154,35 @@ services.addEventListener('click', () => {
     SectionHeading.textContent = ''
     productHeader.append(SectionHeading)
     form.classList.add('none')
-    servicesUl.classList.toggle('none')
-    servicesHeader.classList.toggle('none')
+    let productsList = []
+    for (product of servicesData) {
+        productsList.push(product)
+    }
+    //ordenar produtos por preço
+    productsList.sort(sortPrice)
+    for (product of productsList) {
+        //adicionar os produtos na tela
+        let newProductSection = document.createElement('section')
+        newProductSection.classList.add('product-section')
+        newProductSection.style.flexDirection = 'column'
+        newProductSection.width = '50px'
+        let newProductImg = document.createElement('img')
+        newProductImg.src = product.img
+        newProductImg.classList.add('product-img')
+        newProductImg.style.width = '90%'
+        newProductImg.style.height = '90%'
+        let newProductName = document.createElement('h2')
+        newProductName.textContent = product.name
+        newProductName.classList.add('product-name')
+        let newProductBio = document.createElement('div')
+        newProductBio.classList.add('product-bio')
+        newProductBio.append(newProductName )
+        newProductSection.append(newProductImg, newProductBio)
+        newProductSection.classList.add('animation')
+        productsDiv.append(newProductSection)
+        productHeader.append(productsDiv)
+    }
+    productHeader.scrollIntoView({behavior:'smooth'})
 })
 
 form.addEventListener('click', () => {
@@ -261,7 +248,62 @@ form.addEventListener('click', () => {
 }
 )
 
-
+function starter() {
+    categorias.classList.remove('chosen')
+    destaques.classList.add('chosen')
+    services.classList.remove('chosen')
+    todos.classList.remove('chosen')
+    SectionHeading.textContent = ''
+    productHeader.append(SectionHeading)
+    form.classList.add('none')
+    const productsChildren = Array.from(productsDiv.children);
+    productsChildren.forEach(product => {
+        productsDiv.removeChild(product);
+    });
+    let productsList = []
+    for (product of destaquesData) {
+        productsList.push(product)
+    }
+    //ordenar produtos por preço
+    productsList.sort(sortPrice)
+    for (product of productsList) {
+        //adicionar os produtos na tela
+        let newProductSection = document.createElement('section')
+        newProductSection.classList.add('product-section')
+        newProductSection.width = '50px'
+        let newProductImgAnchor = document.createElement('a')
+        newProductImgAnchor.classList.add('img-anchor')
+        newProductImgAnchor.target = '_blank'
+        newProductImgAnchor.href = product.img
+        let newProductImg = document.createElement('img')
+        newProductImg.src = product.img
+        newProductImg.classList.add('product-img')
+        newProductImgAnchor.append(newProductImg)
+        let newProductName = document.createElement('h2')
+        newProductName.textContent = product.name
+        newProductName.classList.add('product-name')
+        let newProductBio = document.createElement('div')
+        newProductBio.classList.add('product-bio')
+        let newProductBrand = document.createElement('h3')
+        newProductBrand.textContent = 'Marca: ' + product.brand
+        newProductBrand.classList.add('product-brand')
+        let newProductPrice = document.createElement('h2')
+        if (product.falta == true) {
+            newProductPrice.textContent = 'EM FALTA'
+            newProductSection.style.opacity = 0.85
+        }
+        else {
+            productPrice = product.price.replace('.', ',')
+            newProductPrice.textContent = 'R$ ' + productPrice
+        }
+        newProductPrice.classList.add('product-price')
+        newProductBio.append(newProductName, newProductBrand, newProductPrice)
+        newProductSection.append(newProductImgAnchor, newProductBio)
+        newProductSection.classList.add('animation')
+        productsDiv.append(newProductSection)
+        productHeader.append(productsDiv)
+    }
+}
 function sortPrice(a, b) {
     return a.price - b.price;
 }
