@@ -23,4 +23,8 @@ const servicesData = [
         img: "./services-images/encadernacao.webp",
         name: "Encadernação",
     },
+    {
+        img: "./services-images/digitalizacao.jpg",
+        name: "Digitalização",
+    },
 ]

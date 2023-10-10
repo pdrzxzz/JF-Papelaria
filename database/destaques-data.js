@@ -39,12 +39,4 @@ const destaquesData = [
         price: '12.95',
         falta: false,
     },
-    {
-        img: "./images/kit-metalico-bic.webp",
-        name: "Kit Canetas Metálicas C/3",
-        brand: 'Bic',
-        type: "canetas",
-        price: '29.95',
-        falta: false,
-    },
 ]

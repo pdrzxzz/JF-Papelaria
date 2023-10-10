@@ -74,6 +74,7 @@ header>h2 {
 #heading1 {
     font-size: 3rem;
     margin: 50px 0 30px 0;
+    text-align: center;
 }
 
 #products {
@@ -170,7 +171,6 @@ header>h2 {
     flex-direction: row;
     flex-wrap: wrap;
     width: 95vw;
-    margin-top: 32px;
 }
 
 .product-section {
@@ -346,8 +346,8 @@ header>h2 {
         flex-direction: column;
     }
     .product-img {
-        width: 80vw;
-        height: 80vw;
+        width: 60vw;
+        height: 60vw;
     }
     .product-name, .product-brand {
         text-align: center;

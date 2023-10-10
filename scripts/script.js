@@ -1,6 +1,7 @@
 productsDiv = document.querySelector('#products')
 productHeader = document.querySelector('#product-header')
 servicesHeader = document.querySelector('#services-header')
+let avisoUnidade = document.querySelector('#avisos > h3')
 let form = document.querySelector('#products-form')
 SectionHeading = document.createElement('h2')
 let productSelected = ''
@@ -13,6 +14,7 @@ let servicesUl = document.querySelector('#services-ul')
 starter()
 
 destaques.addEventListener('click', () => {
+    avisoUnidade.classList.remove('none')
     categorias.classList.remove('chosen')
     destaques.classList.add('chosen')
     services.classList.remove('chosen')
@@ -72,6 +74,7 @@ destaques.addEventListener('click', () => {
 
 
 todos.addEventListener('click', () => {
+    avisoUnidade.classList.remove('none')
     categorias.classList.remove('chosen')
     destaques.classList.remove('chosen')
     services.classList.remove('chosen')
@@ -130,6 +133,7 @@ todos.addEventListener('click', () => {
 })
 
 categorias.addEventListener('click', () => {
+    avisoUnidade.classList.remove('none')
     categorias.classList.add('chosen')
     destaques.classList.remove('chosen')
     services.classList.remove('chosen')
@@ -143,6 +147,7 @@ categorias.addEventListener('click', () => {
 })
 
 services.addEventListener('click', () => {
+    avisoUnidade.classList.add('none')
     categorias.classList.remove('chosen')
     destaques.classList.remove('chosen')
     services.classList.add('chosen')
@@ -199,7 +204,7 @@ form.addEventListener('click', () => {
             productsList = []
             for (product of data) {
                 //filtrar os produtos da database
-                if (product.type == productSelected) {
+                if (product.type.includes(productSelected)) {
                     productsList.push(product)
                 }
             }
