@@ -8,6 +8,14 @@ const destaquesData = [
         falta: false,
     },
     {
+        img: "./images/papel-foto-adesivo-nexel-50fl.webp",
+        name: "Papel Fotográfico Adesivo 130gr 50FL",
+        brand: 'Nexel',
+        type: "papel-fotografico",
+        price: '35.00',
+        falta: false,
+    },
+    {
         img: "./images/marcador-quadro-pilot.jpg",
         name: "Marcador WBM-7 Recarregável",
         brand: 'Pilot',
@@ -16,11 +24,11 @@ const destaquesData = [
         falta: false,
     },
     {
-        img: "./images/tinta-marcador-quadro-500ml.webp",
-        name: "Tinta para Marcador de Quadro 500ml",
-        brand: 'Radex',
-        type: "marcador-para-quadro-branco",
-        price: '99.95',
+        img: "./images/papel-foto-nexel-50fl.webp",
+        name: "Papel Fotográfico 180gr 50FL",
+        brand: 'Nexel',
+        type: "papel-fotografico",
+        price: '25.00',
         falta: false,
     },
     {

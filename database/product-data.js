@@ -61,7 +61,7 @@ const data = [
         falta: false,
     },
     {
-        img: "./images/apagador-formato-mouse.jpg",
+        img: "./images/apagador-formato-mouse.jpg", 
         name: "Apagador Magnético em Formato de Mouse",
         brand: 'Radex',
         type: "apagadores",
@@ -72,7 +72,7 @@ const data = [
         img: "./images/limpador-de-quadro-branco.webp",
         name: "Limpador de Quadro Branco Spray",
         brand: 'Radex',
-        type: "apagadoresca",
+        type: "apagadores",
         price: '24.95',
         falta: false,
     },
@@ -534,6 +534,14 @@ const data = [
     },
     //colas
     {
+        img: "./images/cola-t6000-tekbond.jpg",
+        name: "Cola T6000 para Artesanato",
+        brand: 'Tek Bond',
+        type: "colas",
+        price: '19.95',
+        falta: false,
+    },
+    {
         img: "./images/cola-pano-acrilex.webp",
         name: "Cola Pano 35g",
         brand: 'Acrilex',
@@ -686,7 +694,7 @@ const data = [
         brand: 'Radex',
         type: "corretivos",
         price: '9.95',
-        falta: false,
+        falta: true,
     },
     {
         img: "./images/corretivo-fita-mercur.webp",
@@ -845,6 +853,47 @@ const data = [
         price: '4.95',
         falta: false,
     },
+    //fitas 
+    {
+        img: "./images/fita-tartan.webp",
+        name: "Fita Tartan 45mmx50m",
+        brand: '3M',
+        type: "fitas",
+        price: '24.95',
+        falta: false,
+    },
+    {
+        img: "./images/fita-3m-tr.webp",
+        name: "Fita Adesiva Transparente 45mmx50m",
+        brand: '3M',
+        type: "fitas",
+        price: '6.95',
+        falta: false,
+    },
+    {
+        img: "./images/fita-nexel.jpeg",
+        name: "Fita Adesiva Transparente 45mmx50m",
+        brand: 'Nexel',
+        type: "fitas",
+        price: '4.95',
+        falta: false,
+    },
+    {
+        img: "./images/fita-fixa-forte-12mm.webp",
+        name: "Fita Dupla Face Fixa Forte 12mmx2m",
+        brand: '3M',
+        type: "fitas",
+        price: '19.95',
+        falta: false,
+    },
+    {
+        img: "./images/fita-fixa-forte-19mm.jpg",
+        name: "Fita Dupla Face Fixa Forte 19mmx2m",
+        brand: 'Nexel',
+        type: "fitas",
+        price: '24.95',
+        falta: false,
+    },
     //giz de cera
     {
         img: "./images/giz-de-cera-koala.jpg",
@@ -946,6 +995,14 @@ const data = [
         falta: false,
     },
     //informática
+    {
+        img: "./images/fone-de-ouvido-philips.jpeg",
+        name: "Fone de Ouvido Headset com Fio 2000 Series",
+        brand: 'Philips',
+        type: "informatica",
+        price: '99.95',
+        falta: false,
+    },
     {
         img: "./images/teclado-multilaser.webp",
         name: "Teclado Básico com Fio USB",
@@ -1264,6 +1321,15 @@ const data = [
         price: '8.95',
         falta: false,
     },
+    //papel 180gr
+    {
+        img: "./images/chamequinho-180gr.webp",
+        name: "Chamequinho 180gr 50FL",
+        brand: 'Chamex',
+        type: "papel-180gr",
+        price: '19.95',
+        falta: false,
+    },
     //papel fotográfico
     {
         img: "./images/papel-foto-nexel-20fl.webp",
@@ -1489,6 +1555,30 @@ const data = [
     },
     //tesouras
     {
+    img: "./images/tesoura-maped-security.jpg",
+    name: "Tesoura Escolar Security 12cm",
+    brand: 'Maped',
+    type: "tesouras",
+    price: '9.95',
+    falta: false,
+    },
+    {
+        img: "./images/tesoura-maped-soft.jpg",
+        name: "Tesoura Escolar Soft 13cm",
+        brand: 'Maped',
+        type: "tesouras",
+        price: '9.95',
+        falta: false,
+    },
+    {
+        img: "./images/tesoura-escolar-onda.jpg",
+        name: "Tesoura Escolar 13cm Cores",
+        brand: 'Onda',
+        type: "tesouras",
+        price: '4.95',
+        falta: false,
+    },
+    {
         img: "./images/tesoura-912.webp",
         name: "Tesoura Color 9 1/2",
         brand: 'Original Line',
@@ -1563,11 +1653,11 @@ const data = [
     },
     //variados
     {
-        img: "./images/lixa-de-unha.jpg",
-        name: "Lixa de unha",
-        brand: 'Pendente',
+        img: "./images/domino-western.webp",
+        name: "Dominó",
+        brand: 'Western',
         type: "variados",
-        price: '0.50',
+        price: '39.95',
         falta: false,
     },
     {
