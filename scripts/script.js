@@ -88,7 +88,7 @@ destaques.addEventListener('click', () => {
         productsDiv.append(newProductSection)
         productHeader.append(productsDiv)
     }
-    productHeader.scrollIntoView({ behavior: 'smooth' })
+    catalogoSuperior.scrollIntoView({ behavior: 'smooth' })
 })
 
 
@@ -143,7 +143,7 @@ todos.addEventListener('click', () => {
         productsDiv.append(newProductSection)
         productHeader.append(productsDiv)
     }
-    productHeader.scrollIntoView({behavior:'smooth'})
+    catalogoSuperior.scrollIntoView({behavior:'smooth'})
 })
 
 categorias.addEventListener('click', () => {
@@ -199,7 +199,7 @@ services.addEventListener('click', () => {
         productsDiv.append(newProductSection)
         productHeader.append(productsDiv)
     }
-    productHeader.scrollIntoView({behavior:'smooth'})
+    catalogoSuperior.scrollIntoView({behavior:'smooth'})
 })
 
 form.addEventListener('click', () => {
@@ -255,7 +255,7 @@ form.addEventListener('click', () => {
                 productsDiv.append(newProductSection)
                 productHeader.append(productsDiv)
             }
-            productHeader.scrollIntoView({ behavior: 'smooth' })
+            catalogoSuperior.scrollIntoView({ behavior: 'smooth' })
         }
     }
 }
