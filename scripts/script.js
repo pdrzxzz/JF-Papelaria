@@ -8,9 +8,34 @@ let categorias = document.querySelector('#categorias')
 let todos = document.querySelector('#todos-produtos')
 let destaques = document.querySelector('#destaques')
 let services = document.querySelector('#services')
-let servicesUl = document.querySelector('#services-ul')
 
 starter()
+
+var catalogoSuperior = document.getElementById('catalogo-superior');
+
+  // Obtém a posição inicial do elemento
+  var posicaoInicial = catalogoSuperior.offsetTop;
+
+  // Adiciona um ouvinte de evento de rolagem
+  window.addEventListener('scroll', function() {
+    // Obtém a posição atual de rolagem
+    var posicaoAtual = window.pageYOffset;
+
+    var alturaElemento = catalogoSuperior.offsetHeight;
+    // Verifica se a posição de rolagem ultrapassou a posição inicial do elemento
+    if (posicaoAtual >= posicaoInicial) {
+      // Adiciona a classe "sticky" ao elemento para destacá-lo
+      catalogoSuperior.classList.add('sticky');
+      productsDiv.classList.add('down')
+      form.classList.add('down')
+    } else {
+      // Remove a classe "sticky" se a posição de rolagem for anterior à posição inicial
+      catalogoSuperior.classList.remove('sticky');
+      productsDiv.classList.remove('down')
+      form.classList.remove('down')
+    }
+  });
+  
 
 destaques.addEventListener('click', () => {
     categorias.classList.remove('chosen')

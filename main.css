@@ -113,8 +113,23 @@ header>h2 {
     width: 95vw;
 }
 
+#catalogo-superior {
+    background-color: var(--color1);
+}
+
+.sticky {
+    position: fixed;
+    z-index: 99;
+    top: 0
+}
+
+.down {
+    position: relative;
+    top: 136px;
+}
+
 #catalogo-heading>h2 {
-    margin: 20px 0 20px 0;
+    margin: 10px 0;
     cursor: pointer;
 }
 
@@ -227,6 +242,9 @@ header>h2 {
     border-bottom: 3px solid var(--color1);
 }
 
+#credit {
+}
+
 .chosen {
     text-decoration: underline; 
 }
@@ -330,6 +348,12 @@ header>h2 {
     #catalogo-heading {
         text-align: center;
         flex-direction: column;
+    }
+    .down {
+        top: 0
+    }
+    .sticky {
+        position: relative;
     }
 }
 

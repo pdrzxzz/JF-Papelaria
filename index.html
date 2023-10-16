@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="nav-div"><a class='contato' href="https://wa.me/5581973100079" target="_blank" id="whatsapp"> <img
+        <div class="nav-div"><a class='contato' href="https://wa.me/5581985880726" target="_blank" id="whatsapp"> <img
                     id="wpp-logo" class='redesocial' src="logo/wpp-logo.png" alt="">(81)9.8588-0726</a><img id='logo'
                 src="logo/logo.png" alt="logo JF papelaria branca, azul e vermelha"><a class='contato' target="_blank"
                 href="https://www.instagram.com/jfpapelaria52/" id="instagram"><img id='insta-logo' class='redesocial'
@@ -27,6 +27,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <h1 id="heading1">Catálogo de produtos</h1>
+        <div id="catalogo-superior">
         <div class="white-line"></div>
         <div id="catalogo-heading">
             <h2 id="destaques">Destaques</h2>
@@ -34,7 +35,9 @@
             <h2 id="categorias">Categorias</h2>
             <h2 id="services">Serviços</h2>
         </div>
+
         <div class="white-line"></div>
+    </div>
         <form id="products-form" action="" class="none">
             <ul id="products-ul">
                 <li>
@@ -43,9 +46,9 @@
                 </li>
                 
                 <li>
-                    <input type="radio" id="Artigos" value="artigos-para-quadro-branco"
+                    <input type="radio" id="Artigos-para-quadro-branco" value="artigos-para-quadro-branco"
                         name="product" class="hidden-input">
-                    <label for="Artigos">Artigos p/Quadro Branco</label>
+                    <label for="Artigos-para-quadro-branco">Artigos p/Quadro Branco</label>
                 </li>
 
                 <li>
@@ -260,8 +263,8 @@
                 </li>
                 
                 <li>
-                    <input type="radio" id="Papel-sulfite" value="papel-sulfite" name="product" class="hidden-input">
-                    <label for="Papel-sulfite">Papel Sulfite</label>
+                    <input type="radio" id="Papel Sulfite" value="papel-sulfite" name="product" class="hidden-input">
+                    <label for="Papel Sulfite">Papel Sulfite</label>
                 </li>
 
                 <li>
@@ -270,8 +273,13 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="Pasta-catálogo" value="pasta-catalogo" name="product" class="hidden-input">
-                    <label for="Pasta-catálogo">Pasta Catálogo</label>
+                    <input type="radio" id="Pasta-Catálogo" value="pasta-catalogo" name="product" class="hidden-input">
+                    <label for="Pasta-Catálogo">Pasta Catálogo</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="Pasta-Sanfonada" value="pasta-sanfonada" name="product" class="hidden-input">
+                    <label for="Pasta-Sanfonada">Pasta Sanfonada</label>
                 </li>
 
                 <li>
@@ -319,13 +327,11 @@
                 
 
             </ul>
-            <h3 style="text-align: center;">Cadernos, agendas, mochilas, estojos, diários, entre outros itens, não estão disponíveis no catálogo, fale conosco via whatsapp ou instagram.</h3>
-
+            <h3 style="text-align: center;">Cadernos, cadernetas, agendas, mochilas, estojos, diários, entre outros itens, não estão disponíveis no catálogo, fale conosco via Whatsapp ou Instagram.</h3>
 
         </form>
-
     </header>
-
+    <!-- <h4 id="credit">Emanuel Pedroza</h4> -->
     <div class="product-header" id="product-header"></div>
     <div id='products' class="products-div"></div>
     <script src="database/services-data.js"></script>
