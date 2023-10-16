@@ -17,7 +17,7 @@ const servicesData = [
     },
     {
         img: "./services-images/embalagem-correios.webp",
-        name: "Embalagem Correios",
+        name: "Embalagem",
     },
     {
         img: "./services-images/encadernacao.webp",

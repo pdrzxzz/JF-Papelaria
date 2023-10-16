@@ -1,7 +1,6 @@
 productsDiv = document.querySelector('#products')
 productHeader = document.querySelector('#product-header')
 servicesHeader = document.querySelector('#services-header')
-let avisoUnidade = document.querySelector('#avisos > h3')
 let form = document.querySelector('#products-form')
 SectionHeading = document.createElement('h2')
 let productSelected = ''
@@ -14,7 +13,6 @@ let servicesUl = document.querySelector('#services-ul')
 starter()
 
 destaques.addEventListener('click', () => {
-    avisoUnidade.classList.remove('none')
     categorias.classList.remove('chosen')
     destaques.classList.add('chosen')
     services.classList.remove('chosen')
@@ -51,19 +49,15 @@ destaques.addEventListener('click', () => {
         let newProductBio = document.createElement('div')
         newProductBio.classList.add('product-bio')
         let newProductBrand = document.createElement('h3')
-        newProductBrand.textContent = 'Marca: ' + product.brand
+        newProductBrand.textContent = 'Marca: ' + product.brand.toUpperCase()
         newProductBrand.classList.add('product-brand')
-        let newProductPrice = document.createElement('h2')
+        let newProductFalta = document.createElement('h2')
         if (product.falta == true) {
-            newProductPrice.textContent = 'EM FALTA'
+            newProductFalta.textContent = 'EM FALTA'
             newProductSection.style.opacity = 0.85
         }
-        else {
-            productPrice = product.price.replace('.', ',')
-            newProductPrice.textContent = 'R$ ' + productPrice
-        }
-        newProductPrice.classList.add('product-price')
-        newProductBio.append(newProductName, newProductBrand, newProductPrice)
+        newProductFalta.classList.add('product-falta')
+        newProductBio.append(newProductName, newProductBrand, newProductFalta)
         newProductSection.append(newProductImgAnchor, newProductBio)
         newProductSection.classList.add('animation')
         productsDiv.append(newProductSection)
@@ -74,7 +68,6 @@ destaques.addEventListener('click', () => {
 
 
 todos.addEventListener('click', () => {
-    avisoUnidade.classList.remove('none')
     categorias.classList.remove('chosen')
     destaques.classList.remove('chosen')
     services.classList.remove('chosen')
@@ -111,19 +104,15 @@ todos.addEventListener('click', () => {
         let newProductBio = document.createElement('div')
         newProductBio.classList.add('product-bio')
         let newProductBrand = document.createElement('h3')
-        newProductBrand.textContent = 'Marca: ' + product.brand
+        newProductBrand.textContent = 'Marca: ' + product.brand.toUpperCase()
         newProductBrand.classList.add('product-brand')
-        let newProductPrice = document.createElement('h2')
+        let newProductFalta = document.createElement('h2')
         if (product.falta == true) {
-            newProductPrice.textContent = 'EM FALTA'
+            newProductFalta.textContent = 'EM FALTA'
             newProductSection.style.opacity = 0.5
         }
-        else {
-            productPrice = product.price.replace('.', ',')
-            newProductPrice.textContent = 'R$ ' + productPrice
-        }
-        newProductPrice.classList.add('product-price')
-        newProductBio.append(newProductName, newProductBrand, newProductPrice)
+        newProductFalta.classList.add('product-falta')
+        newProductBio.append(newProductName, newProductBrand, newProductFalta)
         newProductSection.append(newProductImgAnchor, newProductBio)
         newProductSection.classList.add('animation')
         productsDiv.append(newProductSection)
@@ -133,7 +122,6 @@ todos.addEventListener('click', () => {
 })
 
 categorias.addEventListener('click', () => {
-    avisoUnidade.classList.remove('none')
     categorias.classList.add('chosen')
     destaques.classList.remove('chosen')
     services.classList.remove('chosen')
@@ -147,7 +135,6 @@ categorias.addEventListener('click', () => {
 })
 
 services.addEventListener('click', () => {
-    avisoUnidade.classList.add('none')
     categorias.classList.remove('chosen')
     destaques.classList.remove('chosen')
     services.classList.add('chosen')
@@ -229,19 +216,15 @@ form.addEventListener('click', () => {
                 let newProductBio = document.createElement('div')
                 newProductBio.classList.add('product-bio')
                 let newProductBrand = document.createElement('h3')
-                newProductBrand.textContent = 'Marca: ' + product.brand
+                newProductBrand.textContent = 'Marca: ' + product.brand.toUpperCase()
                 newProductBrand.classList.add('product-brand')
-                let newProductPrice = document.createElement('h2')
+                let newProductFalta = document.createElement('h2')
                 if (product.falta == true) {
-                    newProductPrice.textContent = 'EM FALTA'
+                    newProductFalta.textContent = 'EM FALTA'
                     newProductSection.style.opacity = 0.5
                 }
-                else {
-                    productPrice = product.price.replace('.', ',')
-                    newProductPrice.textContent = 'R$ ' + productPrice
-                }
-                newProductPrice.classList.add('product-price')
-                newProductBio.append(newProductName, newProductBrand, newProductPrice)
+                newProductFalta.classList.add('product-falta')
+                newProductBio.append(newProductName, newProductBrand, newProductFalta)
                 newProductSection.append(newProductImgAnchor, newProductBio)
                 newProductSection.classList.add('animation')
                 productsDiv.append(newProductSection)
@@ -290,19 +273,15 @@ function starter() {
         let newProductBio = document.createElement('div')
         newProductBio.classList.add('product-bio')
         let newProductBrand = document.createElement('h3')
-        newProductBrand.textContent = 'Marca: ' + product.brand
+        newProductBrand.textContent = 'Marca: ' + product.brand.toUpperCase()
         newProductBrand.classList.add('product-brand')
-        let newProductPrice = document.createElement('h2')
+        let newProductFalta = document.createElement('h2')  
         if (product.falta == true) {
-            newProductPrice.textContent = 'EM FALTA'
+            newProductFalta.textContent = 'EM FALTA'
             newProductSection.style.opacity = 0.85
         }
-        else {
-            productPrice = product.price.replace('.', ',')
-            newProductPrice.textContent = 'R$ ' + productPrice
-        }
-        newProductPrice.classList.add('product-price')
-        newProductBio.append(newProductName, newProductBrand, newProductPrice)
+        newProductFalta.classList.add('product-falta')
+        newProductBio.append(newProductName, newProductBrand, newProductFalta)
         newProductSection.append(newProductImgAnchor, newProductBio)
         newProductSection.classList.add('animation')
         productsDiv.append(newProductSection)

@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
+:root {
+    --color1: rgb(43, 30, 102);
+    --color2: rgb(26, 18, 63);
+}
 body {
-    background-color: #d22e2e;
+    background-color: var(--color1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,11 +85,6 @@ header>h2 {
     transition: all 1s;
 }
 
-#avisos>h3 {
-    margin: 0;
-}
-
-
 .no-opacity {
     opacity: 0;
 }
@@ -128,7 +127,7 @@ header>h2 {
 #services-ul {
     width: 100% - 4vw;
     list-style: none;
-    background-color: #90181a;
+    background-color: var(--color2);
     padding: 2vw;
     margin: 20px 0 0 0;
     border-radius: 5px;
@@ -180,11 +179,11 @@ header>h2 {
     align-items: center;
     justify-content: start;
     margin: 0 1.5vw;
-    background-color: #90181a;
+    background-color: var(--color2);
     border-radius: 5px;
     padding: 10px 0;
     margin-bottom: 5%;
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
 }
 
 .img-anchor {
@@ -221,11 +220,11 @@ header>h2 {
     margin-bottom: 2%;
 }
 
-.product-price {
+.product-falta {
     margin: 6% 10% 6% 0;
     display: inline;
     align-self: flex-end;
-    border-bottom: 3px solid #d22e2e;
+    border-bottom: 3px solid var(--color1);
 }
 
 .chosen {

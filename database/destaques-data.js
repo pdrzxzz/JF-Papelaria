@@ -1,15 +1,15 @@
 const destaquesData = [
     {
         img: "./images/resma-papel-chamex.webp",
-        name: "Resma de Papel Ofício A4",
-        brand: 'Chamex',
+        name: "Resma de Papel Sulfite 75g A4 500FL",
+        brand: 'Sylvamo',
         type: "papel-sulfite",
         price: '25.00',
         falta: false,
     },
     {
         img: "./images/papel-foto-adesivo-nexel-50fl.webp",
-        name: "Papel Fotográfico Adesivo 130gr 50FL",
+        name: "Papel Fotográfico Adesivo A4 130gr 50FL",
         brand: 'Nexel',
         type: "papel-fotografico",
         price: '35.00',
@@ -17,7 +17,7 @@ const destaquesData = [
     },
     {
         img: "./images/marcador-quadro-pilot.jpg",
-        name: "Marcador WBM-7 Recarregável",
+        name: "Marcador para Quadro Branco WBM-7 Recarregável",
         brand: 'Pilot',
         type: "marcador-para-quadro-branco",
         price: '8.95',
@@ -25,7 +25,7 @@ const destaquesData = [
     },
     {
         img: "./images/papel-foto-nexel-50fl.webp",
-        name: "Papel Fotográfico 180gr 50FL",
+        name: "Papel Fotográfico A4 180gr 50FL",
         brand: 'Nexel',
         type: "papel-fotografico",
         price: '25.00',
@@ -33,7 +33,7 @@ const destaquesData = [
     },
     {
         img: "./images/marcador-quadro-vboard.jpg",
-        name: "Marcador Vboard Master Recarregável",
+        name: "Marcador para Quadro Branco Vboard Master Recarregável",
         brand: 'Pilot',
         type: "marcador-para-quadro-branco",
         price: '12.95',
