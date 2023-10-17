@@ -255,7 +255,7 @@ form.addEventListener('click', () => {
                 productsDiv.append(newProductSection)
                 productHeader.append(productsDiv)
             }
-            catalogoSuperior.scrollIntoView({ behavior: 'smooth' })
+            productsDiv.scrollIntoView({ behavior: 'smooth' })
         }
     }
 }
