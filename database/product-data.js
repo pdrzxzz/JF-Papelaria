@@ -149,6 +149,38 @@ const data = [
     },
     //blocos e talões
     {
+        img: "./images/cartao-de-ponto-tilibra.jpg",
+        name: "Cartão de Ponto Mensal RB C/100",
+        brand: 'Tilibra',
+        type: "blocos-e-impressos",
+        price: '19.95',
+        falta: false,
+    },
+    {
+        img: "./images/vale-com-canhoto-tilibra.webp",
+        name: "Vale com Canhoto 50FL",
+        brand: 'Tilibra',
+        type: "blocos-e-impressos",
+        price: '3.00',
+        falta: false,
+    },
+    {
+        img: "./images/ficha-pautada-sidgraph.jpg",
+        name: "Ficha Pautada 5''x8'' C/100FL",
+        brand: 'Sidgraph',
+        type: "blocos-e-impressos",
+        price: '15.00',
+        falta: false,
+    },
+    {
+        img: "./images/carne-gps-tamoio.jpg",
+        name: "Guia da Previdência Social Carnê GPS",
+        brand: 'Tamoio',
+        type: "blocos-e-impressos",
+        price: '5.00',
+        falta: false,
+    },
+    {
         img: "./images/recibo-comercial-sem-copia-grafset.jpg",
         name: "Recibo Comercial sem Cópia 1/16",
         brand: 'Grafset',
@@ -379,6 +411,14 @@ const data = [
     },
     //canetas-esferograficas
     {
+        img: "./images/caneta-compactor-economic.png",
+        name: "Caneta Esferográfica Economic Azul",
+        brand: 'Compactor',
+        type: "canetas-esferograficas",
+        price: '1.50',
+        falta: false,
+    },
+    {
         img: "./images/cores-e-sentimentos-bic.jpg",
         name: "Caneta Colorida Cores e Sentimentos C/10 + Suporte",
         brand: 'Bic',
@@ -562,6 +602,22 @@ const data = [
         brand: 'Onda',
         type: "canetas-hidrograficas",
         price: '6.95',
+        falta: false,
+    },
+    {
+        img: "./images/marcador-fineline-onda-10.jpeg",
+        name: "Marcador Fineliner 0.4mm C/10 Cores",
+        brand: 'Onda',
+        type: "canetas-hidrograficas",
+        price: '21.95',
+        falta: false,
+    },
+    {
+        img: "./images/marcador-fineline-onda-6.jpg",
+        name: "Marcador Fineliner 0.4mm C/6 Cores",
+        brand: 'Onda',
+        type: "canetas-hidrograficas",
+        price: '14.95',
         falta: false,
     },
     //clips
@@ -794,6 +850,14 @@ const data = [
         falta: false,
     },
     {
+        img: "./images/corretivo-fita-masterprint.png",
+        name: "Corretivo em Fita MP436 6mx5mm",
+        brand: 'Radex',
+        type: "corretivos",
+        price: '7.95',
+        falta: true,
+    },
+    {
         img: "./images/corretivo-fita-radex.jpg",
         name: "Corretivo em Fita 6mx5mm",
         brand: 'Radex',
@@ -908,6 +972,14 @@ const data = [
         falta: false,
     },
     //emborrachados
+    {
+        img: "./images/emborrachado-tapete.webp",
+        name: "Folha de Emborrachado/EVA Peças",
+        brand: 'Ibel',
+        type: "emborrachados",
+        price: '49.95',
+        falta: false,
+    },
     {
         img: "./images/emborrachado-estampado.webp",
         name: "Folha de Emborrachado/EVA Estampado 40x48cm",
@@ -1076,6 +1148,14 @@ const data = [
     },
     //grampeadores
     {
+        img: "./images/grampeador-master.webp",
+        name: "Grampeador Master 100FL",
+        brand: 'Jocar Office',
+        type: "grampeadores",
+        price: '129.95',
+        falta: false,
+    },
+    {
         img: "./images/grampeador-maped-a17.jpg",
         name: "Grampeador de Mesa Preto A17",
         brand: 'Maped',
@@ -1182,6 +1262,30 @@ const data = [
         falta: false,
     },
     //lápis
+    {
+        img: "./images/lapis-tabuada-bazze.png",
+        name: "Lápis Grafite Tabuada",
+        brand: 'Bazze',
+        type: "lapis-comum",
+        price: '1.95',
+        falta: false,
+    },
+        {
+        img: "./images/lapis-grafite-princesa.webp",
+        name: "Lápis Preto Princesa",
+        brand: 'Tris',
+        type: "lapis-comum",
+        price: '2.95',
+        falta: false,
+    },
+    {
+        img: "./images/lapis-grafite-batman.jpg",
+        name: "Lápis Preto Batman",
+        brand: 'Tris',
+        type: "lapis-comum",
+        price: '2.95',
+        falta: false,
+    },
     {
         img: "./images/lapis-serelepe.jpg",
         name: "Lápis Preto N2",
@@ -1296,6 +1400,14 @@ const data = [
         falta: false,
     },
     //lapiseiras
+    {
+        img: "./images/lapiseira-dreamy.webp",
+        name: "Lapiseira Holic Dreamy 0.7mm Cores",
+        brand: 'Tris',
+        type: "lapiseiras",
+        price: '15.95',
+        falta: false,
+    },
     {
         img: "./images/lapiseira-pentel-05-branca.jpg",
         name: "Lapiseira Profissional Sharp P205 0.5mm Branca",
@@ -1446,10 +1558,26 @@ const data = [
     //papel 180gr
     {
         img: "./images/chamequinho-180gr.webp",
-        name: "Papel Sulfite Chamequinho 180gr 50FL",
+        name: "Papel Sulfite Chamequinho A4 180gr 50FL",
         brand: 'Sylvamo',
         type: "papel-180gr",
         price: '19.95',
+        falta: false,
+    },
+    {
+        img: "./images/filipaper-premium.webp",
+        name: "Papel Filipaper Premium A4 180gr 20FL",
+        brand: 'Sylvamo',
+        type: "papel-180gr",
+        price: '24.95',
+        falta: false,
+    },
+    {
+        img: "./images/papel-offset-nexel.jpg",
+        name: "Papel Offset A4 180gr 50FL",
+        brand: 'Nexel',
+        type: "papel-180gr",
+        price: '24.95',
         falta: false,
     },
     //papel carbono
@@ -1636,6 +1764,14 @@ const data = [
     },
     //reguas
     {
+        img: "./images/escalimetro-maped.jpg",
+        name: "Escalímetro",
+        brand: 'Maped',
+        type: "reguas",
+        price: '39.95',
+        falta: false,
+    },
+    {
         img: "./images/regua-de-aluminio.webp",
         name: "Régua de Alumínio 30cm",
         brand: 'Jocar Office',
@@ -1693,6 +1829,14 @@ const data = [
         falta: false,
     },
     //tesouras
+    {
+        img: "./images/tesoura-de-picotar-leoeleo.webp",
+        name: "Tesoura de Picotar Cores",
+        brand: 'Leo&Leo',
+        type: "tesouras",
+        price: '12.95',
+        falta: false,
+        },
     {
     img: "./images/tesoura-maped-security.jpg",
     name: "Tesoura Escolar Security 12cm",
@@ -1815,6 +1959,22 @@ const data = [
         falta: false,
     },
     //variados
+    {
+        img: "./images/acendedor-bic.webp",
+        name: "Acendedor Handy Azul Recarregável com Isqueiro",
+        brand: 'Bic',
+        type: "variados",
+        price: '19.95',
+        falta: false,
+    },
+    {
+        img: "./images/espeto-madeira-theoto.jpg",
+        name: "Espeto de Madeira Grande C/100",
+        brand: 'Theoto',
+        type: "variados",
+        price: '9.95',
+        falta: false,
+    },
     {
         img: "./images/papel-pautado.jpg",
         name: "Papel Almaço/Pautado C/10",
