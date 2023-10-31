@@ -500,11 +500,27 @@ const data = [
         falta: false,
     },
     {
+        img: "./images/caneta-bpx-c5.jpg",
+        name: "Caneta Esferográfica BPX 0.7mm C/5 Cores",
+        brand: 'Cis',
+        type: "canetas-esferograficas",
+        price: '19.95',
+        falta: false,
+    },
+    {
         img: "./images/caneta-spiro.webp",
         name: "Caneta Esferográfica Spiro 0.7mm",
         brand: 'Cis',
         type: "canetas-esferograficas",
         price: '3.95',
+        falta: false,
+    },
+    {
+        img: "./images/caneta-spiro-c3.jpg",
+        name: "Caneta Esferográfica Spiro 0.7mm C/3 Cores",
+        brand: 'Cis',
+        type: "canetas-esferograficas",
+        price: '11.95',
         falta: false,
     },
     {
@@ -932,6 +948,14 @@ const data = [
     },
     //elásticos
     {
+        img: "./images/elastico-mercur-100.jpg",
+        name: "Elásticos Amarelos Super C/100",
+        brand: 'Mercur',
+        type: "elasticos",
+        price: '9.95',
+        falta: false,
+    },  
+    {
         img: "./images/elastico-redbor-60.jpg",
         name: "Elásticos Amarelos C/60",
         brand: 'Redbor',
@@ -941,7 +965,7 @@ const data = [
     },  
     {
         img: "./images/elastico-mercur-60.jpg",
-        name: "Elásticos Amarelos C/60",
+        name: "Elásticos Amarelos Standard C/60",
         brand: 'Mercur',
         type: "elasticos",
         price: '7.95',
@@ -949,7 +973,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-120.webp",
-        name: "Elásticos Amarelos C/120",
+        name: "Elásticos Amarelos Standard C/120",
         brand: 'Mercur',
         type: "elasticos",
         price: '14.95',
@@ -957,7 +981,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-1200.jpg",
-        name: "Elásticos Amarelos C/1200",
+        name: "Elásticos Amarelos Super C/1200",
         brand: 'Mercur',
         type: "elasticos",
         price: '59.95',
@@ -965,7 +989,7 @@ const data = [
     },
     {
         img: "./images/elastico-mercur-2200.jpg",
-        name: "Elásticos Amarelos C/2200",
+        name: "Elásticos Amarelos Super C/2200",
         brand: 'Mercur',
         type: "elasticos",
         price: '99.95',
@@ -1044,6 +1068,15 @@ const data = [
         brand: 'Brw',
         type: "escritorio",
         price: '14.95',
+        falta: false,
+    },
+    //etiquetas
+    {
+        img: "./images/etiquetas-princesas.jpg",
+        name: "Etiqueta Escolar Adesiva Princesas C/8",
+        brand: 'Tilibra',
+        type: "etiquetas",
+        price: '4.95',
         falta: false,
     },
     //extrator
@@ -1262,6 +1295,14 @@ const data = [
         falta: false,
     },
     //lápis
+    {
+        img: "./images/lapis-spiro.jpg",
+        name: "Lápis Grafite Spiro com Borracha C/4",
+        brand: 'Cis',
+        type: "lapis-comum",
+        price: '7.95',
+        falta: false,
+    },
     {
         img: "./images/lapis-tabuada-bazze.png",
         name: "Lápis Grafite Tabuada",

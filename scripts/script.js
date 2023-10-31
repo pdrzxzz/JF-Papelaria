@@ -36,7 +36,6 @@ var catalogoSuperior = document.getElementById('catalogo-superior');
     }
   });
   
-
 destaques.addEventListener('click', () => {
     categorias.classList.remove('chosen')
     destaques.classList.add('chosen')
@@ -88,9 +87,11 @@ destaques.addEventListener('click', () => {
         productsDiv.append(newProductSection)
         productHeader.append(productsDiv)
     }
-    catalogoSuperior.scrollIntoView({ behavior: 'smooth' })
+    window.scrollTo({
+        top: productsDiv.offsetTop - 136,
+        behavior: 'smooth'
+    })
 })
-
 
 todos.addEventListener('click', () => {
     categorias.classList.remove('chosen')
@@ -143,7 +144,10 @@ todos.addEventListener('click', () => {
         productsDiv.append(newProductSection)
         productHeader.append(productsDiv)
     }
-    catalogoSuperior.scrollIntoView({behavior:'smooth'})
+    window.scrollTo({
+        top: productsDiv.offsetTop - 136,
+        behavior: 'smooth'
+    })
 })
 
 categorias.addEventListener('click', () => {
@@ -156,7 +160,10 @@ categorias.addEventListener('click', () => {
         productsDiv.remove(product)
     }
     form.classList.remove('none')
-    form.scrollIntoView({behavior: 'smooth'})
+    window.scrollTo({
+        top: form.offsetTop - 136,
+        behavior: 'smooth'
+    })
 })
 
 services.addEventListener('click', () => {
@@ -199,7 +206,10 @@ services.addEventListener('click', () => {
         productsDiv.append(newProductSection)
         productHeader.append(productsDiv)
     }
-    catalogoSuperior.scrollIntoView({behavior:'smooth'})
+    window.scrollTo({
+        top: productsDiv.offsetTop - 136,
+        behavior: 'smooth'
+    })
 })
 
 form.addEventListener('click', () => {
@@ -255,7 +265,11 @@ form.addEventListener('click', () => {
                 productsDiv.append(newProductSection)
                 productHeader.append(productsDiv)
             }
-            productsDiv.scrollIntoView({ behavior: 'smooth' })
+            
+            window.scrollTo({
+                top: productsDiv.offsetTop - 136,
+                behavior: 'smooth'
+            })
         }
     }
 }
