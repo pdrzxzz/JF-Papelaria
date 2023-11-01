@@ -411,6 +411,14 @@ const data = [
     },
     //canetas-esferograficas
     {
+        img: "./images/caneta-magica.jpg",
+        name: "Caneta Mágica Tinta Transparente",
+        brand: 'Pendente',
+        type: "canetas-esferograficas",
+        price: '4.95',
+        falta: false,
+    },
+    {
         img: "./images/caneta-compactor-economic.png",
         name: "Caneta Esferográfica Economic Azul",
         brand: 'Compactor',
@@ -636,7 +644,32 @@ const data = [
         price: '14.95',
         falta: false,
     },
+    //carimbos infantis
+    {
+        img: "./images/carimbo-infantil-barbie.png",
+        name: "Carimbo Infantil Barbie C/4",
+        brand: 'Tris',
+        type: "carimbos-infantis",
+        price: '19.95',
+        falta: false,
+    },
+    {
+        img: "./images/carimbo-infantil-batman.webp",
+        name: "Carimbo Infantil Batman C/4",
+        brand: 'Tris',
+        type: "carimbos-infantis",
+        price: '19.95',
+        falta: false,
+    },
     //clips
+    {
+        img: "./images/clips-colorido-epoxi.jpg",
+        name: "Clips 5 Aço Epoxi Cores Sortidas C/100",
+        brand: 'Acc',
+        type: "clips",
+        price: '5.95',
+        falta: false,
+    },
     {
         img: "./images/clips-20-ecco-100.webp",
         name: "Clips Galvanizado N°2/0 C/100",
@@ -756,7 +789,7 @@ const data = [
         brand: 'Piratininga',
         type: "colas",
         price: '5.95',
-        falta: false,
+        falta: true,
     },
     {
         img: "./images/cola-bastao-scotch-40g.jpg",
@@ -871,14 +904,6 @@ const data = [
         brand: 'Radex',
         type: "corretivos",
         price: '7.95',
-        falta: true,
-    },
-    {
-        img: "./images/corretivo-fita-radex.jpg",
-        name: "Corretivo em Fita 6mx5mm",
-        brand: 'Radex',
-        type: "corretivos",
-        price: '9.95',
         falta: true,
     },
     {
@@ -1070,6 +1095,31 @@ const data = [
         price: '14.95',
         falta: false,
     },
+    //estiletes
+    {
+        img: "./images/estilete-plastico-onda.webp",
+        name: "Estilete Plástico Largo",
+        brand: 'Onda',
+        type: "estiletes",
+        price: '4.95',
+        falta: false,
+    },
+    {
+        img: "./images/estilete-de-metal-sq.jpg",
+        name: "Estilete de Metal Largo 15cm",
+        brand: 'Sq',
+        type: "estiletes",
+        price: '9.95',
+        falta: false,
+    },
+    {
+        img: "./images/estilete-de-metal-leoarte.png",
+        name: "Estilete de Metal Largo Lâmina de 18mm",
+        brand: 'Leoarte',
+        type: "estiletes",
+        price: '12.95',
+        falta: false,
+    },
     //etiquetas
     {
         img: "./images/etiquetas-princesas.jpg",
@@ -1089,6 +1139,14 @@ const data = [
         falta: false,
     },
     //fitas 
+        {
+        img: "./images/fita-isolante-adelbras.webp",
+        name: "Fita Isolante Anti-chama 19mmx5m",
+        brand: 'Adelbras',
+        type: "fitas",
+        price: '2.95',
+        falta: false,
+    },
     {
         img: "./images/fita-tartan.webp",
         name: "Fita Tartan 45mmx50m",
@@ -1276,7 +1334,7 @@ const data = [
         brand: 'Multilaser',
         type: "informatica",
         price: '8.95',
-        falta: true,
+        falta: false,
     },
     {
         img: "./images/mouse-pad-multilaser-ergonomico.webp",
@@ -1499,7 +1557,7 @@ const data = [
     },
     {
         img: "./images/lapiseira-juice-keep-07.webp",
-        name: "Lapiseira Juice 0.7mm Cores",
+        name: "Lapiseira Plástica Juice 0.7mm Cores",
         brand: 'Keep',
         type: "lapiseiras",
         price: '5.95',
@@ -1513,7 +1571,24 @@ const data = [
         price: '7.95',
         falta: true,
     },
+    //lupas
+    {
+        img: "./images/lupa.jpg",
+        name: "Lupa anti-deformação 5X 45mm",
+        brand: 'Bic',
+        type: "lupas",
+        price: '24.95',
+        falta: false,
+    },
     //marca-textos
+    {
+        img: "./images/marca-texto-glitter.jpg",
+        name: "Marca-texto Flash Glitter",
+        brand: 'Tris',
+        type: "marca-textos",
+        price: '9.95',
+        falta: false,
+    },
     {
         img: "./images/marca-texto-pastel-bic.jpg",
         name: "Marca-texto Pastel C/4",
@@ -1687,7 +1762,7 @@ const data = [
         price: '12.00',
         falta: false,
     },
-    //FLip chart
+    //flip chart
     {
         img: "./images/flip-chart.jpg",
         name: "Flip Chart",
@@ -1803,6 +1878,15 @@ const data = [
         price: '14.95',
         falta: false,
     },
+    //post-it
+    {
+        img: "./images/clips-20-ecco-100.webp",
+        name: "Post-it Transparente Adesivo Holic C/50FL",  
+        brand: 'Tris',
+        type: "post-it",
+        price: '9.95',
+        falta: false,
+    },
     //reguas
     {
         img: "./images/escalimetro-maped.jpg",
@@ -1912,7 +1996,7 @@ const data = [
     },
     //tintas
     {
-        img: "./images/pinturaa-a-dedo-pira-15ml.webp",
+        img: "./images/pintura-a-dedo-pira-15ml.webp",
         name: "Pintura a Dedo 15ml C/6 Cores",
         brand: 'Piratininga',
         type: "tintas",
@@ -1976,16 +2060,32 @@ const data = [
         falta: false,
     },
     {
-        img: "./images/tinta-imp-664.webp",
-        name: "Tintas para impressora Epson 664 100ml",
+        img: "./images/tinta-imp-544-preta.webp",
+        name: "Tintas para impressora Epson 544 Preta 70ml",
         brand: 'Nexel',
         type: "tintas-imp",
         price: '12.95',
         falta: false,
     },
     {
-        img: "./images/tinta-imp-544.jpg",
-        name: "Tintas para impressora Epson 544 70ml",
+        img: "./images/tinta-imp-544-rosa.jpg",
+        name: "Tintas para impressora Epson 504/544 Magenta 70ml",
+        brand: 'Nexel',
+        type: "tintas-imp",
+        price: '12.95',
+        falta: false,
+    },
+    {
+        img: "./images/tinta-imp-544-amarela.jpg",
+        name: "Tintas para impressora Epson 504/544 Amarela 70ml",
+        brand: 'Nexel',
+        type: "tintas-imp",
+        price: '12.95',
+        falta: false,
+    },
+    {
+        img: "./images/tinta-imp-544-azul.jpg",
+        name: "Tintas para impressora Epson 544 Ciano 70ml",
         brand: 'Nexel',
         type: "tintas-imp",
         price: '12.95',
@@ -1993,13 +2093,61 @@ const data = [
     },
     {
         img: "./images/tinta-imp-504-127ml.jpg",
-        name: "Tinta para impressora Epson 504 127ml",
+        name: "Tinta para impressora Epson 504 Preta 127ml",
         brand: 'Nexel',
         type: "tintas-imp",
         price: '14.95',
         falta: false,
     },
+    {
+        img: "./images/tinta-imp-664-azul.jpg",
+        name: "Tintas para impressora Epson 664 Ciano 100ml",
+        brand: 'Nexel',
+        type: "tintas-imp",
+        price: '12.95',
+        falta: false,
+    },
+    {
+        img: "./images/tinta-imp-664-rosa.jpg",
+        name: "Tintas para impressora Epson 664 Magenta 100ml",
+        brand: 'Nexel',
+        type: "tintas-imp",
+        price: '12.95',
+        falta: false,
+    },  
+    {
+        img: "./images/tinta-imp-664-amarela.jpg",
+        name: "Tintas para impressora Epson 664 Amarela 100ml",
+        brand: 'Nexel',
+        type: "tintas-imp",
+        price: '12.95',
+        falta: false,
+    },
+    {
+        img: "./images/tinta-imp-664-preta.jpg",
+        name: "Tintas para impressora Epson 664 Preta 100ml",
+        brand: 'Nexel',
+        type: "tintas-imp",
+        price: '12.95',
+        falta: false,
+    },
     //variados
+    {
+        img: "./images/papel-madeira.webp",
+        name: "Folha de Papel Madeira Kraft",
+        brand: 'Pendente',
+        type: "variados",
+        price: '2.00',
+        falta: false,
+    },
+    {
+        img: "./images/lampada-elgin.webp",
+        name: "Lâmpada Bulbo 9W 6500K",
+        brand: 'Elgin',
+        type: "variados",
+        price: '5.95',
+        falta: false,
+    },
     {
         img: "./images/acendedor-bic.webp",
         name: "Acendedor Handy Azul Recarregável com Isqueiro",
