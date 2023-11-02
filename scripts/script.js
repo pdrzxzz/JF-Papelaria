@@ -2,12 +2,12 @@ productsDiv = document.querySelector('#products')
 productHeader = document.querySelector('#product-header')
 servicesHeader = document.querySelector('#services-header')
 let form = document.querySelector('#products-form')
-SectionHeading = document.createElement('h2')
 let productSelected = ''
 let categorias = document.querySelector('#categorias')
 let todos = document.querySelector('#todos-produtos')
 let destaques = document.querySelector('#destaques')
 let services = document.querySelector('#services')
+let labelList = document.querySelectorAll('form label')
 
 starter()
 
@@ -37,12 +37,6 @@ var catalogoSuperior = document.getElementById('catalogo-superior');
   });
   
 destaques.addEventListener('click', () => {
-    categorias.classList.remove('chosen')
-    destaques.classList.add('chosen')
-    services.classList.remove('chosen')
-    todos.classList.remove('chosen')
-    SectionHeading.textContent = ''
-    productHeader.append(SectionHeading)
     form.classList.add('none')
     const productsChildren = Array.from(productsDiv.children);
     productsChildren.forEach(product => {
@@ -94,13 +88,7 @@ destaques.addEventListener('click', () => {
 })
 
 todos.addEventListener('click', () => {
-    categorias.classList.remove('chosen')
-    destaques.classList.remove('chosen')
-    services.classList.remove('chosen')
-    todos.classList.add('chosen')
     form.classList.add('none')
-    SectionHeading.textContent = ''
-    productHeader.append(SectionHeading)
     const productsChildren = Array.from(productsDiv.children);
     productsChildren.forEach(product => {
         productsDiv.removeChild(product);
@@ -151,11 +139,6 @@ todos.addEventListener('click', () => {
 })
 
 categorias.addEventListener('click', () => {
-    categorias.classList.add('chosen')
-    destaques.classList.remove('chosen')
-    services.classList.remove('chosen')
-    todos.classList.remove('chosen')
-    SectionHeading.textContent = ''
     for (product of productsDiv.children) {
         productsDiv.remove(product)
     }
@@ -167,16 +150,10 @@ categorias.addEventListener('click', () => {
 })
 
 services.addEventListener('click', () => {
-    categorias.classList.remove('chosen')
-    destaques.classList.remove('chosen')
-    services.classList.add('chosen')
-    todos.classList.remove('chosen')
     const productsChildren = Array.from(productsDiv.children);
     productsChildren.forEach(product => {
         productsDiv.removeChild(product);
     });
-    SectionHeading.textContent = ''
-    productHeader.append(SectionHeading)
     form.classList.add('none')
     let productsList = []
     for (product of servicesData) {
@@ -219,10 +196,7 @@ form.addEventListener('click', () => {
         else if (productLabel.checked === true) {
             productsDiv.innerHTML = ''
             productHeader.innerHTML = ''
-            productSelected = productLabel.value
-            //adicionar heading
-            SectionHeading.textContent = productLabel.id.replaceAll('-', ' ')
-            productHeader.append(SectionHeading)
+            productSelected = productLabel.value    
             productsList = []
             for (product of data) {
                 //filtrar os produtos da database
@@ -280,13 +254,14 @@ function starter() {
     destaques.classList.add('chosen')
     services.classList.remove('chosen')
     todos.classList.remove('chosen')
-    SectionHeading.textContent = ''
-    productHeader.append(SectionHeading)
     form.classList.add('none')
     const productsChildren = Array.from(productsDiv.children);
     productsChildren.forEach(product => {
         productsDiv.removeChild(product);
     });
+    for (label of labelList) {
+        label.classList.add('texto-hover')
+    }
     let productsList = []
     for (product of destaquesData) {
         productsList.push(product)

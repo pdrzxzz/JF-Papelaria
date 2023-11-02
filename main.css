@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 iframe {
@@ -41,11 +41,6 @@ header {
     text-decoration: none;
 }
 
-.nav-div a:hover, #local-anchor:hover, #catalogo-heading > h2:hover, form label:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .redesocial {
     width: 45px;
 }
@@ -53,6 +48,27 @@ header {
 .contato {
     font-size: 2.5rem;
 }
+
+.texto-hover {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .texto-hover::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .texto-hover:hover::after {
+    width: 100%;
+    left: 0;
+  }
 
 #logo {
     width: 12vw;
@@ -242,11 +258,8 @@ header>h2 {
     border-bottom: 3px solid var(--color1);
 }
 
-#credit {
-}
-
-.chosen {
-    text-decoration: underline; 
+form label:hover {
+    cursor: pointer;
 }
 
 @keyframes append {
@@ -305,9 +318,6 @@ header>h2 {
         width: 30vw;
         height: 30vw;
         margin: 3vw;
-    }
-    .nav-div, #local-anchor {
-        text-decoration: underline; 
     }
 }
 
