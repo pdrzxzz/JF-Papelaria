@@ -525,7 +525,7 @@ const data = [
     },
     {
         img: "./images/caneta-bic-azul-caixa.webp",
-        name: "Caneta Esferográfica Cristal Azul 1.0mm C/50",
+        name: "Caneta Esferográfica Cristal 1.0mm C/50",
         brand: 'Bic',
         type: "canetas-esferograficas",
         price: '49.95',
@@ -1296,6 +1296,14 @@ const data = [
     },
     //escritorio
     {
+        img: "./images/extrator-chaparrau.jpg",
+        name: "Extrator de Grampos Aço Inoxidável",
+        brand: 'chaparrau',
+        type: "extrator",
+        price: '4.95',
+        falta: false,
+    },
+    {
         img: "./images/espeto-para-papel.webp",
         name: "Espeto para Papel",
         brand: 'ACC',
@@ -1342,15 +1350,6 @@ const data = [
         name: "Etiqueta Escolar Adesiva Princesas C/8",
         brand: 'Tilibra',
         type: "etiquetas",
-        price: '4.95',
-        falta: false,
-    },
-    //extrator
-    {
-        img: "./images/extrator-chaparrau.jpg",
-        name: "Extrator de Grampos Aço Inoxidável",
-        brand: 'chaparrau',
-        type: "extrator",
         price: '4.95',
         falta: false,
     },
@@ -1476,7 +1475,7 @@ const data = [
         brand: 'Western',
         type: "grampeadores",
         price: '69.95',
-        falta: false,
+        falta: true,
     },
     //grampos
     {
@@ -1787,15 +1786,6 @@ const data = [
         price: '7.95',
         falta: true,
     },
-    //lupas
-    {
-        img: "./images/lupa.jpg",
-        name: "Lupa anti-deformação 5X 45mm",
-        brand: 'Bic',
-        type: "lupas",
-        price: '24.95',
-        falta: false,
-    },
     //marca-textos
     {
         img: "./images/marca-texto-glitter.jpg",
@@ -1889,6 +1879,22 @@ const data = [
     },
     //papel 180gr
     {
+        img: "./images/papel-opaline-usapel.jpg",
+        name: "Papel Opaline 180gr 50FL",
+        brand: 'Usapel',
+        type: "papel-180gr",
+        price: '24.95',
+        falta: false,
+    },
+    {
+        img: "./images/papel-casca-de-ovo.jpg",
+        name: "Papel Casca de Ovo 180gr 50FL",
+        brand: 'Usapel',
+        type: "papel-180gr",
+        price: '24.95',
+        falta: false,
+    },
+    {
         img: "./images/chamequinho-180gr.webp",
         name: "Papel Sulfite Chamequinho A4 180gr 50FL",
         brand: 'Sylvamo',
@@ -1909,6 +1915,23 @@ const data = [
         name: "Papel Offset A4 180gr 50FL",
         brand: 'Nexel',
         type: "papel-180gr",
+        price: '24.95',
+        falta: false,
+    },
+    //papel A3
+    {
+        img: "./images/resma-papel-a3-chamex.webp",
+        name: "Resma de Papel Ofício Chamex A3 500FL",
+        brand: 'Sylvamo',
+        type: "papel-a3",
+        price: '69.95',
+        falta: false,
+    },
+    {
+        img: "./images/papel-chanson-a3.webp",
+        name: "Papel Chanson A3 150GR 20FL",
+        brand: 'Romitec',
+        type: "papel-a3",
         price: '24.95',
         falta: false,
     },
@@ -1983,7 +2006,7 @@ const data = [
         img: "./images/flip-chart.jpg",
         name: "Flip Chart",
         brand: 'Mademaster',
-        type: "Flip-chart",
+        type: "flip-chart",
         price: '149.95',
         falta: false,
     },
@@ -1991,14 +2014,14 @@ const data = [
         img: "./images/papel-para-flip-chart-stalo.webp",
         name: "Papel para Flip Chart 50FL",
         brand: 'Stalo',
-        type: "Flip-chart",
+        type: "flip-chart",
         price: '79.95',
         falta: false,
     },
     //Papel sulfite
     { 
         img: "./images/resma-papel-chamex.webp",
-        name: "Resma de Papel Ofício Chamex A4",
+        name: "Resma de Papel Ofício Chamex A4 500FL",
         brand: 'Sylvamo',
         type: "papel-sulfite",
         price: '25.00',
@@ -2050,6 +2073,80 @@ const data = [
         brand: 'Sylvamo',
         type: "papel-sulfite",
         price: '9.95',
+        falta: false,
+    },
+    //pasta az
+    {
+        img: "./images/pasta-az-frama.avif",
+        name: "Pasta AZ Ofício Lombo Largo Tigrada",
+        brand: 'Frama',
+        type: "pasta-az",
+        price: '9.95',
+        falta: false,
+    },
+    {
+        img: "./images/pasta-az-chies.webp",
+        name: "Pasta AZ Ofício Lombo Largo Cores",
+        brand: 'Chies',
+        type: "pasta-az",
+        price: '29.95',
+        falta: false,
+    },
+    //pasta catálogo
+    {
+        img: "./images/pasta-catalogo-carpa-100.webp",
+        name: "Pasta Catalógo Preta C/100 Sacos Plásticos",
+        brand: 'Carpa',
+        type: "pasta-catalogo",
+        price: '34.95',
+        falta: false,
+    },
+    {
+        img: "./images/pasta-catalogo-carpa-100.webp",
+        name: "Pasta Catalógo Preta C/50 Sacos Plásticos",
+        brand: 'Carpa',
+        type: "pasta-catalogo",
+        price: '29.95',
+        falta: true,
+    },
+    {
+        img: "./images/pasta-catalogo-carpa-100.webp",
+        name: "Pasta Catalógo Preta C/30 Sacos Plásticos",
+        brand: 'Carpa',
+        type: "pasta-catalogo",
+        price: '24.95',
+        falta: false,
+    },
+    {
+        img: "./images/pasta-catalogo-carpa-100.webp",
+        name: "Pasta Catalógo Preta C/10 Sacos Plásticos",
+        brand: 'Carpa',
+        type: "pasta-catalogo",
+        price: '19.95',
+        falta: false,
+    },
+    {
+        img: "./images/pasta-catalogo-pequena.jpg",
+        name: "Pasta Catalógo Preta Pequena C/10 Sacos Plásticos",
+        brand: 'Carpa',
+        type: "pasta-catalogo",
+        price: '11.95',
+        falta: false,
+    },
+    {
+        img: "./images/pasta-catalogo-pequena.jpg",
+        name: "Pasta Catalógo Preta Pequena C/30 Sacos Plásticos",
+        brand: 'Carpa',
+        type: "pasta-catalogo",
+        price: '14.95',
+        falta: false,
+    },
+    {
+        img: "./images/pasta-catalogo-pequena.jpg",
+        name: "Pasta Catalógo Preta Pequena C/50 Sacos Plásticos",
+        brand: 'Carpa',
+        type: "pasta-catalogo",
+        price: '19.95',
         falta: false,
     },
     //pasta sanfonada
@@ -2167,7 +2264,7 @@ const data = [
         brand: 'Mademaster',
         type: "telas",
         price: '24.95',
-        falta: false,
+        falta: true,
     },
     //tesouras
     {
@@ -2348,6 +2445,14 @@ const data = [
         falta: false,
     },
     //variados
+    {
+        img: "./images/lupa.jpg",
+        name: "Lupa anti-deformação 5X 45mm",
+        brand: 'Cis',
+        type: "lupas",
+        price: '24.95',
+        falta: false,
+    },
     {
         img: "./images/papel-madeira.webp",
         name: "Folha de Papel Madeira Kraft",
