@@ -434,6 +434,14 @@ const data = [
     },
     //calculadoras
     {
+        img: "./images/calculadora-quadro-de-anotacoes.jpg",
+        name: "Calculadora de Mesa 12 Dígitos com Quadro para Anotação Preta",
+        brand: 'Elgin',
+        type: "calculadoras",
+        price: '99.95',
+        falta: false,
+    },
+    {
         img: "./images/calculadora-kk-800a.webp",
         name: "Calculadora KK-800A",
         brand: 'Kenko',
@@ -474,6 +482,22 @@ const data = [
         falta: false,
     },
     //canetas-esferograficas
+    {
+        img: "./images/caneta-touch.webp",
+        name: "Caneta Touch com Suporte para Celular",
+        brand: 'Pendente',
+        type: "canetas-esferograficas",
+        price: '4.95',
+        falta: false,
+    },
+    {
+        img: "./images/caneta-touch-fina.jpg",
+        name: "Caneta Touch Fina",
+        brand: 'Pendente',
+        type: "canetas-esferograficas",
+        price: '9.95',
+        falta: false,
+    },
     {
         img: "./images/caneta-magica.jpg",
         name: "Caneta Mágica Tinta Transparente",
@@ -2193,7 +2217,7 @@ const data = [
     },
     //post-it
     {
-        img: "./images/clips-20-ecco-100.webp",
+        img: "./images/post-it-transparente.png",
         name: "Post-it Transparente Adesivo Holic C/50FL",  
         brand: 'Tris',
         type: "post-it",
